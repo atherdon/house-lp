@@ -26,5 +26,5 @@ gulp.task('browserSync', ['stylus'], function(){
 });
 
 gulp.task('watch', ['browserSync'], function(){
-	gulp.watch('public/stylesheets/stylus/*', ['stylus', 'browserSync']);
+	gulp.watch('assets/stylus/**/**.styl', ['stylus', 'browserSync']);
 });
