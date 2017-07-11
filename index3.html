@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="font/ostrich-sans.css">
+        
+        <!-- <link rel="stylesheet/less" type="text/css" href="css/main.less"> -->
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- <script src="js/less-1.4.1.min.js"></script> -->
+        
+    </head>
+    <body>
+      
+    <style type="text/css">
+        .container-group, .content-container {
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+.color2 div.error {
+    background: #18c08f;
+}
+.content-container {
+    min-height: 50px;
+}
+
+.color2 {
+    background: #9a7192;
+}
+.color2 div.error {
+    background: #18c08f;
+}
+
+.wrapper {
+    width: 1140px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+    </style>
+        <!-- <div id="themap" class="map"></div> -->
+        
+        <div id="contact" class="footer section content-container color2 solid">
+            <div class="wrapper padding-small">
+                <h2 class="container title">
+                Запишись на просмотр дома!
+                </h2>
+                <form action="#" class="formvalidation" method="POST">
+                    <div class="row">
+                        <div class="error"></div>
+                        <div class="half">
+                            <input type="text" name="name" placeholder="Your name" class="required">
+                            <input type="email" name="email" placeholder="Your email" class="required">
+                            <!-- <input type="text" name="budget" value="1000" data-slider="true" data-slider-range="1000,5000" data-slider-step="1000" data-slider-snap="true"> -->
+                        </div>
+                        <div class="half">
+                           <!--  <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" class="required"></textarea> -->
+                            <div class="row">
+                                <div class="col-md-12">Title</div>
+                                <div class="col-md-4">
+                                    <input type="text" name="name1" placeholder="Your name" class="required">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="name2" placeholder="Your name" class="required">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="name3" placeholder="Your name" class="required">
+                                </div>
+                            </div>
+                            <button class="btn borderonly">Send your message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+       <!--  <div class="footer content-container color2 darken">
+            <div class="wrapper padding-tiny">
+                <div class="container">
+                    <div class="half table-cell">
+                        <p>I was made by <a href="#">Tardigrade Studio</a></p>
+                    </div>
+                    <div class="half table-cell right-text">
+                        <a href="#" class="inline-block fadeout20 rotate ml15 mb5 mt5"><img src="img/icons/picons/56/social-043_twitter.png" alt=""></a>
+                        <a href="#" class="inline-block fadeout20 rotate ml15 mb5 mt5"><img src="img/icons/picons/56/social-046_facebook.png" alt=""></a>
+                        <a href="#" class="inline-block fadeout20 rotate ml15 mb5 mt5"><img src="img/icons/picons/56/social-051_linkedin.png" alt=""></a>
+                        <a href="#" class="inline-block fadeout20 rotate ml15 mb5 mt5"><img src="img/icons/picons/56/social-042_dribbble.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+        <!-- <script src="js/plugins/jquery.scrollTo-1.4.3.1-min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.fixClient.js"></script> -->
+        <!-- <script src="js/plugins/jquery.parallax-1.1.3.js"></script> -->
+        <!-- <script src="js/plugins/jquery.knob.js"></script> -->
+        <!-- <script src="js/plugins/jquery.singlePageNav.min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.touchSwipe.min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.carouFredSel-6.2.1-packed.js"></script> -->
+        <!-- <script src="js/plugins/jquery.inview.min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.easytabs.min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.fitvids.js"></script> -->
+        <!-- <script src="js/plugins/simple-slider.min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.autosize.min.js"></script> -->
+        <!-- <script src="js/plugins/jquery.jribbble-1.0.1.ugly.js"></script> -->
+        <script src="js/plugins/jquery.validate.min.js"></script>
+        <script src="js/plugins/jquery.form.min.js"></script>
+        <!-- <script src="js/plugins/responsive-nav.js"></script> -->
+        <!-- <script src="js/plugins/detectmobilebrowser.js"></script> -->
+        <!-- <script src="js/plugins/nivo-lightbox/nivo-lightbox.min.js"></script> -->
+        <!-- <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+
+        <!-- <script src="js/main.js"></script> -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+    if($('.formvalidation').length) {
+        $(".formvalidation").validate({
+            invalidHandler: function(event, validator) {
+              // 'this' refers to the form
+              var errors = validator.numberOfInvalids();
+              if (errors) {
+                var message = errors == 1
+                  ? 'You missed 1 field. It has been highlighted'
+                  : 'You missed ' + errors + ' fields. They have been highlighted';
+                $("div.error").html(message);
+                $("div.error").fadeIn();
+              } else {
+                $("div.error").hide();
+              }
+            },
+            showErrors: false,
+            errorPlacement: function(error,element) {
+                return true;
+            },
+            submitHandler: function(form) { 
+                jQuery(form).ajaxSubmit({
+                    url: 'process.php', 
+                    success: function() {
+                        var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
+                        $("div.error").html(message);
+                        $("div.error").fadeIn();
+                    },
+                    error: function() {
+                        alert('Something`s wrong.');
+                    }
+                });
+            }
+        
+        });
+    }
+
+
+            });
+
+
+        </script>
+    </body>
+</html>
