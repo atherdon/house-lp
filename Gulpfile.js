@@ -6,7 +6,7 @@ var rename = require('gulp-rename');
 var browserSync = require('browser-sync');
 
 gulp.task('stylus', function() {
-	return gulp.src('assets/stylus/main.styl')
+	return gulp.src('assets/stylus/style.styl')
 				.pipe(stylus({
 						use: [
 							bootstrap()
@@ -26,5 +26,5 @@ gulp.task('browserSync', ['stylus'], function(){
 });
 
 gulp.task('watch', ['browserSync'], function(){
-	gulp.watch('assets/stylus/**/**.styl', ['stylus', 'browserSync']);
+	gulp.watch('assets/stylus/**/**.styl', ['stylus']);
 });
