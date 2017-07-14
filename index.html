@@ -38,8 +38,16 @@
           
         </div>
         <p>This modals including title, input for each field. </p>
+
         <button class="btn btn-primary" data-target="#exampleFormModal" data-toggle="modal"
-        type="button">Generate</button>
+        type="button">Main</button>
+
+
+        <button class="btn btn-primary" data-target="#exampleFormModal2" data-toggle="modal"
+        type="button">Main2</button>
+
+        <button class="btn btn-primary" data-target="#exampleFormModal3" data-toggle="modal"
+        type="button">Юридическая чистота</button>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleFormModal" aria-hidden="false" aria-labelledby="exampleFormModalLabel"
@@ -100,6 +108,132 @@
           </div>
         </div>
         <!-- End Modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleFormModal2" aria-hidden="false" aria-labelledby="exampleFormModalLabel"
+        role="dialog" tabindex="-1">
+          <div class="modal-dialog">
+            <form class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="exampleFormModalLabel">
+                Запишитесь на просмотр дома!
+                </h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-12 form-group">
+                    <input type="text" class="form-control" 
+                    name="name" placeholder="Имя...">
+                  </div>
+                  <div class="col-lg-12 form-group">
+                    <input type="phone" class="form-control" 
+                    name="phone" placeholder="Телефон">
+                  </div>
+                  <!-- <div class="col-lg-12 form-group">
+                    <input type="email" class="form-control" 
+                    name="email" placeholder="Your Email">
+                  </div> -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      Когда вам удобно посмотреть дом?
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="date" 
+                      placeholder="Дата" class="required">
+                    </div>  
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="month" 
+                      placeholder="Месяц" class="required">
+                    </div>  
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="time" 
+                      placeholder="Время" class="required">
+                    </div>  
+                  </div>
+                  <!-- <div class="col-lg-12 form-group">
+                    <textarea class="form-control" rows="5" placeholder="Type your message"></textarea>
+                  </div> -->
+                  <div class="col-sm-12 pull-right">
+                    <button class="btn btn-primary btn-outline" 
+                    data-dismiss="modal" type="button">
+                    Записаться
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleFormModal3" aria-hidden="false" aria-labelledby="exampleFormModalLabel"
+        role="dialog" tabindex="-1">
+          <div class="modal-dialog">
+            <form class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" id="exampleFormModalLabel">
+                  Юридическая чистота
+                </h4>
+                <h6>
+                  Убедитесь в юридической чистоте усадьбы
+                </h6>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-12 form-group">
+                    <input type="email" class="form-control" 
+                    name="email" placeholder="Email....">
+                  </div>
+                  <div class="col-lg-12 form-group">
+                    <input type="phone" class="form-control" 
+                    name="phone" placeholder="Телефон....">
+                  </div>
+                  <!-- <div class="col-lg-12 form-group">
+                    <input type="email" class="form-control" 
+                    name="email" placeholder="Your Email">
+                  </div> -->
+                  <!-- <div class="row">
+                    <div class="col-md-12">
+                      Когда вам удобно посмотреть дом?
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="date" 
+                      placeholder="Дата" class="required">
+                    </div>  
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="month" 
+                      placeholder="Месяц" class="required">
+                    </div>  
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="time" 
+                      placeholder="Время" class="required">
+                    </div>  
+                  </div> -->
+                  <!-- <div class="col-lg-12 form-group">
+                    <textarea class="form-control" rows="5" placeholder="Type your message"></textarea>
+                  </div> -->
+                  <div class="col-sm-12 pull-right">
+                    <button class="btn btn-primary btn-outline" 
+                    data-dismiss="modal" type="button">
+                    Получить документы
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Modal -->
+
+
       </div>
     </div>
   <!-- End Example Form Modal -->
