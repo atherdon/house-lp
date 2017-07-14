@@ -16,6 +16,19 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+        .tooltip-danger.tooltip .tooltip-inner {
+        color: #fff;
+        background-color: #f96868;
+    }
+    .tooltip-warning.tooltip .tooltip-inner {
+        color: #fff;
+        background-color: #f2a654;
+    }
+    </style>
+
+
   </head>
   <body>
   <svg style="position: absolute; width:0px; height: 0px" xmlns="http://www.w3.org/2000/svg">
@@ -582,24 +595,25 @@
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
 
-			        <li><a href="#" class="nav-button">
-                <div><img src="" alt=""></div>+8 (916) 883-08-40</a>
-              </li>
-			        <li><a href="#" class="nav-button"><div><img src="" alt=""></div>gggbtf@mail.ru</a></li>
-			        <li>
-                <a href="#" class="nav-button-messanger">
-                  <svg class="svg-use">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#parquet">
-                  </svg>
-                </a>
-              </li>
-			        <li>
-                <a href="#" class="nav-button-messanger">
-                  <svg class="svg-use">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#parquet">
-                  </svg>              
-                </a>
-              </li>
+			        <li><a href="tel:+89168830840" class="nav-button tooltip-danger" data-toggle="tooltip" 
+                            data-placement="bottom" title="Закажите звонок!">
+                        <div><img src="" alt=""></div>+8 (916) 883-08-40
+                        </a>
+                    </li>
+			        <li><a href="mailto:gggbtf@mail.ru" class="nav-button tooltip-warning" data-toggle="tooltip" 
+                            data-placement="bottom" title="Запишитесь на просмотр!">
+                        <div><img src="" alt=""></div>gggbtf@mail.ru
+                        </a>
+                    </li>
+			       <li><a href="skype:********?call" class="nav-button-messanger">
+                        <svg></svg>
+                        </a>
+                    </li>
+                    <li><a href="viber://pa?chatURI=<public account URI>&text=Записаться%20на%20просмотр" 
+                            class="nav-button-messanger">
+                        <svg></svg>
+                        </a>
+                    </li>
 
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
