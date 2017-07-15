@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="assets/css/style.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -136,7 +139,7 @@
     	</div><!--/.container-fluid-->
     </section>
 
-    <section class="parameters-section">
+    <section class="parameters-section characteristics">
     	<div class="container-fluid">
     		<h2>Характеристики</h2>
     		<div class="col-md-6">
@@ -200,8 +203,15 @@
 
     		<div class="col-md-6">
     			<div class="parameters-block slider-block">
-    				<h3></h3>
-    				<div class="slider"></div>
+    				<h3>Планы</h3>
+    				<!-- <div class="slider"></div> -->
+                    <ul class="bxslider">
+                        <li><img src="assets/images/schema-1.png" alt="План дома #1" /></li>
+                        <li><img src="assets/images/schema-2.png" alt="План дома #1" /></li>
+                        <li><img src="assets/images/schema-3.png" alt="План дома #1" /></li>                        
+                    </ul>                   
+                    
+                    
     			</div><!--/.parameters-block-->
     		</div><!--/.col-md-6-->
 
@@ -934,5 +944,10 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/append-svg.js"></script>
+
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bxslider/4.1.1/plugins/jquery.easing.1.3.js"></script>
+    <script src="assets/js/slider.js"></script> <!-- move to main.js later -->
+
   </body>
 </html>
