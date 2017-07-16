@@ -4,9 +4,39 @@
 	.right-column,
 	.left-column
 		width 50%
+/* WELCOME SECTION */
 .welcome-section
-	height calc(100vh - 80px)
-	background url('../images/banner.jpg') 100% 100%
+	display flex
+	height calc(100vh - 60px)
+	background url('../images/banner.jpg')
+	background-size cover
+	background-repeat no-repeat
+	h1
+		background-color rgba(39,174,166,0.5)
+		color white
+		padding-left 150px
+		margin-bottom 0px
+		margin-top 15%
+		width 60%
+		min-width 480px
+		span
+			text-transform uppercase
+			color white
+	h2
+		background-color white
+		color #173b63
+		padding-left 150px
+		min-width 450px
+		margin-top 0px
+		width 50%
+	.right-column
+		display flex
+		height 100%
+		align-items flex-end
+		padding-bottom 100px
+		justify-content flex-end
+		.default-button
+			margin-right 50px
 .text-section
 	min-height 285px
 	display flex
@@ -15,7 +45,34 @@
 	background $color-blue
 	color white
 	text-align center
-	.benefit-wrapper
-		display flex
-		flex-wrap wrap
-		justify-content space-around
+	z-index 2
+	.benefit-block
+			width 70%
+			margin auto
+.circle-image-section
+	position relative
+	min-height 500px
+	&.image-left .image-wrapper
+		position absolute
+		right -20%
+		top -20%
+		width 70%
+		border-radius 50%
+		overflow hidden
+		z-index -1
+	.text-wrapper
+		background-color $color-green
+		color white
+.circle-image-section
+	position relative
+	min-height 500px
+	&.image-right .image-wrapper
+		position absolute
+		left -20%
+		top -20%
+		width 70%
+		border-radius 50%
+		overflow hidden
+		z-index -1
+		
+		
