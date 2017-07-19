@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,9 +43,34 @@
         color: #fff;
         background-color: #f2a654;
     }
+
     #themap {
         height: 600px;
     }
+
+    /* contact form */
+            .container-group, .content-container {
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .color2 div.error {
+            background: #18c08f;
+        }
+        .content-container {
+            min-height: 50px;
+        }
+        .color2 {
+            background: #9a7192;
+        }
+        .color2 div.error {
+            background: #18c08f;
+        }
+        .wrapper {
+            width: 1140px;
+            padding-left: 0;
+            padding-right: 0;
+        }
 
 </style>
 
@@ -532,12 +557,50 @@
     	<p></p>
     </section>
 
-    <section class="form-section">
-    	<div class="container-fluid">
-    		<form>
+    <section class="form-section footer section content-container color2 solid">
+    	<div class="container-fluid wrapper padding-small">
+    		<!-- <form>
     			<h2>Запишитесь на просмотр дома!</h2>
 
-    		</form>
+    		</form> -->
+
+            <form action="#" class="formvalidation" method="POST">
+            <h2>Запишитесь на просмотр дома!</h2>
+                    <div class="row">
+                        <div class="error"></div>
+                        <div class="col-md-6">
+                            <input type="text" name="name" placeholder="Your name" class="required">
+                            <input type="email" name="email" placeholder="Your email" class="required">
+                            <!-- <input type="text" name="budget" value="1000" data-slider="true" data-slider-range="1000,5000" data-slider-step="1000" data-slider-snap="true"> -->
+                        </div>
+                        <div class="col-md-6">
+                           <!--  <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" class="required"></textarea> -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    В какое время Вам удобно посмотреть дом?
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="date" 
+                                            placeholder="Дата" class="required">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="month" 
+                                            placeholder="Месяц" class="required">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="time" 
+                                            placeholder="Время" class="required">
+                                </div>
+                            </div>
+
+
+
+                            <button class="btn borderonly">Записаться</button>
+                        </div>
+                    </div>
+                </form>
+
+
     	</div><!--/.container-fluid-->
     </section>
 
@@ -551,7 +614,7 @@
     		<div class="footer-block">
     			<figure><img src="" alt=""></figure>
     			<p>
-                    <a href="#">
+                    <a href="#themap">
                         адрес улица дом
                     </a>
                 </p>
@@ -1126,18 +1189,24 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     
-
+    <!-- Sliders -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.js"></script>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
-    
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Google Maps -->    
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=ru&region=RU"></script>
+
+    <!-- Form validation -->
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery.form.min.js"></script>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/append-svg.js"></script>
 
     <script src="assets/js/slider.js"></script> <!-- move to main.js later -->
     <script src="assets/js/google-maps-init.js"></script> <!-- move to main.js later -->
+    <script src="assets/js/contact-form-init.js"></script> <!-- move to main.js later -->
 
   </body>
 </html>
