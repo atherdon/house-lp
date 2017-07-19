@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	// $.ajax({
-	// 	url: './assets/js/symbol-defs.svg',
-	// 	success: function(data) {$(body).append(data)},
-	// 	dataType: 'html'
-	// })
+	var height = $('.image-wrapper').height();
+	$('.image-wrapper').css({
+		'width': '600px',
+		'height': '600px'
+	});
 })
