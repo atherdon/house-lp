@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
 	// Put slider into variable to use public functions
-    var gallerySlider2 = $('.characteristics .bxslider').bxSlider({
+    var gallerySlider2 = $('#bxslider').bxSlider({
         // controls: false,
         controls: true,
         pager: false,
         easing: 'easeInOutQuint',
-        infiniteLoop: true,
+        infiniteLoop: false,
         speed: 500,
         auto: false,
         // auto: true,
