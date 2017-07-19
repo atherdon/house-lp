@@ -31,13 +31,24 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+<style type="text/css">
+      
+    .tooltip-danger.tooltip .tooltip-inner {
+        color: #fff;
+        background-color: #f96868;
+    }
+    .tooltip-warning.tooltip .tooltip-inner {
+        color: #fff;
+        background-color: #f2a654;
+    }
+
+</style>
+
   </head>
   <body>
-  <style type="text/css">
-      
 
-
-  </style>
   <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -63,25 +74,54 @@
 			        <li><a href="#">Фотогалерея</a></li>
 			        <li><a href="#">Контакты</a></li>
 			      </ul>
+
 			      <ul class="nav navbar-nav">
 
-			        <li><a href="#" class="nav-button navbar-contact mail">
+			      <!--   <li><a href="#" class="nav-button navbar-contact mail">
                 <div><img src="assets/images/phone.png" alt=""></div>+8 (916) 883-08-40</a>
               </li>
-			        <li><a href="#" class="nav-button navbar-contact phone">
+ -->
+                <li>
+                <a href="tel:+89168830840" class="nav-button navbar-contact mail tooltip-danger" data-toggle="tooltip" 
+                            data-placement="bottom" title="Закажите звонок!">
+                        <div><img src="assets/images/phone.png" alt=""></div>+8 (916) 883-08-40
+                        </a>
+                    </li>
+
+ <li><a href="mailto:gggbtf@mail.ru" class="nav-button navbar-contact phone tooltip-warning" data-toggle="tooltip" 
+                            data-placement="bottom" title="Запишитесь на просмотр!">
+                        <div><img src="assets/images/mail.png" alt=""></div>gggbtf@mail.ru
+                        </a>
+                    </li>
+
+			        <!-- <li><a href="#" class="nav-button navbar-contact phone">
                 <div><img src="assets/images/mail.png" alt=""></div>gggbtf@mail.ru</a>
-              </li>
-			        <li>
-                <a href="#" class="nav-button-messanger">
+              </li> -->
+
+              <li><a href="skype:********?call" class="nav-button-messenger">
+                        <img src="assets/images/skype.png" alt="">
+                        </a>
+                    </li>
+
+			        <!-- <li>
+                <a href="#" class="nav-button-messenger">
                   <img src="assets/images/skype.png" alt="">
                 </a>
-              </li>
-			        <li>
-                <a href="#" class="nav-button-messanger">
+              </li> -->
+
+<li><a href="viber://pa?chatURI=<public account URI>&text=Записаться%20на%20просмотр" 
+                            class="nav-button-messenger">
+                        <img src="assets/images/viber.png" alt="">
+                        </a>
+                    </li>
+              
+			        <!-- <li>
+                <a href="#" class="nav-button-messenger">
                   <img src="assets/images/viber.png" alt="">          
                 </a>
-              </li>
+              </li> -->
 			      </ul>
+
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
