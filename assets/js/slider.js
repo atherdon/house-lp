@@ -50,6 +50,8 @@ if ($('#gallery-thumbs').length > 0) {
         // Prevent default click behaviour
         e.preventDefault();
     });
+
+
     // Thumbnail slider
     var thumbsSlider = $('#gallery-thumbs').bxSlider({
         controls: false,
@@ -62,14 +64,15 @@ if ($('#gallery-thumbs').length > 0) {
         slideMargin: 10
     });
     // Function to calculate which slide to move the thumbs to
-    function slideThumbs(currentSlideNumber, visibleThumbs) {
-        // Calculate the first number and ignore the remainder
-        var m = Math.floor(currentSlideNumber / visibleThumbs);
-        // Multiply by the number of visible slides to calculate the exact slide we need to move to
-        var slideTo = m * visibleThumbs;
-        // Tell the slider to move
-        thumbsSlider.goToSlide(m);
-    }
+    // function slideThumbs(currentSlideNumber, visibleThumbs) {
+    //     // Calculate the first number and ignore the remainder
+    //     var m = Math.floor(currentSlideNumber / visibleThumbs);
+    //     // Multiply by the number of visible slides to calculate the exact slide we need to move to
+    //     var slideTo = m * visibleThumbs;
+    //     // Tell the slider to move
+    //     thumbsSlider.goToSlide(m);
+    // }
+    
     // When you click on a thumb
     $('#gallery-thumbs').find('.thumb').click(function () {
         // Remove the active class from all thumbs

@@ -4,4 +4,10 @@ $(document).ready(function(){
 		'width': '600px',
 		'height': '600px'
 	});
+
+	//nivo lightbox init
+
+
+    $('#gallery a').nivoLightbox();
+
 })
