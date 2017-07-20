@@ -39,6 +39,29 @@ var waypoint = new Waypoint({
   },
   // offset: '600px'
 })
+// $('.site-action').fadeOut();
+
+var waypoint = new Waypoint({
+  element: $('#start'),
+  handler: function(direction) {
+    console.log('Scrolled to waypoint!')
+
+    $('.site-action').fadeIn();
+
+  },
+  offset: '-100px'
+})
+
+// var waypoint = new Waypoint({
+//   element: $('#second'),
+//   handler: function(direction) {
+//     console.log('Scrolled to waypoint!')
+
+//     $('.site-action').fadeOut();
+
+//   },
+//   // offset: '600px'
+// })
 
 // var inview = new Waypoint.Inview({
 //   element: $('#start'),
