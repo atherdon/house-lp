@@ -228,19 +228,19 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
 			        <li>
-                        <a href="#">Главная</a>
+                        <a href="#start" class="scrollto">Главная</a>
                     </li>
 			        <li>
-                        <a href="#">Коммуникации</a>
+                        <a href="#communication" class="scrollto down">Коммуникации</a>
                     </li>
 			        <li>
-                        <a href="#">Характеристики</a>
+                        <a href="#characteristics" class="scrollto down">Характеристики</a>
                     </li>
 			        <li>
-                        <a href="#">Фотогалерея</a>
+                        <a href="#photogallery" class="scrollto down">Фотогалерея</a>
                     </li>
 			        <li>
-                        <a href="#">Контакты</a>
+                        <a href="#contacts" class="scrollto down">Контакты</a>
                     </li>
 			      </ul>
 
@@ -248,9 +248,11 @@
 
 			      
                     <li>
-                        <a href="tel:+89168830840" 
-                           class="nav-button navbar-contact mail tooltip-danger" data-toggle="tooltip" 
-                           data-placement="bottom" title="Закажите звонок!">
+                        <a href="#" 
+                           class="nav-button navbar-contact mail tooltip-danger" 
+                           data-toggle="tooltip" 
+                           data-placement="bottom" title="Закажите звонок!"
+                           data-target="#exampleFormModal" data-toggle="modal">
                             <div>
                                 <img src="assets/images/phone.png" alt="">
                             </div>
@@ -259,9 +261,11 @@
                     </li>
 
                     <li>
-                        <a href="mailto:gggbtf@mail.ru" 
-                           class="nav-button navbar-contact phone tooltip-warning" data-toggle="tooltip" 
-                           data-placement="bottom" title="Запишитесь на просмотр!">
+                        <a href="#" 
+                           class="nav-button navbar-contact phone tooltip-warning" 
+                           data-toggle="tooltip" 
+                           data-placement="bottom" title="Запишитесь на просмотр!" 
+                           data-target="#exampleFormModal2" data-toggle="modal">
                             <div>
                                 <img src="assets/images/mail.png" alt="">
                             </div>
@@ -303,16 +307,16 @@
         </div>
         <div class="right-column">
 
-          <a href="" class="default-button red-background" 
+          <a href="#" class="default-button red-background" 
           data-target="#exampleFormModal" data-toggle="modal">
           Запишитесь на просмотр дома 1 
           </a>
 
-          <!-- <a href="" class="default-button red-background" data-target="#exampleFormModal2" data-toggle="modal">Запишитесь на просмотр дома 2 </a>
+          <!-- <a href="#" class="default-button red-background" data-target="#exampleFormModal2" data-toggle="modal">Запишитесь на просмотр дома 2 </a>
 
-          <a href="" class="default-button red-background" data-target="#exampleFormModal3" data-toggle="modal">Запишитесь на просмотр дома 3 </a> -->
+          <a href="#" class="default-button red-background" data-target="#exampleFormModal3" data-toggle="modal">Запишитесь на просмотр дома 3 </a> -->
 
-          <a href="" class="default-button orange-background">
+          <a href="#" class="default-button orange-background">
             виртуальный тур
           </a>
 	    	</div>
@@ -327,7 +331,7 @@
     </section>
 
 <!-- Icons only -->
-    <section class="text-section" id="second">
+   <!--  <section class="text-section" id="second">
         <div class="container-fluid">
             <svg class="icon"><use xlink:href="#crimea" /></svg>
             <svg class="icon"><use xlink:href="#dollar-sign" /></svg>
@@ -355,7 +359,7 @@
 
         </div>
     </section>
-
+ -->
 
 
     <section class="text-section" id="second">
@@ -364,59 +368,59 @@
     	</div>
     </section>
 
-    <section class="benefit-section">
+    <section class="benefit-section" id="communication">
     	<div class="container-fluid">
     		<h2 class="benefit-title">Коммуникации</h2>
         
         <div class="col-md-2">
-    			<div class="benefit-block">
-    				<figure>
-                        <img src="assets/images/benefits/benefits-6.png" alt="">
-                    </figure>
-    				<p>Электроэнергия</p>
-    			</div>
+			<div class="benefit-block">
+				<figure>
+                    <img src="assets/images/benefits/benefits-6.png" alt="">
+                </figure>
+				<p>Электроэнергия</p>
+			</div>
         </div>
         <div class="col-md-2">
-    			<div class="benefit-block">
-    				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-5.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#pipes" /></svg>
-                    </figure>
-    				<p>Центральный водопровод и канализация</p>
-    			</div>
+			<div class="benefit-block">
+				<figure>
+                    <!-- <img src="assets/images/benefits/benefits-5.png" alt=""> -->
+                    <svg class="icon"><use xlink:href="#pipes" /></svg>
+                </figure>
+				<p>Центральный водопровод и канализация</p>
+			</div>
         </div>
         <div class="col-md-2">
-    			<div class="benefit-block">
-    				<figure>
-                        <img src="assets/images/benefits/benefits-4.png" alt="">
-                    </figure>
-    				<p>Городской телефон</p>
-    			</div>
+			<div class="benefit-block">
+				<figure>
+                    <img src="assets/images/benefits/benefits-4.png" alt="">
+                </figure>
+				<p>Городской телефон</p>
+			</div>
         </div>
         <div class="col-md-2">
-    			<div class="benefit-block">
-    				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-3.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#radar-dish" /></svg>
-                    </figure>
-    				<p>Спутниковое телевидение</p>
-    			</div>
+			<div class="benefit-block">
+				<figure>
+                    <!-- <img src="assets/images/benefits/benefits-3.png" alt=""> -->
+                    <svg class="icon"><use xlink:href="#radar-dish" /></svg>
+                </figure>
+				<p>Спутниковое телевидение</p>
+			</div>
         </div>
         <div class="col-md-2">
-    			<div class="benefit-block">
-    				<figure>
-                        <img src="assets/images/benefits/benefits-2.png" alt="">
-                    </figure>
-    				<p>Магистральный газ</p>
-    			</div>
+			<div class="benefit-block">
+				<figure>
+                    <img src="assets/images/benefits/benefits-2.png" alt="">
+                </figure>
+				<p>Магистральный газ</p>
+			</div>
         </div>
         <div class="col-md-2">
-    			<div class="benefit-block">
-    				<figure>
-                        <img src="assets/images/benefits/benefits-1.png" alt="">
-                    </figure>
-    				<p>Интернет</p>
-    			</div>
+			<div class="benefit-block">
+				<figure>
+                    <img src="assets/images/benefits/benefits-1.png" alt="">
+                </figure>
+				<p>Интернет</p>
+			</div>
         </div>
 
     		</div><!--/.benefit-wrapper-->
@@ -434,7 +438,7 @@
     	</div><!--/.container-fluid-->
     </section>
 
-    <section class="parameters-section characteristics">
+    <section class="parameters-section characteristics" id="characteristics">
     	<div class="container-fluid">
     		<h2>Характеристики</h2>
     		<div class="col-md-6">
@@ -614,7 +618,7 @@
     	</div><!--/.container-fluid-->
     </section>
 
-    <section class="parameters-section image-gallery">
+    <section class="parameters-section image-gallery" id="photogallery">
     	<div class="container-fluid">
     		<h2 class="parameters-title">Фотогалерея</h2>
     		
@@ -695,7 +699,8 @@
           <div class="col-md-offset-1 col-md-2">
   			<div class="benefit-block">
   				<figure>
-                    <img src="assets/images/benefits/benefits-8.png" alt="">
+                    <!-- <img src="assets/images/benefits/benefits-8.png" alt=""> -->
+                    <svg class="icon"><use xlink:href="#mailbox" /></svg>
                 </figure>
   				<p>Почта и банки</p>
   			</div>
@@ -704,6 +709,7 @@
             <div class="benefit-block">
               <figure>
                 <img src="assets/images/benefits/benefits-9.png" alt="">
+
               </figure>
               <p>Учебные заведения</p>
             </div>
@@ -719,7 +725,8 @@
           <div class="col-md-2">
             <div class="benefit-block">
               <figure>
-                <img src="assets/images/benefits/benefits-11.png" alt="">
+                <!-- <img src="assets/images/benefits/benefits-11.png" alt=""> -->
+                <svg class="icon"><use xlink:href="#transport" /></svg>
               </figure>
               <p>Общественный транспорт</p>
             </div>
@@ -727,7 +734,8 @@
           <div class="col-md-2">
             <div class="benefit-block">
               <figure>
-                <img src="assets/images/benefits/benefits-12.png" alt="">
+                <!-- <img src="assets/images/benefits/benefits-12.png" alt=""> -->
+                <svg class="icon"><use xlink:href="#pin" /></svg>
               </figure>
               <p>Спортивные объекты</p>
             </div>
@@ -846,7 +854,7 @@
 
     <!--<section id="themap"></section>-->
 
-    <footer>
+    <footer id="contacts">
 		<h2>НАШИ КОНТАКТЫ</h2>
         <div class="container-fluid">
             <div class="col-md-offset-2 col-md-3">
@@ -1638,22 +1646,25 @@
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script> -->
 
     <!-- Google Maps -->    
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=ru&region=RU"></script>
 
-<script type="text/javascript" src="assets/js/nivo-lightbox/nivo-lightbox.min.js"></script>
+    <!-- Nivo Lightbox -->  
+    <script type="text/javascript" src="assets/js/nivo-lightbox/nivo-lightbox.min.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <!-- Datepicker -->  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.ru.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.ru.min.js"></script>
 
-<script src="assets/js/jquery.timepicker.js"></script>
+    <!-- Timepicker -->  
+    <script src="assets/js/jquery.timepicker.js"></script>
 
-<script src="assets/js/datepicker-init.js"></script>
+    <script src="assets/js/datepicker-init.js"></script>
 
 
     <!-- Form validation -->
@@ -1662,6 +1673,7 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/append-svg.js"></script>
+
 
     <script src="assets/js/slider.js"></script> <!-- move to main.js later -->
     <script src="assets/js/google-maps-init.js"></script> <!-- move to main.js later -->
