@@ -14,5 +14,17 @@ $(document).ready(function(){
 
 	$('.timepicker-input').timepicker(options);
 
-    
+	
+	$('.navbar-contact.phone').on('click', function(){
+
+		return false;
+		// $('#exampleFormModal').modal();	
+
+	});
+
+    $(".js-select-placeholder").select2({
+  		placeholder: "Месяц",
+  		minimumResultsForSearch: Infinity
+	});
+
 });

@@ -28,9 +28,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
 
-    <link rel="stylesheet" href="assets/css/jquery.timepicker.css">    
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.css">       
 
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -182,6 +182,9 @@
     .modal .col-lg-4 input {
         height: 28px;
     }
+    .modal .modal-content {
+        border-radius: 0px;
+    }
 
     .modal button.btn.btn-primary.btn-outline {
         width: 252px;
@@ -231,16 +234,16 @@
                         <a href="#start" class="scrollto">Главная</a>
                     </li>
 			        <li>
-                        <a href="#communication" class="scrollto down">Коммуникации</a>
+                        <a href="#communication" class="scrollto ">Коммуникации</a>
                     </li>
 			        <li>
-                        <a href="#characteristics" class="scrollto down">Характеристики</a>
+                        <a href="#characteristics" class="scrollto ">Характеристики</a>
                     </li>
 			        <li>
-                        <a href="#photogallery" class="scrollto down">Фотогалерея</a>
+                        <a href="#photogallery" class="scrollto ">Фотогалерея</a>
                     </li>
 			        <li>
-                        <a href="#contacts" class="scrollto down">Контакты</a>
+                        <a href="#contacts" class="scrollto ">Контакты</a>
                     </li>
 			      </ul>
 
@@ -813,55 +816,55 @@
     		</form> -->
 
             <form action="#" class="formvalidation" method="POST" id="contactForm">
-            <h2>Запишитесь на просмотр дома!</h2>
-                    <div class="row">
-                        <div class="error"></div>
-                        <div class="col-md-6">
-                            <input type="text" name="name" placeholder="Your name" class="required">
-                            <input type="email" name="email" placeholder="Your email" class="required">
-                            
-                        </div>
-                        <div class="col-md-6">
-                         
-                            <div class="row">
-                                <div class="col-md-12">
-                                    В какое время Вам удобно посмотреть дом?
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="text" name="date" 
-                                            placeholder="Дата" class="required">
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="text" name="month" 
-                                            placeholder="Месяц" class="required">
-                                <!-- <select name="month" id="month" class="required">
-                                       <option selected value="">Месяц</option>
-                                        <option value = "1">01</option>
-                                        <option value = "2">02</option>
-                                        <option value = "3">03</option>
-                                        <option value = "4">04</option>
-                                        <option value = "5">05</option>
-                                        <option value = "6">06</option>
-                                        <option value = "7">07</option>
-                                        <option value = "8">08</option>
-                                        <option value = "9">09</option>
-                                        <option value = "10">10</option>
-                                        <option value = "11">11</option>
-                                        <option value = "12">12</option> 
-                                    </select> -->        
-                                </div>
-                                <div class="col-md-4">
-                                    <input type="text" name="time" 
-                                            placeholder="Время" class="required">
-                                </div>
-                            </div>
-
-
-
-                            <button class="btn borderonly">Записаться</button>
-                        </div>
+                <h2>Запишитесь на просмотр дома!</h2>
+                <div class="row">
+                    <div class="error"></div>
+                    <div class="col-md-6">
+                        <input type="text" name="name" placeholder="Your name" class="required">
+                        <input type="email" name="email" placeholder="Your email" class="required">
+                        
                     </div>
-                </form>
+                    <div class="col-md-6">
+                     
+                        <div class="row">
+                            <div class="col-md-12">
+                                В какое время Вам удобно посмотреть дом?
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="date" 
+                                        placeholder="Дата" class="required">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="month" 
+                                        placeholder="Месяц" class="required">
+                            <!-- <select name="month" id="month" class="required">
+                                   <option selected value="">Месяц</option>
+                                    <option value = "1">01</option>
+                                    <option value = "2">02</option>
+                                    <option value = "3">03</option>
+                                    <option value = "4">04</option>
+                                    <option value = "5">05</option>
+                                    <option value = "6">06</option>
+                                    <option value = "7">07</option>
+                                    <option value = "8">08</option>
+                                    <option value = "9">09</option>
+                                    <option value = "10">10</option>
+                                    <option value = "11">11</option>
+                                    <option value = "12">12</option> 
+                                </select> -->        
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="time" 
+                                        placeholder="Время" class="required">
+                            </div>
+                        </div>
+
+
+
+                        <button class="btn borderonly">Записаться</button>
+                    </div>
+                </div>
+            </form>
 
 
     	</div><!--/.container-fluid-->
@@ -954,11 +957,12 @@
                       placeholder="Дата" class="required datepicker-input">
                     </div>  
                     <div class="col-lg-4 form-group">
-                      <input type="text" name="month" 
-                      placeholder="Месяц" class="required">
+                      <!-- <input type="text" name="month" 
+                      placeholder="Месяц" class="required"> -->
 
-                      <!-- <select name="month" id="month" class="required">
-                       <option selected value="">Месяц</option>
+                      <select name="month" id="month" class="required js-select-placeholder" >
+                      
+                       <option disabled selected value>Месяц</option>
                         <option value = "1">01</option>
                         <option value = "2">02</option>
                         <option value = "3">03</option>
@@ -971,7 +975,11 @@
                         <option value = "10">10</option>
                         <option value = "11">11</option>
                         <option value = "12">12</option> 
-                    </select> -->
+                    </select>
+
+
+
+
                     </div>  
                     <div class="col-lg-4 form-group">
                       <input type="text" name="time" 
@@ -1028,23 +1036,24 @@
                       placeholder="Дата" class="required datepicker-input">
                     </div>  
                     <div class="col-lg-4 form-group">
-                      <input type="text" name="month" 
-                      placeholder="Месяц" class="required">
-                      <!-- <select name="month" id="month" class="required">
-                       <option selected value="">Месяц</option>
-                        <option value = "1">01</option>
-                        <option value = "2">02</option>
-                        <option value = "3">03</option>
-                        <option value = "4">04</option>
-                        <option value = "5">05</option>
-                        <option value = "6">06</option>
-                        <option value = "7">07</option>
-                        <option value = "8">08</option>
-                        <option value = "9">09</option>
-                        <option value = "10">10</option>
-                        <option value = "11">11</option>
-                        <option value = "12">12</option> 
-                    </select> -->                      
+                      <!-- <input type="text" name="month" 
+                      placeholder="Месяц" class="required"> -->
+                      <select name="month" id="month" 
+                      class="required js-select-placeholder">
+                       <!-- <option selected value="">Месяц</option> -->
+                        <option value = "1">Январь</option>
+                        <option value = "2">Февраль</option>
+                        <option value = "3">Март</option>
+                        <option value = "4">Апрель</option>
+                        <option value = "5">Май</option>
+                        <option value = "6">Июнь</option>
+                        <option value = "7">Июль</option>
+                        <option value = "8">Август</option>
+                        <option value = "9">Сентябрь</option>
+                        <option value = "10">Октябрь</option>
+                        <option value = "11">Ноябрь</option>
+                        <option value = "12">Декабрь</option> 
+                    </select>                      
                     </div>  
                     <div class="col-lg-4 form-group">
                       <input type="text" name="time" 
@@ -1663,6 +1672,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script> -->
 
     <!-- Google Maps -->    
@@ -1688,6 +1700,7 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/append-svg.js"></script>
+
 
 
     <script src="assets/js/slider.js"></script> <!-- move to main.js later -->
