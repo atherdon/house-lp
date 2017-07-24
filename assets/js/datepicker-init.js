@@ -3,7 +3,8 @@ $(document).ready(function(){
 	
 
 	$('.datepicker-input').datepicker({
-	    language: "ru"
+	    language: "ru",
+	    orientation: "bottom"
 	});
 
 	var options = {

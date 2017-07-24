@@ -187,22 +187,20 @@
     }
 
     .modal button.btn.btn-primary.btn-outline {
-        width: 252px;
-        height: 38px;
+        
         border-color: #6B6B6B;
         background-color: #FF1E00;
-        border-radius: 40px;
-        line-height: 23px;
+        line-height: 46px;
         font-size: 23px;
         color: #FFFFFF;
         text-align: center;
-        
+        border-radius: 0px;
         font-weight: 400;
-        position: relative;
-        margin-right: -10000px;
-        margin-top: 231px;
-        left: 92px;
-        padding: 14px 0px 0px;
+       
+    }
+
+    .datepicker-input {
+        color:black;
     }
 
 </style>
@@ -231,19 +229,29 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
 			        <li>
-                        <a href="#start" class="scrollto">Главная</a>
+                        <a href="#start" class="scrollto">
+                        Главная
+                        </a>
                     </li>
 			        <li>
-                        <a href="#communication" class="scrollto ">Коммуникации</a>
+                        <a href="#communication" class="scrollto ">
+                        Коммуникации
+                        </a>
                     </li>
 			        <li>
-                        <a href="#characteristics" class="scrollto ">Характеристики</a>
+                        <a href="#characteristics" class="scrollto ">
+                        Характеристики
+                        </a>
                     </li>
 			        <li>
-                        <a href="#photogallery" class="scrollto ">Фотогалерея</a>
+                        <a href="#photogallery" class="scrollto ">
+                        Фотогалерея
+                        </a>
                     </li>
 			        <li>
-                        <a href="#contacts" class="scrollto ">Контакты</a>
+                        <a href="#contacts" class="scrollto ">
+                        Контакты
+                        </a>
                     </li>
 			      </ul>
 
@@ -315,9 +323,9 @@
           Запишитесь на просмотр дома 1 
           </a>
 
-          <!-- <a href="#" class="default-button red-background" data-target="#exampleFormModal2" data-toggle="modal">Запишитесь на просмотр дома 2 </a>
+          <a href="#" class="default-button red-background" data-target="#exampleFormModal2" data-toggle="modal">Запишитесь на просмотр дома 2 </a>
 
-          <a href="#" class="default-button red-background" data-target="#exampleFormModal3" data-toggle="modal">Запишитесь на просмотр дома 3 </a> -->
+          <a href="#" class="default-button red-background" data-target="#exampleFormModal3" data-toggle="modal">Запишитесь на просмотр дома 3 </a>
 
           <a href="#" class="default-button orange-background">
             виртуальный тур
@@ -957,25 +965,23 @@
                       placeholder="Дата" class="required datepicker-input">
                     </div>  
                     <div class="col-lg-4 form-group">
-                      <!-- <input type="text" name="month" 
-                      placeholder="Месяц" class="required"> -->
 
-                      <select name="month" id="month" class="required js-select-placeholder" >
-                      
-                       <option disabled selected value>Месяц</option>
-                        <option value = "1">01</option>
-                        <option value = "2">02</option>
-                        <option value = "3">03</option>
-                        <option value = "4">04</option>
-                        <option value = "5">05</option>
-                        <option value = "6">06</option>
-                        <option value = "7">07</option>
-                        <option value = "8">08</option>
-                        <option value = "9">09</option>
-                        <option value = "10">10</option>
-                        <option value = "11">11</option>
-                        <option value = "12">12</option> 
-                    </select>
+                    <select name="month" id="month" 
+                      class="required js-select-placeholder">
+                 
+                        <option value = "1">Январь</option>
+                        <option value = "2">Февраль</option>
+                        <option value = "3">Март</option>
+                        <option value = "4">Апрель</option>
+                        <option value = "5">Май</option>
+                        <option value = "6">Июнь</option>
+                        <option value = "7">Июль</option>
+                        <option value = "8">Август</option>
+                        <option value = "9">Сентябрь</option>
+                        <option value = "10">Октябрь</option>
+                        <option value = "11">Ноябрь</option>
+                        <option value = "12">Декабрь</option> 
+                    </select>      
 
 
 
@@ -1036,11 +1042,10 @@
                       placeholder="Дата" class="required datepicker-input">
                     </div>  
                     <div class="col-lg-4 form-group">
-                      <!-- <input type="text" name="month" 
-                      placeholder="Месяц" class="required"> -->
+                      
                       <select name="month" id="month" 
                       class="required js-select-placeholder">
-                       <!-- <option selected value="">Месяц</option> -->
+                 
                         <option value = "1">Январь</option>
                         <option value = "2">Февраль</option>
                         <option value = "3">Март</option>
