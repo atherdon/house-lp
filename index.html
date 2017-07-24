@@ -300,10 +300,10 @@
     <section class="two-column-section welcome-section" id="start">
     	
         <div class="left-column">
-		    	<h1>Дом <span class="small">в Севастополе</span><br>
-		    			<span class="big">от собственника</span>
-		    	</h1>
-		    	<h2>Купите дом для жизни и отдыха<br>в тихом центре Севастополя</h2>
+	    	<h1>Дом <span class="small">в Севастополе</span><br>
+	    			<span class="big">от собственника</span>
+	    	</h1>
+	    	<h2>Купите дом для жизни и отдыха<br>в тихом центре Севастополя</h2>
         </div>
         <div class="right-column">
 
@@ -319,9 +319,9 @@
           <a href="#" class="default-button orange-background">
             виртуальный тур
           </a>
-	    	</div>
+	    </div>
 
-         <div class="row">
+        <div class="row">
             <div class="center-block" style="width:200px;background-color:#ccc;">
                 <a href="#second" class="scrollto down"></a>    
             </div>
@@ -916,7 +916,7 @@
                   <span aria-hidden="true">×</span>
                 </button>
                 <h4 class="modal-title" id="exampleFormModalLabel">
-                Закажите звонок в удобное для Вас время
+                    Закажите звонок в удобное для Вас время
                 </h4>
               </div>
               <div class="modal-body">
@@ -939,11 +939,27 @@
                     </div>
                     <div class="col-lg-4 form-group">
                       <input type="text" name="date" 
-                      placeholder="Дата" class="required">
+                      placeholder="Дата" class="required datepicker-input">
                     </div>  
                     <div class="col-lg-4 form-group">
                       <input type="text" name="month" 
                       placeholder="Месяц" class="required">
+
+                      <select name="month" id="month" class="required">
+                       <option selected value="">Месяц</option>
+                        <option value = "1">01</option>
+                        <option value = "2">02</option>
+                        <option value = "3">03</option>
+                        <option value = "4">04</option>
+                        <option value = "5">05</option>
+                        <option value = "6">06</option>
+                        <option value = "7">07</option>
+                        <option value = "8">08</option>
+                        <option value = "9">09</option>
+                        <option value = "10">10</option>
+                        <option value = "11">11</option>
+                        <option value = "12">12</option> 
+                    </select>
                     </div>  
                     <div class="col-lg-4 form-group">
                       <input type="text" name="time" 

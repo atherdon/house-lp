@@ -9,6 +9,7 @@ $(document).ready(function(){
 	var options = {
 		show2400: true,
 		timeFormat: 'H:i'
+		// time from & to
 	};
 
 	$('.timepicker-input').timepicker(options);

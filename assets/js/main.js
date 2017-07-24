@@ -9,5 +9,6 @@ $(document).ready(function(){
 
 
     $('#gallery a').nivoLightbox();
-$('[data-toggle="tooltip"]').tooltip();
+	$('[data-toggle="tooltip"]').tooltip();
+	
 })
