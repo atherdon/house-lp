@@ -243,7 +243,7 @@
 
 .block {
     padding: 10px;
-    text-align: right;
+    /*text-align: right;*/
     color: white;
     opacity: 0.8;
 }
@@ -251,20 +251,23 @@
 .block-1 {
    
     width: 100%;
-    height: 350px;
+    /*height: 350px;*/
+    min-height: 350px;
     background: #3a78a1;
 }
 .block-11 {
     display: block;
     
     width: 100%;
-    height: 175px;
+    /*height: 175px;*/
+    min-height: 175px;
 }
 .block-12 {
     display: block;
     
     width: 100%;
-    height: 175px;
+    /*height: 175px;*/
+    min-height: 175px;
     background: black;
 }
 
@@ -272,7 +275,8 @@
     position: absolute;
     
     width: 250px;
-    height: 250px;
+    /*height: 250px;*/
+    min-height: 250px;
     background: #e74c3c;
     
     top: 0;
@@ -290,16 +294,55 @@
 }
 </style>
 
-    <section class="tanynah" id="communication">
+    <section class="tanynah benefit-section" id="communication">
         
         <div class=" block-1">
         
-            <div class="block block-11">Блок 1.1</div>
-            <div class="block block-12">Блок 1.2</div>
+            <div class="block block-11"></div>
+            <!-- Block 1.2 - text content -->
+            <div class="block block-12 container-fluid circle-image-section image-left">
+                <div class="col-md-6 text-wrapper">
+                    <h2>Севастополь</h2>
+                    <h3>Создайте для своей семьи максимально комфортные условия. Здесь вы сможете видеть, как растут ваши дети и внуки, заботиться о родителях и всегда быть вместе с теми, кто вам дорог.</h3>
+                    <a href="" class="default-button red-background" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+                </div>
+            </div>
         </div>
         <!-- <div class="block block-2">Блок 2</div> -->
         <div id="image1" class="cropcircle block block-2"></div>
-        <div class="block block-3">Блок 3</div>
+        <!-- <div class="block block-3"></div> -->
+        <!-- Block 3 (top) -->
+        <div class="container-fluid block block-3" >
+            <h2 class="benefit-title">Коммуникации</h2>
+        
+            <div class="col-md-2">
+                <div class="benefit-block">
+                    <figure>
+                        <img src="assets/images/benefits/benefits-6.png" alt="">
+                    </figure>
+                    <p>Электроэнергия</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="benefit-block">
+                    <figure>
+                        
+                        <svg class="icon"><use xlink:href="#pipes" /></svg>
+                    </figure>
+                    <p>Центральный водопровод и канализация</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="benefit-block">
+                    <figure>
+                        <img src="assets/images/benefits/benefits-4.png" alt="">
+                    </figure>
+                    <p>Городской телефон</p>
+                </div>
+            </div>
+      
+
+            </div>
 
     </section>
 
@@ -307,9 +350,9 @@
 
 
 
+<!-- 
 
-
-    <!--  <section class="benefit-section" id="communication">
+     <section class="benefit-section" id="communication">
        
         <div id="image1" class="cropcircle"></div>
 
@@ -322,7 +365,7 @@
                 <a href="" class="default-button red-background" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
             </div>
         </div>
-        <div class="container-fluid" style="z-index: 200;position: absolute;">
+        <div class="container-fluid" >
             <h2 class="benefit-title">Коммуникации</h2>
         
         <div class="col-md-2">
@@ -355,9 +398,9 @@
             </div>
         </div>
 
-        </section> -->
+        </section>
 
-
+ -->
 
 
     <!-- <section class="circle-image-section image-left"> -->
