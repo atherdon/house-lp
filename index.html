@@ -233,106 +233,63 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-    <header>
-    	<nav class="navbar navbar-default navbar-fixed-top">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			    </div>
-
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li>
-                        <a href="#start" class="scrollto">
-                        Главная
-                        </a>
-                    </li>
-			        <li>
-                        <a href="#communication" class="scrollto ">
-                        Коммуникации
-                        </a>
-                    </li>
-			        <li>
-                        <a href="#characteristics" class="scrollto ">
-                        Характеристики
-                        </a>
-                    </li>
-			        <li>
-                        <a href="#photogallery" class="scrollto ">
-                        Фотогалерея
-                        </a>
-                    </li>
-			        <li>
-                        <a href="#contacts" class="scrollto ">
-                        Контакты
-                        </a>
-                    </li>
-			      </ul>
-
-			      <ul class="nav navbar-nav">
-
-			      
-                    <li>
-                        <a href="#" 
-                           class="nav-button navbar-contact mail tooltip-danger" 
-                           data-toggle="tooltip" 
-                           data-placement="bottom" title="Закажите звонок!"
-                           data-target="#exampleFormModal" data-toggle="modal">
-                            <div>
-                                <img src="assets/images/phone.png" alt="">
-                            </div>
-                            +8 (916) 883-08-40
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" 
-                           class="nav-button navbar-contact phone tooltip-warning" 
-                           data-toggle="tooltip" 
-                           data-placement="bottom" title="Запишитесь на просмотр!" 
-                           data-target="#exampleFormModal2" data-toggle="modal">
-                            <div>
-                                <img src="assets/images/mail.png" alt="">
-                            </div>
-                            gggbtf@mail.ru
-                        </a>
-                    </li>
-
-			        
-                    <li>
-                        <a href="skype:********?call" class="nav-button-messenger">
-                            <img src="assets/images/skype.png" alt="">
-                        </a>
-                    </li>
-
-			       
-
-                    <li>
-                        <a href="viber://pa?chatURI=<public account URI>&text=Записаться%20на%20просмотр" 
-                            class="nav-button-messenger">
-                            <img src="assets/images/viber.png" alt="">
-                        </a>
-                    </li>
-
-			        
-			      </ul>
-
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-    </header>
+    
 
    
+<style type="text/css">
+
+.block {
+    padding: 10px;
+    text-align: right;
+    color: white;
+    opacity: 0.8;
+}
+
+.block-1 {
+    width: 350px;
+    height: 350px;
+    background: #3a78a1;
+}
+.block-11 {
+    display: block;
+    width: 350px;
+    height: 175px;
+}
+.block-12 {
+    display: block;
+    width: 350px;
+    height: 175px;
+    background: black;
+}
+
+.block-2 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 250px;
+    height: 250px;
+    background: #e74c3c;
+}
+
+.block-3 {
+    position: absolute;
+    top: 60px;
+    width: 350px;
+    height: 175px;
+    background: #27ae60;
+}
+</style>
 
     <section class="tanynah" id="communication">
         
+        <div class=" block-1">
+        
+            <div class="block block-11">Блок 1.1</div>
+            <div class="block block-12">Блок 1.2</div>
+        </div>
+        <div class="block block-2">Блок 2</div>
+        <div class="block block-3">Блок 3</div>
+
     </section>
 
 
@@ -341,7 +298,7 @@
 
 
 
-     <section class="benefit-section" id="communication">
+    <!--  <section class="benefit-section" id="communication">
        
         <div id="image1" class="cropcircle"></div>
 
@@ -353,8 +310,7 @@
                 <h3>Создайте для своей семьи максимально комфортные условия. Здесь вы сможете видеть, как растут ваши дети и внуки, заботиться о родителях и всегда быть вместе с теми, кто вам дорог.</h3>
                 <a href="" class="default-button red-background" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
             </div>
-        </div><!--/.container-fluid-->
-
+        </div>
         <div class="container-fluid" style="z-index: 200;position: absolute;">
             <h2 class="benefit-title">Коммуникации</h2>
         
@@ -369,7 +325,7 @@
         <div class="col-md-2">
             <div class="benefit-block">
                 <figure>
-                    <!-- <img src="assets/images/benefits/benefits-5.png" alt=""> -->
+                    >
                     <svg class="icon"><use xlink:href="#pipes" /></svg>
                 </figure>
                 <p>Центральный водопровод и канализация</p>
@@ -385,10 +341,10 @@
         </div>
       
 
-            </div><!--/.benefit-wrapper-->
-        </div><!--/.container-fluid-->
+            </div>
+        </div>
 
-        </section>
+        </section> -->
 
 
 
