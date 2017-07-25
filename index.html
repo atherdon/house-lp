@@ -236,6 +236,13 @@
 
     }*/
 
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0px;
+}
+.js-select-placeholder {
+    width: 100%;
+}
 </style>
 
   </head>
@@ -898,8 +905,8 @@
                                 </select> -->  
 
                                 <select name="month"  
-                                  class="required js-select-placeholder"  data-placeholder="Месяц">
-                             
+                                  class="required js-select-placeholder"  data-placeholder="Месяц" >
+                                    <option disabled selected value></option>
                                     <option value = "1">Январь</option>
                                     <option value = "2">Февраль</option>
                                     <option value = "3">Март</option>
@@ -1022,7 +1029,7 @@
 
                     <select name="month" 
                       class="required js-select-placeholder" data-placeholder="Месяц">
-                 
+                 <option disabled selected value></option>
                         <option value = "1">Январь</option>
                         <option value = "2">Февраль</option>
                         <option value = "3">Март</option>
@@ -1100,7 +1107,7 @@
                       
                       <select name="month" 
                       class="required js-select-placeholder" data-placeholder="Месяц">
-                 
+                 <option disabled selected value></option>
                         <option value = "1">Январь</option>
                         <option value = "2">Февраль</option>
                         <option value = "3">Март</option>

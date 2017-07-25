@@ -35,11 +35,15 @@ $(document).ready(function(){
 	$.map( $("select[name='month']"), function( val, i ) {
 		// $(val).select2();
 		console.log( $(val).data().placeholder );
-		
+
 	   	$(val).select2({
 	  		// placeholder: "Месяц",
-	  		placeholder: $(val).attr('placeholder'),
-	  		minimumResultsForSearch: Infinity
+	  		// placeholder: $(val).attr('placeholder'),
+	  		placeholder: function(){
+		        $(val).data('placeholder');
+		    },
+	  		minimumResultsForSearch: Infinity,
+	  		 width: 'element',
 		});
 
 	});
