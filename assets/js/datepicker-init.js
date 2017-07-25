@@ -1,11 +1,15 @@
 $(document).ready(function(){
 
-	
 
-	$('.datepicker-input').datepicker({
-	    language: "ru",
-	    orientation: "bottom"
+	$.map( $('.datepicker-input'), function( val, i ) {
+
+	   	$(val).datepicker({
+			language: "ru",
+			orientation: "bottom"
+			});
 	});
+
+
 
 	var options = {
 		show2400: true,
@@ -13,7 +17,11 @@ $(document).ready(function(){
 		// time from & to
 	};
 
-	$('.timepicker-input').timepicker(options);
+	
+	$.map( $('.timepicker-input'), function( val, i ) {
+
+	   	$(val).timepicker(options);
+	});
 
 	
 	$('.navbar-contact.phone').on('click', function(){
@@ -23,9 +31,17 @@ $(document).ready(function(){
 
 	});
 
-    $(".js-select-placeholder").select2({
-  		placeholder: "Месяц",
-  		minimumResultsForSearch: Infinity
+
+	$.map( $("select[name='month']"), function( val, i ) {
+		// $(val).select2();
+		console.log( $(val).data().placeholder );
+		
+	   	$(val).select2({
+	  		// placeholder: "Месяц",
+	  		placeholder: $(val).attr('placeholder'),
+	  		minimumResultsForSearch: Infinity
+		});
+
 	});
 
 });
