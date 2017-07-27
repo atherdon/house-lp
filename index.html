@@ -170,6 +170,21 @@
     .btn-floating.orange-background {
         border-color: #ffa841;
     }
+    .btn-floating:hover .orange-background {
+        border-color: #fe614e;
+    }
+    .btn-floating {
+        outline: none;
+    } 
+    .btn-floating:focus, 
+    .btn-floating:active {
+        outline: 0;
+
+  
+  -moz-outline-style: none;
+  -moz-outline-style: none;
+    } 
+
     a.down {
         background: url(assets/images/arrowdown.png) no-repeat 0 0;
         display: block;
@@ -350,6 +365,76 @@
     border-left: 0;
     border-right: 0;
 }
+
+/*footer*/
+
+footer {
+    color: white;
+    height: 360px;
+}
+footer a {
+    color: white;
+    outline: none;
+}
+footer a:hover, footer a:visited, footer a:active, footer a:focus {
+    color: white;
+    outline: 0;
+  border:none;
+  -moz-outline-style: none;
+}
+footer figure {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    border-radius: 62px;
+    width: 116px;
+    height: 116px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+footer h2 {
+    text-align: center;
+    font-size: 70px;
+    /*font-family: '';*/
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+footer .size-48-63 {
+    width: 48px;
+    height: 63px;
+    margin-left: 32px;
+    margin-top: 25px; 
+}
+/*footer .size-48-63 img {
+    margin-left: 32px;
+    margin-top: 25px;    
+}*/
+footer .size-74-54 {
+    width: 74px;
+    height: 54px;
+    margin-left: 19px;
+    margin-top: 25px; 
+}
+/*footer .size-74-54 img {
+    
+}*/
+footer .size-66-66 {
+   width: 66px;
+    height: 66px;
+    margin-left: 24px;
+    margin-top: 20px; 
+}
+footer .footer-block p {
+    font-size: 21px;
+    text-align: center;
+    line-height: 21px;
+}
+/*footer .size-66-66 img {
+    margin-left: 32px;
+    margin-top: 25px; 
+}*/
 
 </style>
 
@@ -860,7 +945,7 @@
                     </ul>
                 </div>
 
-                
+
                   <!-- This is the 1st step to take in order to customize nav arrows.
                       Make 2 anchors, place them in a block element, and ensure that the
                       styles marked with`/*_*/` are used. -->
@@ -943,7 +1028,9 @@
 
 
     <section class="text-section">
-        <p>Все готово – живите! В доме выполнен качественный ремонт для себя – заменена электропроводка, окна, двери, батареи и газовый котел. Уложена новая плитка в санузле, установлена новая сантехника и душевая кабина. Дом полностью оборудован европейской мебелью британского и шведского производства.</p>
+        <p>
+            Все готово – живите! В доме выполнен качественный ремонт для себя – заменена электропроводка, окна, двери, батареи и газовый котел. Уложена новая плитка в санузле, установлена новая сантехника и душевая кабина. Дом полностью оборудован европейской мебелью британского и шведского производства.
+        </p>
     </section>
 
     <section class="circle-image-section image-right">
@@ -1075,44 +1162,55 @@
     <!--<section id="themap"></section>-->
 
     <footer id="contacts">
-		<h2>НАШИ КОНТАКТЫ</h2>
+
+		
         <div class="container-fluid">
-            <div class="col-md-offset-2 col-md-3">
-        		<div class="footer-block">
-        			<figure>
-                        <img src="assets/images/mail.png" alt="">
-                    </figure>
-        			<p>
-                        <a href="#themap">
-                            адрес улица дом
-                        </a>
-                    </p>
-        		</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>НАШИ КОНТАКТЫ</h2>
+                </div>                
             </div>
-            <div class="col-md-3">
-        		<div class="footer-block">
-        			<figure>
-                        <img src="assets/images/mail.png" alt="">
-                    </figure>
-        			<p>
-                        <a href="mailto:gggbtf@mail.ru" title="Запишитесь на просмотр!">
-                            kharkiv@gmail.com
-                        </a>
-                    </p>
-        		</div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-3">
+                    <div class="footer-block">
+                        <figure>
+                            <img src="assets/images/footer-picker.png" class="size-48-63" alt="">
+                        </figure>
+                        <p>
+                            <!-- <a href="#themap"> -->
+                                Республика Крым,  
+                            <!-- </a> -->
+                        </p>
+                        <p>г. Севастополь,</p>
+                        <p>ул. Семфиропольская, 29</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-block">
+                        <figure>
+                            <img src="assets/images/footer-mail.png" class="size-74-54" alt="">
+                        </figure>
+                        <p>
+                            <a href="mailto:gggbtf@mail.ru" title="Запишитесь на просмотр!">
+                                kharkiv@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-block">
+                        <figure>
+                            <img src="assets/images/footer-phone.png" class="size-66-66" alt="">
+                        </figure>
+                        <p>
+                            <a href="tel:+89168830840" title="Закажите звонок!">
+                                +38 050 111 22 33
+                            </a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-        		<div class="footer-block">
-        			<figure>
-                        <img src="assets/images/phone.png" alt="">
-                    </figure>
-        			<p>
-                        <a href="tel:+89168830840" title="Закажите звонок!">
-                            +38 050 111 22 33
-                        </a>
-                    </p>
-        		</div>
-            </div>
+            
     	</div><!--/.container-fluid-->
     </footer>
 
