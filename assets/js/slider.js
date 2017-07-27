@@ -2,14 +2,30 @@ $(document).ready(function(){
 
 	// Put slider into variable to use public functions
     var gallerySlider2 = $('#bxslider').bxSlider({
-        // controls: false,
-        controls: true,
+        
         pager: false,
         easing: 'easeInOutQuint',
         infiniteLoop: false,
         speed: 500,
         auto: false,
         // auto: true,
+
+        /* Controls must be true */
+        controls: true,
+
+        /* Class selectors from step 1 */
+        nextSelector: '.plans-wrapper .bxNext',
+        prevSelector: '.plans-wrapper .bxPrev',
+
+        /* Here's the heart of how to customize nav arrows.
+         || Enter a HTML string for both prevText and nextText.
+         || Here I used Font-Awesome icons. Sprites are commonly
+         || used, but try to use only one element per option.
+         */
+        nextText: '<i class="fa fa-chevron-right fa-3x"></i>',
+        prevText: '<i class="fa fa-chevron-left fa-3x"></i>',
+        // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
+        // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
        
     });
 

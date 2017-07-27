@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>
-        Sevastopol
+        Дом в Севастополе от собственника
     </title>
 
     <!-- you can make a 16x16 png and use -->
@@ -31,6 +31,30 @@
     <link rel="stylesheet" href="assets/css/jquery.timepicker.css">       
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" /> -->
+
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2" rel="stylesheet" /> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -552,9 +576,10 @@
     		</div><!--/.col-md-6-->
 
     		<div class="col-md-6">
-    			<div class="parameters-block slider-block">
+    			<div class="parameters-block slider-block plans-wrapper">
     				<h3 class="orange-background">Планы</h3>
     				<!-- <div class="slider"></div> -->
+
                     <ul id="bxslider"> <!-- @todo do we need class slider? I don't think so -->
                         <li><img src="assets/images/schema-1.png" alt="План дома #1" /></li>
                         <li><img src="assets/images/schema-2.png" alt="План дома #1" /></li>
@@ -562,7 +587,15 @@
                         <!-- <li>
                         <img src="assets/images/schema-3.png" alt="План дома #1" />
                         </li>  -->                 
-                    </ul>                   
+                    </ul> 
+                    
+                    <!-- This is the 1st step to take in order to customize nav arrows.
+                      Make 2 anchors, place them in a block element, and ensure that the
+                      styles marked with`/*_*/` are used. -->
+                      <nav class='controls'>
+                        <a href='#' id='PREV' class='bxPrev'></a>
+                        <a href='#' id='NEXT' class='bxNext'></a>
+                      </nav>                  
                     
                     
     			</div><!--/.parameters-block-->
