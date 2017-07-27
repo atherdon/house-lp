@@ -106,7 +106,10 @@ if ($('#gallery-thumbs').length > 0) {
         maxSlides: 2,
 
         slideWidth: 400,
-        slideMargin: 10
+        slideMargin: 10,
+
+        adaptiveHeight: true
+        wrapperClass: '.gallery-container.slider',
         // slideWidth: 100,
         // adaptiveHeight: true
     });
