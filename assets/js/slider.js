@@ -34,14 +34,18 @@ $(document).ready(function(){
 
 // If there are gallery thumbs on the page
 if ($('#gallery-thumbs').length > 0) {
+
     // Cache the thumb selector for speed
     var thumb = $('#gallery-thumbs').find('.thumb');
+
     // How many thumbs do you want to show & scroll by
     var visibleThumbs = 5;
+
     // Put slider into variable to use public functions
     var gallerySlider = $('#gallery').bxSlider({
         // controls: false,
-        controls: true,
+        // controls: true,
+
         pager: false,
         easing: 'easeInOutQuint',
         infiniteLoop: true,
@@ -60,7 +64,27 @@ if ($('#gallery-thumbs').length > 0) {
         onSlidePrev: function () {
             var currentSlideNumber = gallerySlider.getCurrentSlide();
             slideThumbs(currentSlideNumber, visibleThumbs);
-        }
+        },
+
+         /* Controls must be true */
+        controls: true,
+
+        /* Class selectors from step 1 */
+        nextSelector: '.gallery-container.slider .bxNext',
+        prevSelector: '.gallery-container.slider .bxPrev',
+
+        /* Here's the heart of how to customize nav arrows.
+         || Enter a HTML string for both prevText and nextText.
+         || Here I used Font-Awesome icons. Sprites are commonly
+         || used, but try to use only one element per option.
+         */
+        nextText: '<i class="fa fa-chevron-circle-right fa-3x"></i>',
+        prevText: '<i class="fa fa-chevron-circle-left fa-3x"></i>',
+        // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
+        // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
+
+        wrapperClass: '.gallery-container.slider',
+        adaptiveHeight: true
     });
     // When clicking a thumb
     thumb.click(function (e) {
@@ -75,12 +99,16 @@ if ($('#gallery-thumbs').length > 0) {
     var thumbsSlider = $('#gallery-thumbs').bxSlider({
         controls: false,
         pager: false,
+
         easing: 'easeInOutQuint',
         infiniteLoop: false,
         minSlides: 5,
         maxSlides: 2,
-        slideWidth: 360,
+
+        slideWidth: 400,
         slideMargin: 10
+        // slideWidth: 100,
+        // adaptiveHeight: true
     });
     // Function to calculate which slide to move the thumbs to
     // function slideThumbs(currentSlideNumber, visibleThumbs) {

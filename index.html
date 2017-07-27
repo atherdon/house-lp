@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/fonts.css">
 
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    
 
     <link rel="stylesheet" href="assets/js/nivo-lightbox/nivo-lightbox.css">
 
@@ -275,9 +275,14 @@
     color:#ffa841;
 }
 
-.controls {
+.plans-wrapper .controls {
     position: relative;
     bottom: 270px;
+}
+
+.gallery-container.slider .controls {
+    position: relative;
+    bottom: 340px;
 }
 
 .controls a,
@@ -298,9 +303,38 @@
   color: rgba(127, 127, 0, .7);
   transition: all 1s ease-out;
 }
-#NEXT {
+.plans-wrapper #NEXT {
   left: 87%;
   /*___________*/
+}
+
+.gallery-container.slider #NEXT {
+  left: 105%;
+  /*___________*/
+}
+
+.gallery-container.slider #PREV {
+  right: 14%;
+  /*___________*/
+}
+
+.gallery-container.slider .gallery-thumbs-container {
+    
+}
+
+.gallery-container.slider .gallery-thumbs-container .bx-wrapper {
+    margin: 0;
+}
+
+.gallery-container.slider .gallery-thumbs-container .bx-wrapper .bx-viewport {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0px;
+    top 8px;
+
+    border-left: 0;
+    border-right: 0;
 }
 
 </style>
@@ -624,7 +658,7 @@
                         <img src="assets/images/schema-3.png" alt="План дома #1" />
                         </li>  -->                 
                     </ul> 
-                    
+
                     <!-- This is the 1st step to take in order to customize nav arrows.
                       Make 2 anchors, place them in a block element, and ensure that the
                       styles marked with`/*_*/` are used. -->
@@ -746,22 +780,28 @@
             <div class="gallery-container slider">
 
                 <div id="gallery" class="gallery-images">
-                    <a href="assets/images/gallery/1.jpg" data-lightbox-gallery="gallery1" data-title="Item title" data-caption="Item Description">
+                    <a href="assets/images/gallery/1.jpg" data-lightbox-gallery="gallery1" 
+                    data-title="Item title" data-caption="Item Description">
                     <img src="assets/images/gallery/1.jpg" alt="" />
                     </a>
-                    <a href="assets/images/gallery/2.jpg" data-lightbox-gallery="gallery1" data-title="Item title" data-caption="Item Description">
+                    <a href="assets/images/gallery/2.jpg" data-lightbox-gallery="gallery1" 
+                    data-title="Item title" data-caption="Item Description">
                     <img src="assets/images/gallery/2.jpg" alt="" />
                     </a>
-                    <a href="assets/images/gallery/3.jpg" data-lightbox-gallery="gallery1" data-title="Item title" data-caption="Item Description">
+                    <a href="assets/images/gallery/3.jpg" data-lightbox-gallery="gallery1" 
+                    data-title="Item title" data-caption="Item Description">
                     <img src="assets/images/gallery/3.jpg" alt="" />
                     </a>
-                    <a href="assets/images/gallery/4.jpg" data-lightbox-gallery="gallery1" data-title="Item title" data-caption="Item Description">
+                    <a href="assets/images/gallery/4.jpg" data-lightbox-gallery="gallery1" 
+                    data-title="Item title" data-caption="Item Description">
                     <img src="assets/images/gallery/4.jpg" alt="" />
                     </a>
-                    <a href="assets/images/gallery/5.jpg" data-lightbox-gallery="gallery1" data-title="Item title" data-caption="Item Description">
+                    <a href="assets/images/gallery/5.jpg" data-lightbox-gallery="gallery1" 
+                    data-title="Item title" data-caption="Item Description">
                     <img src="assets/images/gallery/5.jpg" alt="" />
                     </a>
-                    <a href="assets/images/gallery/6.jpg" data-lightbox-gallery="gallery1" data-title="Item title" data-caption="Item Description">
+                    <a href="assets/images/gallery/6.jpg" data-lightbox-gallery="gallery1" 
+                    data-title="Item title" data-caption="Item Description">
                     <img src="assets/images/gallery/6.jpg" alt="" />
                     </a>
                 </div>
@@ -805,6 +845,16 @@
                         </li>
                     </ul>
                 </div>
+
+                
+                  <!-- This is the 1st step to take in order to customize nav arrows.
+                      Make 2 anchors, place them in a block element, and ensure that the
+                      styles marked with`/*_*/` are used. -->
+                  <nav class='controls'>
+                    <a href='#' id='PREV' class='bxPrev'></a>
+                    <a href='#' id='NEXT' class='bxNext'></a>
+                  </nav>   
+
             </div>
 
 
