@@ -1,4 +1,5 @@
-            $(document).ready(function() {
+$(document).ready(function() {
+
     if($('.formvalidation').length) {
         $(".formvalidation").validate({
             invalidHandler: function(event, validator) {
@@ -34,4 +35,4 @@
         
         });
     }
-            });
+});

@@ -280,6 +280,10 @@
         float: right;
         border: 0px solid transparent !important;
     }
+    .form-section .btn-red:hover {
+        color:white;
+    }
+
     .form-section .error {
         /*color: white;*/
         background-color: green;
@@ -288,11 +292,30 @@
         text-align: center;
 
     }*/
+.wrapper2 {
+    margin: 0 auto;
+}
+.row.row-with-three-inputs input, 
+.row.row-with-three-inputs select {
+    width: 100px;
+    margin-right: 25px;
+    text-align: center;
+    color: black;
+}
 
-
+.row.row-with-three-inputs .title {
+    font-size: 45px;
+}
+.simple {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
 .select2-container--default .select2-selection--single {
     border-radius: 0px;
 }
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 25px;
+}
+
 .js-select-placeholder {
     width: 100%;
 }
@@ -301,7 +324,7 @@
 /*slider*/
 .fa-chevron-circle-right:before,
 .fa-chevron-circle-left:before {
-    color:#ffa841;
+    color: #ffa841;
 }
 
 .plans-wrapper .controls {
@@ -1088,42 +1111,41 @@ footer .footer-block p {
                 </div>
                 
                 <div class="row">
-                    <div class="error"></div>
-                    <div class="col-md-6">
-                        <input type="text" name="name" placeholder="Your name" class="required">
-                        <input type="email" name="email" placeholder="Your email" class="required">
-                        
+                    <div class="col-md-12">
+                        <div class="error"></div>    
                     </div>
+                    
                     <div class="col-md-6">
-                     
                         <div class="row">
                             <div class="col-md-12">
-                                В какое время Вам удобно посмотреть дом?
+                                    <input type="text" name="name" 
+                                    placeholder="Your name" class="required">
                             </div>
-                            <div class="col-md-4">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="email" name="email" 
+                                placeholder="Your email" class="required">
+                            </div>
+                        </div>
+                    
+                        
+                        
+                    </div>
+                    <div class="col-md-6 ">
+                     
+                        <div class="row row-with-three-inputs">
+                            <div class="col-md-12">
+                            <h1 class="title simple">
+                                В какое время Вам удобно посмотреть дом?
+                            </h1>
+                            
+                            </div>
+                            <div class="col-md-3">
                                 <input type="text" name="date" 
                                         placeholder="Дата" class="required datepicker-input">
                             </div>
-                            <div class="col-md-4">
-
-                                <!-- <input type="text" name="month" 
-                                        placeholder="Месяц" class="required"> -->
-                            <!-- <select name="month" id="month" class="required">
-                                   <option selected value="">Месяц</option>
-                                    <option value = "1">01</option>
-                                    <option value = "2">02</option>
-                                    <option value = "3">03</option>
-                                    <option value = "4">04</option>
-                                    <option value = "5">05</option>
-                                    <option value = "6">06</option>
-                                    <option value = "7">07</option>
-                                    <option value = "8">08</option>
-                                    <option value = "9">09</option>
-                                    <option value = "10">10</option>
-                                    <option value = "11">11</option>
-                                    <option value = "12">12</option> 
-                                </select> -->  
-
+                            <div class="col-md-3">                           
                                 <select name="month"  
                                   class="required js-select-placeholder"  data-placeholder="Месяц" >
                                     <option disabled selected value></option>
@@ -1142,7 +1164,7 @@ footer .footer-block p {
                                 </select> 
 
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <input type="text" name="time" 
                                         placeholder="Время" class="required timepicker-input">
                             </div>
@@ -1150,7 +1172,8 @@ footer .footer-block p {
 
 
 
-                        <button class="btn borderonly btn-red">Записаться</button>
+                        <button class="btn borderonly btn-red">Записаться
+                        </button>
                     </div>
                 </div>
             </form>

@@ -108,7 +108,7 @@ if ($('#gallery-thumbs').length > 0) {
         slideWidth: 400,
         slideMargin: 10,
 
-        adaptiveHeight: true
+        adaptiveHeight: true,
         wrapperClass: '.gallery-container.slider',
         // slideWidth: 100,
         // adaptiveHeight: true
