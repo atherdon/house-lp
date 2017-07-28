@@ -153,15 +153,16 @@
         background-color: #46be8a;
         border-color: #46be8a;
     }*/
-    .site-action img {
+    /*.site-action img {
         display: block;
-    }
+    }*/
     .btn-floating img {
         position: relative;
         top: 10px;
-        right: -8px;
+        right: -10px;
         width: 40px;
         height: 40px;
+        display: block;
     }
     .btn-floating:hover {
         background-color: #fe614e;
@@ -169,8 +170,9 @@
     }
     .btn-floating.orange-background {
         border-color: #ffa841;
+        width: 57px;
     }
-    .btn-floating:hover .orange-background {
+    .btn-floating.orange-background:hover {
         border-color: #fe614e;
     }
     .btn-floating {
@@ -250,7 +252,17 @@
         border-radius: 0px;
         font-weight: 400;
        
+
+
     }
+
+
+    .modal-content{
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+}
 
     .datepicker-input {
         color:black;
@@ -337,6 +349,7 @@
     padding-left: 25px;
     height: 50px;
     margin-bottom: 10px;
+    color: black;
 }
 
 .select2-container--default .select2-selection--single {
@@ -423,7 +436,7 @@
 
 footer {
     color: white;
-    height: 360px;
+    height: 366px;
 }
 footer a {
     color: white;
@@ -488,6 +501,83 @@ footer .footer-block p {
     margin-left: 32px;
     margin-top: 25px; 
 }*/
+
+/*updated banners*/
+
+/*blockquote*/
+.quote-section {
+    color: white;
+}
+.quote-section h2 {
+    background: rgba(39,174,166,.5);
+    display: inline-block;
+    padding: 5px 25px;
+}
+
+/*.quote-section blockquote {
+    border: none;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.quote-section blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+}
+,
+.quote-section blockquote:after {
+    color: #ccc;
+    content: close-quote;
+
+    font-size: 4em;
+   
+}*/
+a.default-button {
+    outline : none;
+    text-decoration: none;
+}
+a.default-button:active,
+a.default-button:focus, {
+  outline:0;
+  border:none;
+  -moz-outline-style: none;
+  color:white;
+}
+a.default-button:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.quote-section blockquote {
+    position: relative;
+    marign: auto 0;
+    padding: 10px 60px;
+    
+    quotes: "\201C""\201D""\2018""\2019";
+    border: none;
+}
+.quote-section blockquote:before,
+.quote-section blockquote:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 120px;
+    line-height: 1;
+    /*font-size: 4em;*/
+    /*font-size: 30px;*/
+}
+.quote-section blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+.quote-section blockquote:after {
+    bottom: 0;
+    right: 0;
+    content: "\201D";
+}
 
 </style>
 
@@ -1234,7 +1324,8 @@ footer .footer-block p {
                 <div class="col-md-offset-2 col-md-3">
                     <div class="footer-block">
                         <figure>
-                            <img src="assets/images/footer-picker.png" class="size-48-63" alt="">
+                            <img src="assets/images/footer-picker.png" 
+                            class="size-48-63" alt="">
                         </figure>
                         <p>
                             <!-- <a href="#themap"> -->
@@ -1248,10 +1339,12 @@ footer .footer-block p {
                 <div class="col-md-3">
                     <div class="footer-block">
                         <figure>
-                            <img src="assets/images/footer-mail.png" class="size-74-54" alt="">
+                            <img src="assets/images/footer-mail.png" 
+                            class="size-74-54" alt="">
                         </figure>
                         <p>
-                            <a href="mailto:gggbtf@mail.ru" title="Запишитесь на просмотр!">
+                            <a href="mailto:gggbtf@mail.ru" 
+                            title="Запишитесь на просмотр!">
                                 kharkiv@gmail.com
                             </a>
                         </p>
@@ -1260,7 +1353,8 @@ footer .footer-block p {
                 <div class="col-md-3">
                     <div class="footer-block">
                         <figure>
-                            <img src="assets/images/footer-phone.png" class="size-66-66" alt="">
+                            <img src="assets/images/footer-phone.png" 
+                            class="size-66-66" alt="">
                         </figure>
                         <p>
                             <a href="tel:+89168830840" title="Закажите звонок!">
@@ -2067,6 +2161,9 @@ footer .footer-block p {
     <!-- <script src="assets/js/site-action-init.js"></script> --> <!-- move to main.js later -->
 
     <script src="assets/js/arrow-link-init.js"></script> <!-- move to main.js later -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script> 
+    <script src="assets/js/mask-init.js"></script> 
 
   </body>
 </html>
