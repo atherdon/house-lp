@@ -602,8 +602,17 @@ a.default-button:visited {
     right: 0;
     content: "\201D";
 }
-
-
+.show-on-responsive {
+    display: none;
+}
+@media (max-width: 768px) {
+    .show-on-responsive {
+        display: block;
+    }
+    .hide-on-responsive {
+        display: none;    
+    }
+}
 
 </style>
 
@@ -640,24 +649,47 @@ a.default-button:visited {
                         Коммуникации
                         </a>
                     </li>
-			        <li>
+                    <li>
                         <a href="#characteristics" class="scrollto ">
                         Характеристики
                         </a>
                     </li>
-			        <li>
+                    <li>
                         <a href="#photogallery" class="scrollto ">
                         Фотогалерея
                         </a>
                     </li>
-			        <li>
+                    <li>
                         <a href="#contacts" class="scrollto ">
                         Контакты
                         </a>
                     </li>
+
+                    <li class="show-on-responsive">
+                        <a href="#" data-target="#exampleFormModal" data-toggle="modal">
+                        Закажите звонок!
+                        </a>
+                    </li>
+                    <li class="show-on-responsive">
+                        <a href="#" 
+                           data-target="#exampleFormModal2" data-toggle="modal">
+                        Запишитесь на просмотр! 
+                        </a>
+                    </li>
+                    <li class="show-on-responsive">
+                        <a href="skype:********?call">
+                        Skype
+                        </a>
+                    </li>
+                    <li class="show-on-responsive">
+                        <a href="viber://pa?chatURI=<public account URI>&text=Записаться%20на%20просмотр">
+                        Viber
+                        </a>
+                    </li>
+
 			      </ul>
 
-			      <ul class="nav navbar-nav">
+			      <ul class="nav navbar-nav hide-on-responsive">
 
 			      
                     <li>
