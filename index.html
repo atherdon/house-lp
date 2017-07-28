@@ -258,11 +258,28 @@
 
 
     .modal-content{
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
-    -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
-    -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
-    box-shadow: 0 5px 15px rgba(0,0,0,0);
-}
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+        -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+        -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+        box-shadow: 0 5px 15px rgba(0,0,0,0);
+    }
+    .modal .modal-title {
+        text-align: center;
+        line-height: 35px;
+    }
+    .modal .modal-body {
+        padding: 0 50px;
+
+    }
+    .modal .modal-header h6,
+    .modal .modal-body h4 {
+        text-align: center;
+
+    }
+    .modal .modal-title {
+        padding: 0 50px;
+        padding-top: 15px;
+    }
 
     .datepicker-input {
         color:black;
@@ -1386,9 +1403,9 @@ a.default-button:visited {
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
-                <h4 class="modal-title" id="exampleFormModalLabel">
+                <h1 class="modal-title" id="exampleFormModalLabel">
                     Закажите звонок в удобное для Вас время
-                </h4>
+                </h1>
               </div>
               <div class="modal-body">
                 <div class="row">
@@ -1401,15 +1418,15 @@ a.default-button:visited {
                     name="phone" placeholder="Телефон">
                   </div>
                   
-                  <div class="row">
+                  <div class="row row-with-three-inputs">
                     <div class="col-md-12">
-                      Укажите удобное для звонка время
+                      <h4>Укажите удобное для звонка время</h4>
                     </div>
-                    <div class="col-lg-4 form-group">
+                    <div class="col-md-3 form-group">
                       <input type="text" name="date" 
                       placeholder="Дата" class="required datepicker-input">
                     </div>  
-                    <div class="col-lg-4 form-group">
+                    <div class="col-md-3 form-group">
 
                     <select name="month" 
                       class="required js-select-placeholder" data-placeholder="Месяц">
@@ -1432,7 +1449,7 @@ a.default-button:visited {
 
 
                     </div>  
-                    <div class="col-lg-4 form-group">
+                    <div class="col-md-3 form-group">
                       <input type="text" name="time" 
                              placeholder="Время" class="required timepicker-input">
                     </div>  
@@ -1440,7 +1457,7 @@ a.default-button:visited {
 
                 
 
-                  <div class="col-sm-12 pull-right">
+                  <div class="col-sm-12 ">
                     <button class="btn btn-primary btn-outline" 
                             data-dismiss="modal" type="button">
                     Заказать звонок
@@ -1464,9 +1481,9 @@ a.default-button:visited {
                   <span aria-hidden="true">×</span>
                 </button>
                 
-                <h4 class="modal-title" id="exampleFormModalLabel">
+                <h1 class="modal-title" id="exampleFormModalLabel">
                 Запишитесь на просмотр дома!
-                </h4>
+                </h1>
               </div>
               <div class="modal-body">
                 <div class="row">
@@ -1481,7 +1498,7 @@ a.default-button:visited {
                   
                   <div class="row">
                     <div class="col-md-12">
-                      Когда вам удобно посмотреть дом?
+                      <h4>Когда вам удобно посмотреть дом?</h4>
                     </div>
                     <div class="col-lg-4 form-group">
                       <input type="text" name="date" 
@@ -1536,9 +1553,9 @@ a.default-button:visited {
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
-                <h4 class="modal-title" id="exampleFormModalLabel">
+                <h1 class="modal-title" id="exampleFormModalLabel">
                   Юридическая чистота
-                </h4>
+                </h1>
                 <h6>
                   Убедитесь в юридической чистоте усадьбы
                 </h6>
