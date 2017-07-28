@@ -183,12 +183,14 @@
     }
 
 
+
+/*
     .modal-header {
       padding: 15px 20px;
       border-bottom: none;
     }
     .modal-content {
-      /*background-color: black;*/
+      
       border-color: #999999;
      background-color: #0A75A7;
      color:white;
@@ -277,7 +279,8 @@
     .modal .modal-body .btn {
         margin-top:25px;
         margin-bottom: 25px;
-    }
+    }*/
+
     .datepicker-input {
         color:black;
     }
@@ -453,11 +456,11 @@
 /*footer {
     color: white;
     height: 366px;
-}
+}*/
 footer a {
     color: white;
     outline: none;
-}*/
+}
 
 
     /*a
@@ -465,12 +468,12 @@ footer a {
         outline none
         */
 
-/*footer a:hover, footer a:visited, footer a:active, footer a:focus {
+footer a:hover, footer a:visited, footer a:active, footer a:focus {
     color: white;
     outline: 0;
   border:none;
   -moz-outline-style: none;
-}*/
+}
 /*
     color white
     height 366px*/
@@ -485,7 +488,7 @@ footer a {
         height 116px
         margin 0 auto
         margin-bottom 15px*/
-    
+
 footer figure {
     border-style: solid;
     border-width: 3px;
@@ -501,7 +504,7 @@ footer h2 {
     text-align: center;
     font-size: 70px;
     /*font-family: '';*/
-    margin-top: 40px;
+   margin-top: 40px;
     margin-bottom: 25px;
 }
 
@@ -535,42 +538,12 @@ footer .footer-block p {
     text-align: center;
     line-height: 21px;
 }
-/*footer .size-66-66 img {
+footer .size-66-66 img {
     margin-left: 32px;
     margin-top: 25px; 
-}*/
-
-
-/*blockquote*/
-.quote-section {
-    color: white;
-}
-.quote-section h2 {
-    background: rgba(39,174,166,.5);
-    display: inline-block;
-    padding: 5px 25px;
 }
 
-/*.quote-section blockquote {
-    border: none;
-    quotes: "\201C""\201D""\2018""\2019";
-}
-.quote-section blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: .1em;
-    margin-right: .25em;
-    vertical-align: -.4em;
-}
-,
-.quote-section blockquote:after {
-    color: #ccc;
-    content: close-quote;
 
-    font-size: 4em;
-   
-}*/
 a.default-button {
     outline : none;
     text-decoration: none;
@@ -587,6 +560,15 @@ a.default-button:visited {
     text-decoration: none;
 }
 
+/*blockquote*/
+.quote-section {
+    color: white;
+}
+.quote-section h2 {
+    background: rgba(39,174,166,.5);
+    display: inline-block;
+    padding: 5px 25px;
+}
 .quote-section blockquote {
     position: relative;
     marign: auto 0;
@@ -615,6 +597,7 @@ a.default-button:visited {
     right: 0;
     content: "\201D";
 }
+
 .show-on-responsive {
     display: none !important;
 }
@@ -679,7 +662,8 @@ a.default-button:visited {
                     </li>
 
                     <li class="show-on-responsive">
-                        <a href="#" data-target="#exampleFormModal" data-toggle="modal">
+                        <a href="#" 
+                        data-target="#exampleFormModal" data-toggle="modal">
                         Закажите звонок
                         </a>
                     </li>
@@ -706,11 +690,14 @@ a.default-button:visited {
 
 			      
                     <li>
-                        <a href="#" 
+                    <!-- data-toggle="tooltip" 
+                           data-placement="bottom" title="Закажите звонок!"  -->
+                        <a href="#" id="phone-modal"
                            class="nav-button navbar-contact mail tooltip-danger" 
-                           data-toggle="tooltip" 
+                           data-tooltip="true"
                            data-placement="bottom" title="Закажите звонок!"
-                           data-target="#exampleFormModal" data-toggle="modal">
+                           data-target="#FormModal" 
+                           data-toggle="modal">
                             <div>
                                 <img src="assets/images/phone.png" alt="">
                             </div>
@@ -719,11 +706,13 @@ a.default-button:visited {
                     </li>
 
                     <li>
-                        <a href="#" 
+                        <a href="#" id="email-modal"
                            class="nav-button navbar-contact phone tooltip-warning" 
-                           data-toggle="tooltip" 
-                           data-placement="bottom" title="Запишитесь на просмотр!" 
-                           data-target="#exampleFormModal2" data-toggle="modal">
+                           data-tooltip="true"
+                           data-placement="bottom" 
+                           title="Запишитесь на просмотр!" 
+                           data-target="#FormModal2" 
+                           data-toggle="modal">
                             <div>
                                 <img src="assets/images/mail.png" alt="">
                             </div>
@@ -766,13 +755,18 @@ a.default-button:visited {
         <div class="right-column">
 
           <a href="#" class="default-button red-background" 
-          data-target="#exampleFormModal" data-toggle="modal">
+            data-target="#FormModal" 
+            data-toggle="modal">
           Запишитесь на просмотр дома 1 
           </a>
 
-          <a href="#" class="default-button red-background" data-target="#exampleFormModal2" data-toggle="modal">Запишитесь на просмотр дома 2 </a>
+          <a href="#" class="default-button red-background" 
+            data-target="#FormModal2" 
+            data-toggle="modal">Запишитесь на просмотр дома 2 </a>
 
-          <a href="#" class="default-button red-background" data-target="#exampleFormModal3" data-toggle="modal">Запишитесь на просмотр дома 3 </a>
+          <a href="#" class="default-button red-background" 
+            data-target="#Modal3" 
+            data-toggle="modal">Запишитесь на просмотр дома 3 </a>
 
           <a href="#" class="default-button orange-background">
             виртуальный тур
@@ -841,8 +835,8 @@ a.default-button:visited {
         <div class="col-md-2">
 			<div class="benefit-block">
 				<figure>
-                    <!-- <img src="assets/images/benefits/benefits-5.png" alt=""> -->
-                    <svg class="icon"><use xlink:href="#pipes" /></svg>
+                    <img src="assets/images/benefits/benefits-5.png" alt="">
+                    <!-- <svg class="icon"><use xlink:href="#pipes" /></svg> -->
                 </figure>
 				<p>Центральный водопровод и канализация</p>
 			</div>
@@ -858,8 +852,8 @@ a.default-button:visited {
         <div class="col-md-2">
 			<div class="benefit-block">
 				<figure>
-                    <!-- <img src="assets/images/benefits/benefits-3.png" alt=""> -->
-                    <svg class="icon"><use xlink:href="#radar-dish" /></svg>
+                    <img src="assets/images/benefits/benefits-3.png" alt="">
+                    <!-- <svg class="icon"><use xlink:href="#radar-dish" /></svg> -->
                 </figure>
 				<p>Спутниковое телевидение</p>
 			</div>
@@ -898,11 +892,17 @@ a.default-button:visited {
 
     <section class="parameters-section characteristics" id="characteristics">
     	<div class="container-fluid">
-    		<h2>Характеристики</h2>
+    		<h2>
+            Характеристики
+            </h2>
     		<div class="col-md-6">
     			<div class="parameters-block">
-    				<h3 class="red-background">Описание</h3>
-    				<h4>Республика Крым, г. Севастополь, ул. Семфиропольская, 29.<br> Общая площадь территории 710 м².</h4>
+    				<h3 class="red-background">
+                    Описание
+                    </h3>
+    				<h4>
+                    Республика Крым, г. Севастополь, ул. Семфиропольская, 29.<br> Общая площадь территории 710 м².
+                    </h4>
     				<p>
     					<span>Категория земли:</span>
     					 для индивидуального жилищного строительства. Площадь дома 302 м²., в том числе, жилая 164 м².
@@ -961,15 +961,13 @@ a.default-button:visited {
     		<div class="col-md-6">
     			<div class="parameters-block slider-block plans-wrapper">
     				<h3 class="orange-background">Планы</h3>
-    				<!-- <div class="slider"></div> -->
+    				
 
-                    <ul id="bxslider"> <!-- @todo do we need class slider? I don't think so -->
+                    <ul id="bxslider"> 
                         <li><img src="assets/images/schema-1.png" alt="План дома #1" /></li>
                         <li><img src="assets/images/schema-2.png" alt="План дома #1" /></li>
                         <li><img src="assets/images/schema-3.png" alt="План дома #1" /></li>  
-                        <!-- <li>
-                        <img src="assets/images/schema-3.png" alt="План дома #1" />
-                        </li>  -->                 
+                                    
                     </ul> 
 
                     <!-- This is the 1st step to take in order to customize nav arrows.
@@ -995,8 +993,8 @@ a.default-button:visited {
           <div class="col-md-2 col-md-offset-1">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-14.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#crimea" /></svg>
+                        <img src="assets/images/benefits/benefits-14.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#crimea" /></svg> -->
                     </figure>
       				<p>Побережье Крыма</p>
       			</div>
@@ -1004,8 +1002,8 @@ a.default-button:visited {
           <div class="col-md-2">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-12.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#city-space" /></svg>
+                        <img src="assets/images/benefits/benefits-12.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#city-space" /></svg> -->
                     </figure>
       				<p>Тихий центр Севастополя</p>
       			</div>
@@ -1013,8 +1011,8 @@ a.default-button:visited {
           <div class="col-md-2">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-13.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#mansory" /></svg>
+                        <img src="assets/images/benefits/benefits-13.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#mansory" /></svg> -->
                     </figure>
       				<p>Участок за каменной стеной</p>
       			</div>
@@ -1022,8 +1020,8 @@ a.default-button:visited {
           <div class="col-md-2">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-11.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#paint-brush" /></svg>
+                        <img src="assets/images/benefits/benefits-11.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#paint-brush" /></svg> -->
                     </figure>
       				<p>Ремонт</p>
       			</div>
@@ -1031,8 +1029,8 @@ a.default-button:visited {
           <div class="col-md-2">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-10.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#bedside-table" /></svg>
+                        <img src="assets/images/benefits/benefits-10.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#bedside-table" /></svg> -->
                     </figure>
       				<p>Полная меблировка</p>
       			</div>
@@ -1043,8 +1041,8 @@ a.default-button:visited {
           <div class="col-md-2 col-md-offset-3">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-9.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#sauna" /></svg>
+                        <img src="assets/images/benefits/benefits-9.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#sauna" /></svg> -->
                     </figure>
       				<p>Сауна </p>
       			</div>
@@ -1052,17 +1050,17 @@ a.default-button:visited {
           <div class="col-md-2">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-8.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#house" /></svg>
+                        <img src="assets/images/benefits/benefits-8.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#house" /></svg> -->
                     </figure>
-      				<p>2 гаража</p>
+      				<!-- <p>2 гаража</p> -->
       			</div>
           </div>
           <div class="col-md-2">
       			<div class="benefit-block">
       				<figure>
-                        <!-- <img src="assets/images/benefits/benefits-7.png" alt=""> -->
-                        <svg class="icon"><use xlink:href="#sprout" /></svg>
+                        <img src="assets/images/benefits/benefits-7.png" alt="">
+                        <!-- <svg class="icon"><use xlink:href="#sprout" /></svg> -->
                     </figure>
       				<p>Сад</p>
       			</div>
@@ -1182,8 +1180,8 @@ a.default-button:visited {
           <div class="col-md-offset-1 col-md-2">
   			<div class="benefit-block">
   				<figure>
-                    <!-- <img src="assets/images/benefits/benefits-8.png" alt=""> -->
-                    <svg class="icon"><use xlink:href="#mailbox" /></svg>
+                    <img src="assets/images/benefits/benefits-8.png" alt="">
+                    <!-- <svg class="icon"><use xlink:href="#mailbox" /></svg> -->
                 </figure>
   				<p>Почта и банки</p>
   			</div>
@@ -1208,8 +1206,8 @@ a.default-button:visited {
           <div class="col-md-2">
             <div class="benefit-block">
               <figure>
-                <!-- <img src="assets/images/benefits/benefits-11.png" alt=""> -->
-                <svg class="icon"><use xlink:href="#transport" /></svg>
+                <img src="assets/images/benefits/benefits-11.png" alt="">
+                <!-- <svg class="icon"><use xlink:href="#transport" /></svg> -->
               </figure>
               <p>Общественный транспорт</p>
             </div>
@@ -1217,8 +1215,8 @@ a.default-button:visited {
           <div class="col-md-2">
             <div class="benefit-block">
               <figure>
-                <!-- <img src="assets/images/benefits/benefits-12.png" alt=""> -->
-                <svg class="icon"><use xlink:href="#pin" /></svg>
+                <img src="assets/images/benefits/benefits-12.png" alt="">
+                <!-- <svg class="icon"><use xlink:href="#pin" /></svg> -->
               </figure>
               <p>Спортивные объекты</p>
             </div>
@@ -1449,10 +1447,11 @@ a.default-button:visited {
     <!-- End Site Action -->
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleFormModal" aria-hidden="false" aria-labelledby="exampleFormModalLabel"
-        role="dialog" tabindex="-1">
+    <div class="modal fade" id="FormModal" 
+         aria-hidden="false" aria-labelledby="exampleFormModalLabel"
+         role="dialog" tabindex="-1">
           <div class="modal-dialog">
-            <form class="modal-content" id="FormModal">
+            <form class="modal-content" id="FormModal1">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
@@ -1471,15 +1470,15 @@ a.default-button:visited {
                     <input type="phone" class="form-control" 
                     name="phone" placeholder="Телефон">
                   </div>
-                  
-                  <div class="row ">
+                </div>  
+                  <div class="row">
                     <div class="col-md-12">
                       <h4>Укажите удобное для звонка время</h4>
                     </div>
                     <div class="col-md-8 col-centered form-inline">
                         <div class="form-group">
                              <input type="text" name="date" 
-                      placeholder="Дата" class="required datepicker-input">
+                                    placeholder="Дата" class="required datepicker-input">
                         </div>
                         <div class="form-group">
                             <select name="month" class="required js-select-placeholder" data-placeholder="Месяц">
@@ -1503,38 +1502,7 @@ a.default-button:visited {
                                     placeholder="Время" class="required timepicker-input">
                         </div>
                     </div>
-                   <!--  <div class="col-md-3 col-centered">
-                      <input type="text" name="date" 
-                      placeholder="Дата" class="required datepicker-input">
-                    </div>   -->
-                    <!-- <div class="col-md-3 col-centered">
-
-                    <select name="month" 
-                      class="required js-select-placeholder" data-placeholder="Месяц">
-                        <option disabled selected value></option>
-                        <option value = "1">Январь</option>
-                        <option value = "2">Февраль</option>
-                        <option value = "3">Март</option>
-                        <option value = "4">Апрель</option>
-                        <option value = "5">Май</option>
-                        <option value = "6">Июнь</option>
-                        <option value = "7">Июль</option>
-                        <option value = "8">Август</option>
-                        <option value = "9">Сентябрь</option>
-                        <option value = "10">Октябрь</option>
-                        <option value = "11">Ноябрь</option>
-                        <option value = "12">Декабрь</option> 
-                    </select>      
-
-
-
-
-                    </div>  --> 
-                    <!-- <div class="col-md-3 col-centered">
-                      <input type="text" name="time" 
-                             placeholder="Время" class="required timepicker-input">
-                    </div>  
-                  </div> -->
+                  
 
                 
 
@@ -1551,19 +1519,18 @@ a.default-button:visited {
         </div>
         <!-- End Modal -->
 
-
         <!-- Modal -->
-        <div class="modal fade" id="exampleFormModal2" aria-hidden="false" aria-labelledby="exampleFormModalLabel"
+        <div class="modal fade" id="FormModal2" aria-hidden="false" aria-labelledby="exampleFormModalLabel2"
         role="dialog" tabindex="-1">
           <div class="modal-dialog">
-            <form class="modal-content" id="FormModal2">
+            <form class="modal-content" id="FormModal21">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
                 
                 <h1 class="modal-title" id="exampleFormModalLabel">
-                Запишитесь на просмотр дома!
+                    Запишитесь на просмотр дома!
                 </h1>
               </div>
               <div class="modal-body">
@@ -1576,7 +1543,7 @@ a.default-button:visited {
                     <input type="phone" class="form-control" 
                     name="phone" placeholder="Телефон...">
                   </div>
-                  
+                </div>  
                   <div class="row row-with-three-inputs">
                     <div class="col-md-12">
                       <h4>
@@ -1584,6 +1551,7 @@ a.default-button:visited {
                         </h4>
                     </div>
                     <div>
+
                     <div class="col-md-3 col-centered form-group">
                       <input type="text" name="date" 
                       placeholder="Дата" class="required datepicker-input">
@@ -1628,16 +1596,16 @@ a.default-button:visited {
         <!-- End Modal -->
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleFormModal3" aria-hidden="false" 
-        aria-labelledby="exampleFormModalLabel"
+        <div class="modal fade" id="FormModal3" aria-hidden="false" 
+        aria-labelledby="exampleFormModalLabel3"
         role="dialog" tabindex="-1">
           <div class="modal-dialog">
-            <form class="modal-content" id="FormModal3">
+            <form class="modal-content" id="FormModal31">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
-                <h1 class="modal-title" id="exampleFormModalLabel">
+                <h1 class="modal-title" id="exampleFormModalLabel3">
                   Юридическая чистота
                 </h1>
                 <h6>
@@ -1667,6 +1635,8 @@ a.default-button:visited {
           </div>
         </div>
         <!-- End Modal -->
+
+
 
 
   <svg id="pictures" style="position: absolute; width:0px; height: 0px" xmlns="http://www.w3.org/2000/svg">

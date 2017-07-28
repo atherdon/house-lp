@@ -24,12 +24,12 @@ $(document).ready(function(){
 	});
 
 	
-	$('.navbar-contact.phone').on('click', function(){
+	// $('.navbar-contact.phone').on('click', function(){
 
-		return false;
-		// $('#exampleFormModal').modal();	
+	// 	return false;
+	// 	// $('#exampleFormModal').modal();	
 
-	});
+	// });
 
 
 	$.map( $("select[name='month']"), function( val, i ) {
@@ -43,7 +43,7 @@ $(document).ready(function(){
 		        $(val).data('placeholder');
 		    },
 	  		minimumResultsForSearch: Infinity,
-	  		 width: 'element',
+	  		 width: 'element'
 		});
 
 	});
