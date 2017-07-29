@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-var windowWidth = $(window).width();
-var windowHeight = $(window).height();
+	var windowWidth = $(window).width();
+	var windowHeight = $(window).height();
 
 	if($('.scrollto').length) {
 		$('.scrollto').click(function() {
@@ -17,40 +17,40 @@ var windowHeight = $(window).height();
 	}
 
 
-var waypoint = new Waypoint({
-  element: $('.left-column h1'),
-  handler: function(direction) {
-    console.log('Scrolled to waypoint!')
+	var waypoint = new Waypoint({
+	  element: $('.left-column h1'),
+	  handler: function(direction) {
+	    console.log('Scrolled to waypoint!')
 
-    $('a.down').fadeIn();
-    
-  },
-  // offset: '600px'
-})
+	    $('a.down').fadeIn();
+	    
+	  },
+	  // offset: '600px'
+	})
 
 
-var waypoint = new Waypoint({
-  element: $('.left-column h2'),
-  handler: function(direction) {
-    console.log('Scrolled to waypoint!')
+	var waypoint = new Waypoint({
+	  element: $('.left-column h2'),
+	  handler: function(direction) {
+	    console.log('Scrolled to waypoint!')
 
-    $('a.down').fadeOut();
+	    $('a.down').fadeOut();
 
-  },
-  // offset: '600px'
-})
+	  },
+	  // offset: '600px'
+	})
 // $('.site-action').fadeOut();
 
-var waypoint = new Waypoint({
-  element: $('#start'),
-  handler: function(direction) {
-    console.log('Scrolled to waypoint!')
+	var waypoint = new Waypoint({
+	  element: $('#start'),
+	  handler: function(direction) {
+	    console.log('Scrolled to waypoint!')
 
-    $('.site-action').fadeIn();
+	    $('.site-action').fadeIn();
 
-  },
-  offset: '-100px'
-})
+	  },
+	  offset: '-100px'
+	})
 
 // var waypoint = new Waypoint({
 //   element: $('#second'),

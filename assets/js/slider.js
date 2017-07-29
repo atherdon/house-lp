@@ -32,6 +32,7 @@ $(document).ready(function(){
        
     });
 
+
 // If there are gallery thumbs on the page
 if ($('#gallery-thumbs').length > 0) {
 
@@ -105,7 +106,7 @@ if ($('#gallery-thumbs').length > 0) {
         minSlides: 5,
         maxSlides: 2,
 
-        slideWidth: 400,
+        slideWidth: 680,
         slideMargin: 10,
 
         adaptiveHeight: true,
