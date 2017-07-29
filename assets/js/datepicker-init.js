@@ -23,15 +23,6 @@ $(document).ready(function(){
 	   	$(val).timepicker(options);
 	});
 
-	
-	// $('.navbar-contact.phone').on('click', function(){
-
-	// 	return false;
-	// 	// $('#exampleFormModal').modal();	
-
-	// });
-
-
 	$.map( $("select[name='month']"), function( val, i ) {
 		// $(val).select2();
 		console.log( $(val).data().placeholder );
@@ -47,5 +38,7 @@ $(document).ready(function(){
 		});
 
 	});
+
+
 
 });
