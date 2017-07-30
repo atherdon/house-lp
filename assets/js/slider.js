@@ -22,8 +22,8 @@ $(document).ready(function(){
          || Here I used Font-Awesome icons. Sprites are commonly
          || used, but try to use only one element per option.
          */
-        nextText: '<i class="fa fa-chevron-circle-right fa-3x"></i>',
-        prevText: '<i class="fa fa-chevron-circle-left fa-3x"></i>',
+        nextText: '<i class="fa fa-chevron-circle-right fa-6x"></i>',
+        prevText: '<i class="fa fa-chevron-circle-left fa-6x"></i>',
         // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
         // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
 
@@ -79,8 +79,8 @@ if ($('#gallery-thumbs').length > 0) {
          || Here I used Font-Awesome icons. Sprites are commonly
          || used, but try to use only one element per option.
          */
-        nextText: '<i class="fa fa-chevron-circle-right fa-3x"></i>',
-        prevText: '<i class="fa fa-chevron-circle-left fa-3x"></i>',
+        nextText: '<i class="fa fa-chevron-circle-right fa-6x"></i>',
+        prevText: '<i class="fa fa-chevron-circle-left fa-6x"></i>',
         // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
         // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
 
