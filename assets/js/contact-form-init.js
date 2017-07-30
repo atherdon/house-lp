@@ -54,6 +54,9 @@ $(document).ready(function() {
 
         // $('#FormModal1 ').
 
+        var form  = $("#FormModal1");
+        var error = $("#FormModal1").find('.error'); 
+
         $("#FormModal1").validate({
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
@@ -64,10 +67,14 @@ $(document).ready(function() {
                   ? 'You missed 1 field. It has been highlighted'
                   : 'You missed ' + errors + ' fields. They have been highlighted';
 
+                  
                 $("div.error").html(message);
                 $("div.error").fadeIn();
+
               } else {
+
                 $("div.error").hide();
+
               }
             },
             showErrors: false,
