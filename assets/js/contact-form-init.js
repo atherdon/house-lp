@@ -43,6 +43,14 @@ $(document).ready(function() {
     /* Modal1 */
     if($('#FormModal1').length) {
 
+        var messages = {
+          'Время звонка не введено',
+          'Время дату звонка'б
+          'Введите почту для связи',
+          'Введите данные в поля формы'
+        };
+
+
         $("#FormModal1").validate({
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
@@ -160,6 +168,6 @@ $(document).ready(function() {
         
         });
     }    
-    
+
 
 });
