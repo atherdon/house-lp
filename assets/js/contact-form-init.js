@@ -40,16 +40,19 @@ $(document).ready(function() {
         });
     }
 
+
+
     /* Modal1 */
     if($('#FormModal1').length) {
 
-        var messages = {
-          'Время звонка не введено',
-          'Время дату звонка'б
-          'Введите почту для связи',
-          'Введите данные в поля формы'
-        };
+        // var messages = {
+        //   'Время звонка не введено',
+        //   'Время дату звонка',
+        //   'Введите почту для связи',
+        //   'Введите данные в поля формы'
+        // };
 
+        // $('#FormModal1 ').
 
         $("#FormModal1").validate({
             invalidHandler: function(event, validator) {
@@ -71,7 +74,8 @@ $(document).ready(function() {
             errorPlacement: function(error,element) {
                 return true;
             },
-            submitHandler: function(form) { 
+            submitHandler: function(form) {             
+
                 jQuery(form).ajaxSubmit({
                     url: 'process.php', 
                     success: function() {
