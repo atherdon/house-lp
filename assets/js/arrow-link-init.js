@@ -17,7 +17,7 @@ $(document).ready(function() {
 	}
 
 
-	var waypoint = new Waypoint({
+	var waypoint1 = new Waypoint({
 	  element: $('.left-column h1'),
 	  handler: function(direction) {
 	    console.log('Scrolled to waypoint!')
@@ -29,7 +29,7 @@ $(document).ready(function() {
 	})
 
 
-	var waypoint = new Waypoint({
+	var waypoint2 = new Waypoint({
 	  element: $('.left-column h2'),
 	  handler: function(direction) {
 	    console.log('Scrolled to waypoint!')
@@ -41,16 +41,43 @@ $(document).ready(function() {
 	})
 // $('.site-action').fadeOut();
 
-	var waypoint = new Waypoint({
+	var waypoint3 = new Waypoint({
 	  element: $('#start'),
 	  handler: function(direction) {
-	    console.log('Scrolled to waypoint!')
+	    console.log('Scrolled to start waypoint!')
+
+	    // $('body').hide();
 
 	    $('.site-action').fadeIn();
+
+	    $('ul.nav > li').removeClass('active');
+         // $(this).addClass('active');
+         // console.log( $('.nav-links a[href="#start"]').parent() )
+	    $('.nav-links a[href="#start"]').parent().addClass('active');
 
 	  },
 	  offset: '-100px'
 	})
+
+	var waypoint4 = new Waypoint({
+	  element: $('#communication'),
+	  handler: function(direction) {
+	    console.log('Scrolled to communication waypoint!')
+
+	    // $('body').hide();
+
+	    // $('.site-action').fadeIn();
+
+	    $('ul.nav > li').removeClass('active');
+         // $(this).addClass('active');
+         // console.log( $('.nav-links a[href="#communication"]').parent() )
+	    $('.nav-links a[href="#communication"]').parent().addClass('active');
+
+	  },
+	  offset: '300px'
+	})
+
+	
 
 // var waypoint = new Waypoint({
 //   element: $('#second'),
