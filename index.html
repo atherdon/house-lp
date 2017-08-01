@@ -165,7 +165,7 @@
       
     } 
 
-    a.down {
+/*    a.down {
         background: url(assets/images/arrowdown.png) no-repeat 0 0;
         display: block;
         height: 57px;
@@ -176,7 +176,7 @@
         left: 0;
         right: 0;
         opacity: .8;
-    }
+    }*/
 
     @media only screen and (min-width: 900px){
         a.down {
@@ -264,7 +264,7 @@
     .modal .modal-body .col-centered input, 
     .modal .modal-body .col-centered select {
         width: 100px;
-        margin-right: 10px;
+        /*margin-right: 10px;*/
         text-align: center;
         color: black;
     }
@@ -299,6 +299,7 @@
         padding-right: 25px;
         padding-left: 25px;
     }
+
     .form-section .btn-red {
         background: linear-gradient(#fe4545, #ab2a2a);
         display: inline-block;
@@ -370,7 +371,7 @@
     width: 100%;
     padding-left: 25px;
     height: 50px;
-    margin-bottom: 10px;
+
     color: black;
 }
 
@@ -778,28 +779,29 @@ a.default-button:visited {
           <a href="#" class="default-button red-background" 
             data-target="#FormModal" 
             data-toggle="modal">
-          Запишитесь на просмотр дома 1 
+          <span>Запишитесь на просмотр дома</span> 
           </a>
 
-          <a href="#" class="default-button red-background" 
+          <!-- <a href="#" class="default-button red-background" 
             data-target="#FormModal2" 
             data-toggle="modal">
-            Запишитесь на просмотр дома 2 
-            </a>
+            Запишитесь на просмотр дома 
+            </a> -->
 
-          <a href="#" class="default-button red-background" 
+         <!--  <a href="#" class="default-button red-background" 
             data-target="#FormModal3" 
             data-toggle="modal">
-            Запишитесь на просмотр дома 3 
-            </a>
+            Запишитесь на просмотр дома 
+            </a> -->
 
             <a href="#" class="default-button orange-background">
                 <div>
-                    <img src="assets/images/360-tour.png" 
-                    alt="" class="animation-scale-up">
+                <img src="assets/images/360-tour.png" alt="">
                 </div>
-                    
-                виртуальный тур
+                <span>
+                    виртуальный тур
+                </span>    
+                
             </a>
 	    </div>
 
@@ -916,11 +918,18 @@ a.default-button:visited {
     <section class="circle-image-section image-left" id="sevastopol">
     	<div class="container-fluid">
     		<div class="image-wrapper"></div>
-    		<div class="col-md-4 text-wrapper">
-    			<h2>Севастополь</h2>
-    			<h3>Создайте для своей семьи максимально комфортные условия. Здесь вы сможете видеть, как растут ваши дети и внуки, заботиться о родителях и всегда быть вместе с теми, кто вам дорог.</h3>
-    			<a href="" class="default-button red-background below-bottom-line" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
-    		</div>
+            <div class="row">
+            <div class="col-md-4 text-wrapper">
+                <h2>Севастополь</h2>
+                <h3>Создайте для своей семьи максимально комфортные условия. Здесь вы сможете видеть, как растут ваши дети и внуки, заботиться о родителях и всегда быть вместе с теми, кто вам дорог.</h3>
+                
+            </div>    
+            </div>
+    		<div class="row">
+            <div class="col-md-3 below-line">
+                <a href="" class="default-button red-background below-bottom-line" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+            </div>
+            </div>
     	</div><!--/.container-fluid-->
     </section>
 
@@ -929,73 +938,73 @@ a.default-button:visited {
     		<h2>
             Характеристики
             </h2>
-    		<div class="col-md-6">
-    			<div class="parameters-block">
-    				<h3 class="red-background">
+            <div class="row">
+                <div class="col-md-6">
+                <div class="parameters-block">
+                    <h3 class="red-background">
                     Описание
                     </h3>
-    				<h4>
+                    <h4>
                     Республика Крым, г. Севастополь, ул. Семфиропольская, 29.<br> Общая площадь территории 710 м².
                     </h4>
-    				<p>
-    					<span>Категория земли:</span>
-    					 для индивидуального жилищного строительства. Площадь дома 302 м²., в том числе, жилая 164 м².
-    				</p>
-    				<p>
-    					<span>Планировка:</span> 
-    					разноуровневая.
-    				</p>
-    				<p>
-    					<span>Фундамент:</span> 
-    					монолитный бетон.
-    				</p>
-    				<p>
-    					<span>Стены: </span>
-    					инкерманский камень.
-    				</p>
-    				<p>
-    					<span>Крыша: </span>
-    					новая металлочерпица.
-    				</p>
-    				<p>
-    					<span>1й этаж: </span>
-    					потолки – 3,06 м, прихожая - 9 м², гостиная – 42 м², столовая – 16 м².
-    				</p>
-    				<p>
-    					<span>Лестничный пролет: </span>
-    					ванная комната – 8,3 м², спальная комната – 16,7 м².
-    				</p>
-    				<p>
-    					<span>2й этаж:</span>
-    					 библиотека – 37,8 м², 4 спальни: родительская– 24,9 м², детская – 17,5 м², гостевая – 17 м², «девичья» – 11 м². 
-    				</p>
-    				<p>
-    					<span>Цокольный этаж:</span>
-    					 кладовая, гладильная, каморка, сауна, бассейн, комната отдыха, котельная, гараж – 20,3 м².
-    				</p>
-    				<p>
-    					<span>Отдельный гараж: </span>
-    					25 м², вход со двора дома, стены – инкерманский камень, крыша – новая металлочерепица, полы — бетонные.  Оштукатурен изнутри, «шуба» снаружи.
-    				</p>
-    				<p>
-    					<span>Двор: </span>
-    					тротуарная плитка, металлический навес, крытая зона с навесом, площадка с камином, котлован для бассейна, малинник, сад (груша, хурма, вишня, черешня, яблоня, виноград, персик, кизил и инжир), огород. 
-    				</p>
-    				<p>
-    					<span>Чердак:</span>
-    					 пустой, чистый, не используется. Возможно оборудование мансардных комнат.
-    				</p>
-    				<p>
-    					<span>Крыша: </span>
-    					металлочерепица. Сантехника, отопление, электрика, пожарная сигнализация, полы и потолки готовы. Стены комнат подготовлены под финишную отделку
-    				</p>
-    			</div><!--/.parameters-block-->
-    		</div><!--/.col-md-6-->
-
-    		<div class="col-md-6">
-    			<div class="parameters-block slider-block plans-wrapper">
-    				<h3 class="orange-background">Планы</h3>
-    				
+                    <p>
+                        <span>Категория земли:</span>
+                         для индивидуального жилищного строительства. Площадь дома 302 м²., в том числе, жилая 164 м².
+                    </p>
+                    <p>
+                        <span>Планировка:</span> 
+                        разноуровневая.
+                    </p>
+                    <p>
+                        <span>Фундамент:</span> 
+                        монолитный бетон.
+                    </p>
+                    <p>
+                        <span>Стены: </span>
+                        инкерманский камень.
+                    </p>
+                    <p>
+                        <span>Крыша: </span>
+                        новая металлочерпица.
+                    </p>
+                    <p>
+                        <span>1й этаж: </span>
+                        потолки – 3,06 м, прихожая - 9 м², гостиная – 42 м², столовая – 16 м².
+                    </p>
+                    <p>
+                        <span>Лестничный пролет: </span>
+                        ванная комната – 8,3 м², спальная комната – 16,7 м².
+                    </p>
+                    <p>
+                        <span>2й этаж:</span>
+                         библиотека – 37,8 м², 4 спальни: родительская– 24,9 м², детская – 17,5 м², гостевая – 17 м², «девичья» – 11 м². 
+                    </p>
+                    <p>
+                        <span>Цокольный этаж:</span>
+                         кладовая, гладильная, каморка, сауна, бассейн, комната отдыха, котельная, гараж – 20,3 м².
+                    </p>
+                    <p>
+                        <span>Отдельный гараж: </span>
+                        25 м², вход со двора дома, стены – инкерманский камень, крыша – новая металлочерепица, полы — бетонные.  Оштукатурен изнутри, «шуба» снаружи.
+                    </p>
+                    <p>
+                        <span>Двор: </span>
+                        тротуарная плитка, металлический навес, крытая зона с навесом, площадка с камином, котлован для бассейна, малинник, сад (груша, хурма, вишня, черешня, яблоня, виноград, персик, кизил и инжир), огород. 
+                    </p>
+                    <p>
+                        <span>Чердак:</span>
+                         пустой, чистый, не используется. Возможно оборудование мансардных комнат.
+                    </p>
+                    <p>
+                        <span>Крыша: </span>
+                        металлочерепица. Сантехника, отопление, электрика, пожарная сигнализация, полы и потолки готовы. Стены комнат подготовлены под финишную отделку
+                    </p>
+                </div><!--/.parameters-block-->
+            </div><!--/.col-md-6-->
+            <div class="col-md-6">
+                <div class="parameters-block slider-block plans-wrapper">
+                    <h3 class="orange-background">Планы</h3>
+                    
 
                     <ul id="bxslider"> 
                         <li><img src="assets/images/schema-1.png" alt="План дома #1" /></li>
@@ -1013,8 +1022,12 @@ a.default-button:visited {
                       </nav>                  
                     
                     
-    			</div><!--/.parameters-block-->
-    		</div><!--/.col-md-6-->
+                </div><!--/.parameters-block-->
+            </div><!--/.col-md-6-->
+            </div>
+
+
+
 
     	</div><!--/.container-fluid-->
     </section>
@@ -1109,12 +1122,22 @@ a.default-button:visited {
 
     <section class="circle-image-section image-right" id="dosug">
     	<div class="container-fluid">
+            <div class="row">
     		<div class="text-wrapper col-md-6 col-md-offset-6">
     			<h2>Занимайтесь любимым делом! </h2>
     			<h3>Проводите досуг как вам нравится, не мешая своим домочадцам и не испытывайте помех сами. Не ограничивайте себя в выборе любимых занятий. </h3>
-    			<a href="#" class="default-button red-background below-bottom-line" 
-                data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+    		
     		</div>
+            </div>
+          <div class="row">
+          <div class="col-md-3 col-md-offset-6 below-line">
+                <a href="#" class="default-button red-background below-bottom-line" 
+                data-target="#exampleFormModal" 
+                data-toggle="modal">
+                    Записаться на просмотр
+                </a>  
+          </div>
+            </div>
     		<div class="image-wrapper"></div>
     	</div><!--/.container-fluid-->
     </section>
@@ -1305,10 +1328,15 @@ a.default-button:visited {
     	<div class="container-fluid">
     		<h2>Обращение от собственника </h2>
     		<blockquote>На тихой улочке, за высокой каменной стеной, увитой плющом, на ухоженном участке стоит дом с большими окнами, окруженный садом. Круглый год здесь щебечут птицы, летом порхают бабочки и даже живет ежик.  Зимой стена надежно защищает жильцов дома от холодного ветра, а жарким летом можно укрыться от палящего солнца в тени деревьев и винограда. На Новый Год можно нарядить живую ель во дворе! Почему мы продаем этот дом? Жизнь не стоит на месте: меняется работа, вырастают дети и разлетаются из родительского гнезда, да и просто душа просит перемен. А для вас это прекрасная возможность купить собственный дом в Севастополе!</blockquote>
-    		<a href="" class="default-button red-background" 
-            data-target="#exampleFormModal" data-toggle="modal">Запишитесь на просмотр</a>
-    		<a href="" class="default-button orange-background" 
-            data-target="#exampleFormModal3" data-toggle="modal">Юридическая чистота</a>
+            <div class="row row-buttons">
+                <!-- <div class="col-md-7"> -->
+                    <a href="#" class="default-button red-background" 
+                        data-target="#FormModal" data-toggle="modal">Запишитесь на просмотр</a>
+                    <a href="#" class="default-button orange-background" 
+                        data-target="#FormModal3" data-toggle="modal">Юридическая чистота</a>
+                <!-- </div> -->
+            </div>
+    		
     	</div>
     </section>
 
@@ -1513,7 +1541,7 @@ a.default-button:visited {
                     <div class="col-md-12">
                       <h4>Укажите удобное для звонка время</h4>
                     </div>
-                    <div class="col-md-8 col-centered form-inline">
+                    <div class="col-md-9 col-centered form-inline">
                         <div class="form-group">
                              <input type="text" name="date" 
                                     placeholder="Дата" class="required datepicker-input">
@@ -1619,7 +1647,7 @@ a.default-button:visited {
                     </select> 
 
                     </div>  
-                    <div class="col-lg-4 form-group">
+                    <div class="col-md-3 col-centered form-group">
                       <input type="text" name="time" 
                       placeholder="Время" class="required timepicker-input">
                     </div>  
