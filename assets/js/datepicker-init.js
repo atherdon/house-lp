@@ -30,7 +30,7 @@ $(document).ready(function(){
 	  		placeholder: function(){
 		        $(val).data('placeholder');
 		    },
-	  		minimumResultsForSearch: Infinity,
+	  		// minimumResultsForSearch: Infinity,
 	  		 width: 'element'
 		});
 
