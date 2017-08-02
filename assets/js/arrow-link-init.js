@@ -1,16 +1,18 @@
 $(document).ready(function() {
 
-	var windowWidth = $(window).width();
+	var windowWidth  = $(window).width();
 	var windowHeight = $(window).height();
 
 	if($('.scrollto').length) {
 		$('.scrollto').click(function() {
+
 			$.scrollTo($(this).attr("href"), {duration: 1000, easing:'swing'});
 			return false;
 		})
 	}
 	if($('.scrolltoslow').length) {
 		$('.scrolltoslow').click(function() {
+			
 			$.scrollTo($(this).attr("href"), {duration: 2000});
 			return false;
 		})
@@ -50,10 +52,10 @@ $(document).ready(function() {
 
 	    $('.site-action').fadeIn();
 
-	    $('ul.nav > li').removeClass('active');
+	    // $('ul.nav > li').removeClass('active');
          // $(this).addClass('active');
          // console.log( $('.nav-links a[href="#start"]').parent() )
-	    $('.nav-links a[href="#start"]').parent().addClass('active');
+	    // $('.nav-links a[href="#start"]').parent().addClass('active');
 
 	  },
 	  offset: '-100px'
@@ -68,10 +70,10 @@ $(document).ready(function() {
 
 	    // $('.site-action').fadeIn();
 
-	    $('ul.nav > li').removeClass('active');
+	    // $('ul.nav > li').removeClass('active');
          // $(this).addClass('active');
          // console.log( $('.nav-links a[href="#communication"]').parent() )
-	    $('.nav-links a[href="#communication"]').parent().addClass('active');
+	    // $('.nav-links a[href="#communication"]').parent().addClass('active');
 
 	  },
 	  offset: '300px'
