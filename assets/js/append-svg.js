@@ -10,7 +10,7 @@ $(document).ready(function(){
 	// 	// dataType: 'html'
 	// })
 
-	$('#pictures').prependTo($('body'));
+	// $('#pictures').prependTo($('body'));
 
 	// $('body').prepend( $('#pictures').html()
 
