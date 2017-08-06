@@ -8,6 +8,8 @@
     <title>
         Дом в Севастополе от собственника | г. Севастополь, ул. Семфиропольская, 29
     </title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
     <!-- you can make a 16x16 png and use -->
     <!-- :todo update favicon -->
@@ -18,20 +20,20 @@
     
 
     
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> -->
 
-    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <!-- <link rel="stylesheet" href="assets/fonts/fonts.css"> -->
 
 
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css"> -->
     
 
     <link rel="stylesheet" href="assets/js/nivo-lightbox/nivo-lightbox.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
-
-    <link rel="stylesheet" href="assets/css/jquery.timepicker.css">       
+<!-- 
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.css">        -->
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 
@@ -134,7 +136,7 @@
 
 
 
-    .btn-floating img {
+    .btn-floating.tour img {
         position: relative;
         top: 10px;
         right: -10px;
@@ -142,19 +144,37 @@
         height: 40px;
         display: block;
     }
+    .btn-floating.visit-place img {
+        position: relative;
+        top: 10px;
+        right: -16px;
+        width: 29px;
+        height: 21px;
+        display: block;
+        padding-top: 0px;
+        margin-top: 9px;
+        margin-bottom: 10px;
+    }
     .btn-floating:hover {
         background-color: #fe614e;
         border-color: #fe614e;
     }
     .btn-floating.orange-background {
-        border-color: #ffa841;
-        width: 57px;
+        border-color: #ffa841;      
+    }
+    .btn-floating.red-background {
+        border-color: #fe614e;      
     }
     .btn-floating.orange-background:hover {
         border-color: #fe614e;
     }
+    .btn-floating.orange-background:hover {
+        border-color: #ffa841;
+    }
     .btn-floating {
         outline: none;
+        width: 57px;
+        display: block;
     } 
     .btn-floating:focus, 
     .btn-floating:active {
@@ -1514,11 +1534,16 @@ footer .size-66-66 {
     <!-- Site Action -->
     <div class="site-action">
         <button type="button" 
-        class="site-action-toggle btn-raised btn orange-background btn-floating">
-            <img src="assets/images/360-tour.png" alt="" class="animation-scale-up">  
+        class="site-action-toggle btn-raised btn orange-background btn-floating tour">
+            <img src="assets/images/360-tour.png" alt="Виртуальный тур">  
+         </button>
+         <button type="button" 
+        class="site-action-toggle btn-raised btn red-background btn-floating visit-place">
+            <img src="assets/images/mail.png" alt="Записаться на просмотр">  
          </button>
     </div>
     <!-- End Site Action -->
+
 
         <!-- Modal -->
     <div class="modal fade" id="FormModal" 
@@ -1749,7 +1774,7 @@ footer .size-66-66 {
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script> -->
 
     <!-- Google Maps -->    
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=ru&region=RU&key=AIzaSyCL-trHsW53EmB3ujh1SMi-ZEGcvJodqlQ"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?language=ru&region=RU&key=AIzaSyCL-trHsW53EmB3ujh1SMi-ZEGcvJodqlQ"></script>
 
     <!-- Nivo Lightbox -->  
     <script type="text/javascript" src="assets/js/nivo-lightbox/nivo-lightbox.min.js"></script>
