@@ -42,6 +42,7 @@
 	min-height 285px
 	display flex
 	align-items center
+	
 .benefit-section
 	background $color-blue
 	color white
@@ -52,7 +53,9 @@
 		width 70%
 		margin auto	
 		img
-			width 120px 
+			width 120px
+	.col-md-2
+		min-height 265px
 		 		
 .benefit-section .benefit-block img
 	width 120px
@@ -189,31 +192,27 @@
 .js-select-placeholder
 	width 100%
 	
-/* fixes for scroll with fixed header */		
-#communication #communication-title:before
+/* fixes for scroll with fixed header */	
+#communication-title:before, 
+#characteristics-title:before,
+#photogallery-title:before,
+#contacts-title:before
 	display block
-	content " "
-	margin-top -170px
-	height 170px 
-	visibility hidden
-
-#characteristics #characteristics-title:before
-	display block
-	content " "
-	margin-top -30px
-	height 30px 
+	content " "	
 	visibility hidden
 	
-#photogallery #photogallery-title:before
-	display block
-	content " "
+#communication #communication-title:before
+	margin-top -170px
+	height 170px 
+
+#characteristics #characteristics-title:before
 	margin-top -30px
 	height 30px 
-	visibility hidden
+	
+#photogallery #photogallery-title:before
+	margin-top -30px
+	height 30px 
 
 #contacts #contacts-title:before 		
-	display block
-	content " "
 	margin-top -200px
 	height 200px 
-	visibility hidden
