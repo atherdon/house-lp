@@ -14,11 +14,11 @@ $(document).ready(function(){
 	$('[data-tooltip="true"]').tooltip();
 
 	// active links
-	 $('.nav.navbar-nav.nav-links > li').click(function (e) {
-            e.preventDefault();
-            $('ul.nav > li').removeClass('active');
-            $(this).addClass('active');                
-        });
+	$('.nav.navbar-nav.nav-links > li').click(function (e) {
+		e.preventDefault();
+		$('ul.nav > li').removeClass('active');
+		$(this).addClass('active');                
+	});
 	
 
 	// phone mask init

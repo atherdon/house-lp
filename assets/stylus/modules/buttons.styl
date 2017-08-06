@@ -1,18 +1,27 @@
 .default-button
-	display inline-block
 	padding 15px 20px
 	text-transform uppercase
 	color white
 	height 80px
 	display inline-block	
+	outline none
+	text-decoration none
 	&:hover
 		color white
+	&:active, &:focus
+		outline 0
+		border none
+		-moz-outline-style none
+		color white			
+	&:visited
+		color white
+		text-decoration none	
 	img
 		vertical-align middle
 	span
 		display inline-block	
 		vertical-align middle	
-			
+		
 .orange-background
 	background-color $color-orange
 .red-background
