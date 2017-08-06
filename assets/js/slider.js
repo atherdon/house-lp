@@ -114,15 +114,16 @@ if ($('#gallery-thumbs').length > 0) {
         // slideWidth: 100,
         // adaptiveHeight: true
     });
+
     // Function to calculate which slide to move the thumbs to
-    // function slideThumbs(currentSlideNumber, visibleThumbs) {
-    //     // Calculate the first number and ignore the remainder
-    //     var m = Math.floor(currentSlideNumber / visibleThumbs);
-    //     // Multiply by the number of visible slides to calculate the exact slide we need to move to
-    //     var slideTo = m * visibleThumbs;
-    //     // Tell the slider to move
-    //     thumbsSlider.goToSlide(m);
-    // }
+    function slideThumbs(currentSlideNumber, visibleThumbs) {
+        // Calculate the first number and ignore the remainder
+        var m = Math.floor(currentSlideNumber / visibleThumbs);
+        // Multiply by the number of visible slides to calculate the exact slide we need to move to
+        var slideTo = m * visibleThumbs;
+        // Tell the slider to move
+        thumbsSlider.goToSlide(m);
+    }
     
     // When you click on a thumb
     $('#gallery-thumbs').find('.thumb').click(function () {
@@ -131,6 +132,10 @@ if ($('#gallery-thumbs').length > 0) {
         // Add the active class to the clicked thumb
         $(this).addClass('pager-active');
     });
+
+
+    $('#gallery a').nivoLightbox();
+
 }
 
 

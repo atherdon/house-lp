@@ -9,7 +9,7 @@ $(document).ready(function(){
 	//nivo lightbox init
 
 
-    $('#gallery a').nivoLightbox();
+
     
 	$('[data-tooltip="true"]').tooltip();
 
