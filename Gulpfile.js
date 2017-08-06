@@ -8,9 +8,13 @@ var browserSync = require('browser-sync');
 
 gulp.task('stylus', function() {
 	return gulp.src([
-			'https://fonts.googleapis.com/css?family=Roboto:300,400',
-			'http://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css',
+
+			'assets/css/jquery.bxslider.css',
 			'assets/css/jquery.timepicker.css',
+			'assets/js/nivo-lightbox/nivo-lightbox.css',
+			'assets/css/bootstrap-datepicker.min.css',
+			'assets/css/select2.min.css',
+			// 'assets/font-awesome-4.7.0/css/font-awesome.min.css',
 			'assets/stylus/style.styl'
 		])
 		.pipe(stylus({
