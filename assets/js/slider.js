@@ -8,6 +8,8 @@ $(document).ready(function(){
         infiniteLoop: false,
         speed: 500,
         auto: false,
+
+        slideWidth: 580,
         // auto: true,
 
         /* Controls must be true */
@@ -49,9 +51,12 @@ if ($('#gallery-thumbs').length > 0) {
 
         pager: false,
         easing: 'easeInOutQuint',
-        infiniteLoop: true,
+        infiniteLoop: false,
         speed: 500,
         auto: false,
+
+        // slideWidth: 680,
+
         // auto: true,
         onSlideAfter: function (currentSlideNumber) {
             var currentSlideNumber = gallerySlider.getCurrentSlide();
@@ -85,7 +90,7 @@ if ($('#gallery-thumbs').length > 0) {
         // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
 
         wrapperClass: 'gallery-wrapper',
-        // adaptiveHeight: true
+        adaptiveHeight: true
     });
 
     // When clicking a thumb
@@ -110,7 +115,7 @@ if ($('#gallery-thumbs').length > 0) {
         slideWidth: 680,
         slideMargin: 10,
 
-        adaptiveHeight: true,
+
         wrapperClass: '.gallery-container.slider',
         // slideWidth: 100,
         // adaptiveHeight: true

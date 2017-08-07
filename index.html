@@ -125,7 +125,9 @@
     }
 
 
-
+    .btn-floating.tour {
+        margin-bottom: 15px;
+    }
     .btn-floating.tour img {
         position: relative;
         top: 10px;
@@ -187,26 +189,6 @@
 
 
 
-.row.row-with-three-inputs h1 {
-    margin-top:0px;
-}
-
-/*.row.row-with-three-inputs input, 
-.row.row-with-three-inputs select {
-    width: 100px;
-    margin-right: 25px;
-    text-align: center;
-    color: black;
-}*/
-
-/*#contactForm {
-    margin-bottom: 35px;
-}*/
-
-
-
-
-
 
 /*slider*/
 .fa-chevron-circle-right:before,
@@ -214,12 +196,13 @@
     color: #ffa841;
 }
 
-.plans-wrapper .controls {
+#characteristics .bx-controls {
     position: relative;
-    bottom: 270px;
+    bottom: 300px;
 }
+    
 
-.gallery-container.slider .controls {
+.gallery-container.slider .bx-controls {
     position: relative;
     bottom: 340px;
 }
@@ -227,9 +210,9 @@
 
 
 
-.controls a,
-.controls a:link,
-.controls a:visited {
+.bx-controls a,
+.bx-controls a:link,
+.bx-controls a:visited {
   color: cyan;
   position: relative;
   0
@@ -240,26 +223,32 @@
   /*_________*/
   transition: all 1s ease-in;
 }
-.controls a:hover,
-.controls a:active {
+.bx-controls a:hover,
+.bx-controls a:active {
   color: rgba(127, 127, 0, .7);
   transition: all 1s ease-out;
 }
 
-.plans-wrapper #NEXT {
-  left: 87%;
-  /*___________*/
-}
-
-.gallery-container.slider #NEXT {
+.plans-wrapper .bx-next {
   left: 105%;
   /*___________*/
 }
 
-.gallery-container.slider #PREV {
-  right: 14%;
+.gallery-container.slider .bx-next {
+  left: 106%;
   /*___________*/
 }
+
+.gallery-container.slider .bx-prev {
+  right: 20%;
+  /*___________*/
+}
+.gallery-thumbs-container{
+    position: relative;
+    top: -80px;
+    margin-bottom: 100px;
+}
+
 
 .gallery-container.slider .gallery-thumbs-container {
     
@@ -565,7 +554,7 @@
             Характеристики
             </h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 column-left-characteristic">
                 <div class="parameters-block">
                     <h3 class="red-background">
                     Описание
@@ -575,7 +564,7 @@
                     </h4>
                     <p>
                         <span>Категория земли:</span>
-                         для индивидуального жилищного строительства. Площадь дома 302 м²., в том числе, жилая 164 м².
+                         для индивидуального жилищного строительства.<br> Площадь дома 302 м²., в том числе, жилая 164 м².
                     </p>
                     <p>
                         <span>Планировка:</span> 
@@ -628,7 +617,7 @@
                 </div><!--/.parameters-block-->
             </div><!--/.col-md-6-->
 
-            <div class="col-md-6">
+            <div class="col-md-6 column-right-characteristic">
                 <div class="parameters-block">
                 <!-- <div class="parameters-block slider-block plans-wrapper"> -->
                     <h3 class="orange-background">
