@@ -173,56 +173,11 @@
       
     } 
 
-
-
-
-
-
-
-
-
-
     .datepicker-input {
         color:black;
     }
 
 
-
-
-
-    .form-section .btn-red {
-        background: linear-gradient(#fe4545, #ab2a2a);
-        display: inline-block;
-        /*padding: 5px 15px;*/
-        /*color: #fff !important;*/
-        border-radius: 4px;
-        margin-right: 10px;
-        line-height: 20px;
-        /*font-size: 23px;*/
-        padding: 16px 60px;
-        float: right;
-        border: 0px solid transparent !important;
-
-        margin-top: 60px;
-        outline: none;
-    }
-    .form-section .btn-red:hover {
-        color:white;
-    }
-    .form-section .btn-red:active,
-    .form-section .btn-red:focus {
-        color:white;
-        outline: 0;
-    }
-
-    .form-section .error {
-        /*color: white;*/
-        background-color: green;
-    }
-    /*.form-section h2 {
-        text-align: center;
-
-    }*/
     .t-center {
         text-align: center;
     }
@@ -231,10 +186,7 @@
     }
 
 
-.wrapper2 {
-    margin: 0 auto;
-    padding: 0 120px;
-}
+
 .row.row-with-three-inputs h1 {
     margin-top:0px;
 }
@@ -251,22 +203,6 @@
     margin-bottom: 35px;
 }*/
 
-.row.row-with-three-inputs .title {
-    font-size: 45px;
-}
-.simple {
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
-}
-.col-left-form {
-    margin-top: 5px;
-}
-.col-left-form input {
-    width: 100%;
-    padding-left: 25px;
-    height: 50px;
-
-    color: black;
-}
 
 
 
@@ -1020,18 +956,34 @@
 
     <section class="quote-section">
     	<div class="container-fluid">
-    		<h2>
-                Обращение от собственника 
-            </h2>
-    		<blockquote>На тихой улочке, за высокой каменной стеной, увитой плющом, на ухоженном участке стоит дом с большими окнами, окруженный садом. Круглый год здесь щебечут птицы, летом порхают бабочки и даже живет ежик.  Зимой стена надежно защищает жильцов дома от холодного ветра, а жарким летом можно укрыться от палящего солнца в тени деревьев и винограда. На Новый Год можно нарядить живую ель во дворе! Почему мы продаем этот дом? Жизнь не стоит на месте: меняется работа, вырастают дети и разлетаются из родительского гнезда, да и просто душа просит перемен. А для вас это прекрасная возможность купить собственный дом в Севастополе!</blockquote>
-            <div class="row row-buttons">
-                <!-- <div class="col-md-7"> -->
-                    <a href="#" class="default-button red-background" 
-                        data-target="#FormModal" data-toggle="modal">Запишитесь на просмотр</a>
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>
+                        Обращение от собственника 
+                    </h2>
+                </div>
+                <div class="col-md-12">
+                    <blockquote>На тихой улочке, за высокой каменной стеной, увитой плющом, на ухоженном участке стоит дом с большими окнами, окруженный садом. Круглый год здесь щебечут птицы, летом порхают бабочки и даже живет ежик.  Зимой стена надежно защищает жильцов дома от холодного ветра, а жарким летом можно укрыться от палящего солнца в тени деревьев и винограда. На Новый Год можно нарядить живую ель во дворе! Почему мы продаем этот дом? Жизнь не стоит на месте: меняется работа, вырастают дети и разлетаются из родительского гнезда, да и просто душа просит перемен. А для вас это прекрасная возможность купить собственный дом в Севастополе!</blockquote>
+                </div>
+                
+                <div class="col-md-3 pull-right">        
                     <a href="#" class="default-button orange-background" 
-                        data-target="#FormModal3" data-toggle="modal">Юридическая чистота</a>
-                <!-- </div> -->
+                        data-target="#FormModal3" 
+                        data-toggle="modal">
+                        Юридическая чистота
+                    </a>
+                </div> 
+                <div class="col-md-3 pull-right">
+                    <a href="#" class="default-button red-background" 
+                        data-target="#FormModal" 
+                        data-toggle="modal">
+                        Запишитесь на просмотр
+                    </a>
+                </div>
+
             </div>
+        </div>
+    		
     		
     	</div>
     </section>
@@ -1053,17 +1005,17 @@
     </section>
 
     <section class="form-section">
-    	<div class="container-fluid wrapper2 padding-small">
+    	<div class="container-fluid padding-small">
             <form action="#" class="formvalidation" method="POST" id="contactForm">
                 <div class="row">
-                    <div class="col-md-12 t-center mb-40">
+                    <div class="col-md-12 t-center">
                         <h2>
                             Запишитесь на просмотр дома!
                         </h2>
                     </div>
                 </div>
                 
-                <div class="row">
+                <div class="row row-padding-120">
                     <div class="col-md-12">
                         <div class="error"></div>    
                     </div>
@@ -1086,79 +1038,52 @@
                      <!-- row-with-three-inputs -->
                         <div class="row row-with-three-inputs">
                             <div class="col-md-12">
-                            <h1 class="title simple">
-                                В какое время Вам удобно посмотреть дом?
-                            </h1>
+                                <h1 class="title simple">
+                                    В какое время Вам удобно посмотреть дом?
+                                </h1>
                             
                             </div>
 
-                            <div class="col-md-9 col-centered form-inline">
-                        <div class="form-group">
-                             <input type="text" name="date" 
-                                    placeholder="Дата" class="required datepicker-input">
-                        </div>
-                        <div class="form-group">
-                            <select name="month" class="required js-select-placeholder" data-placeholder="Месяц">
-                                <option disabled selected value></option>
-                                <option value = "1">Январь</option>
-                                <option value = "2">Февраль</option>
-                                <option value = "3">Март</option>
-                                <option value = "4">Апрель</option>
-                                <option value = "5">Май</option>
-                                <option value = "6">Июнь</option>
-                                <option value = "7">Июль</option>
-                                <option value = "8">Август</option>
-                                <option value = "9">Сентябрь</option>
-                                <option value = "10">Октябрь</option>
-                                <option value = "11">Ноябрь</option>
-                                <option value = "12">Декабрь</option> 
-                            </select>  
-                        </div>
-                        <div class="form-group">
-                             <input type="text" name="time" 
-                                    placeholder="Время" class="required timepicker-input">
-                        </div>
-                    </div>
-                  
-
-                           <!--  <div class="col-md-3">
-                                <input type="text" name="date" 
-                                        placeholder="Дата" class="required datepicker-input">
-                            </div> -->
-                        <!--     <div class="col-md-3">                           
-                                <select name="month"  
-                                  class="required js-select-placeholder"  data-placeholder="Месяц" >
-                                    <option disabled selected value></option>
-                                    <option value = "1">Январь</option>
-                                    <option value = "2">Февраль</option>
-                                    <option value = "3">Март</option>
-                                    <option value = "4">Апрель</option>
-                                    <option value = "5">Май</option>
-                                    <option value = "6">Июнь</option>
-                                    <option value = "7">Июль</option>
-                                    <option value = "8">Август</option>
-                                    <option value = "9">Сентябрь</option>
-                                    <option value = "10">Октябрь</option>
-                                    <option value = "11">Ноябрь</option>
-                                    <option value = "12">Декабрь</option> 
-                                </select> 
-
-                            </div> -->
-                            <!-- <div class="col-md-3">
-                                <input type="text" name="time" 
-                                        placeholder="Время" class="required timepicker-input">
-                            </div> -->
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 pull-right">
-                                <button class="btn borderonly btn-red">
-                                    Записаться
-                                </button>                                
+                            <div class="col-md-12 col-centered form-inline">
+                                <div class="form-group">
+                                     <input type="text" name="date" 
+                                            placeholder="Дата" class="required datepicker-input">
+                                </div>
+                                <div class="form-group">
+                                    <select name="month" class="required js-select-placeholder" data-placeholder="Месяц">
+                                        <option disabled selected value></option>
+                                        <option value = "1">Январь</option>
+                                        <option value = "2">Февраль</option>
+                                        <option value = "3">Март</option>
+                                        <option value = "4">Апрель</option>
+                                        <option value = "5">Май</option>
+                                        <option value = "6">Июнь</option>
+                                        <option value = "7">Июль</option>
+                                        <option value = "8">Август</option>
+                                        <option value = "9">Сентябрь</option>
+                                        <option value = "10">Октябрь</option>
+                                        <option value = "11">Ноябрь</option>
+                                        <option value = "12">Декабрь</option> 
+                                    </select>  
+                                </div>
+                                <div class="form-group">
+                                     <input type="text" name="time" 
+                                            placeholder="Время" class="required timepicker-input">
+                                </div>
                             </div>
+                  
                         </div>
 
 
 
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 pull-right">
+                        <button class="btn borderonly btn-red">
+                            Записаться
+                        </button>                                
                     </div>
                 </div>
             </form>

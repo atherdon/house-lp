@@ -9,7 +9,7 @@
 .welcome-section
 	display flex
 	height calc(100vh - 60px)
-	background url('../images/banner-a.png')
+	background url('../images/banner/banner-a.png')
 	background-size cover
 	background-repeat no-repeat
 	h1
@@ -71,7 +71,7 @@
 		top 0
 		border-radius 50%
 		overflow hidden
-		background-image url('../images/circle-photo-1.jpg')
+		background-image url('../images/circle/circle-photo-1.jpg')
 		background-position center center
 		background-repeat no-repeat
 		z-index 1
@@ -112,36 +112,30 @@
 /* Quote section */			
 .quote-section
 	min-height 600px
-	display flex
-	align-items center
-	background-image url('../images/banner-c.jpg')
+	background-image url('../images/banner/banner-c.png')
 	background-size cover
 	background-repeat no-repeat
 	background-position center center
-	blockquote
-		background rgba(39,174,166,0.5)
-		max-width 1000px
-		position relative
-    	marign auto 0
-    	padding 10px 60px
-    	quotes "\201C""\201D""\2018""\2019"
-    	border none
-	h2
+    	
+.quote-section h2
 		background rgba(39,174,166,.5)
     	display inline-block
     	padding 5px 25px
+    	height 80px
     	
 .quote-section *
 	color white
 	
-.quote-section > blockquote      	
-	background-color rgba(39,174,166,0.5)
-	max-width 1000px
-	position relative
+.quote-section blockquote
+	background rgba(39,174,166,0.5)
 	marign auto 0
 	padding 10px 60px
 	quotes "\201C""\201D""\2018""\2019"
 	border none
+	position relative      	
+	
+.quote-section .row
+	padding 0px 120px
 
 
 /*blockquote*/
@@ -149,19 +143,12 @@
 .quote-section {
     color: white;
 }
-.quote-section h2 {
+/*.quote-section h2 {
     background: rgba(39,174,166,.5);
     display: inline-block;
     padding: 5px 25px;
-}
-.quote-section blockquote {
-    position: relative;
-    margin: 0 auto;
-    padding: 10px 60px;
-    
-    quotes: "\201C""\201D""\2018""\2019";
-    border: none;
-}
+}*/
+
 .quote-section blockquote:before,
 .quote-section blockquote:after {
     position: absolute;
@@ -182,6 +169,8 @@
     right: 0;
     content: "\201D";
 }
+
+
 
 
 
@@ -206,11 +195,11 @@
 /* Garden section */		
 .garden-section.circle-image-section 
 	.image-wrapper
-		background-image url('../images/banner-d.jpg')
+		background-image url('../images/banner/banner-d.jpg')
 		
 .rest-with-your-friends.circle-image-section 
 	.image-wrapper
-		background-image url('../images/banner-b.jpg')
+		background-image url('../images/banner/banner-b.jpg')
 		
 				
 #communication
@@ -222,33 +211,19 @@
 .controls .fa.fa-6x
 	font-size 6em
 
-.row.row-with-three-inputs input
-	height 28px		
-	
-.row.row-with-three-inputs input,
-.row.row-with-three-inputs select,
-.row.row-with-three-inputs .select2.select2-container.select2-container--default
-	width 100px
-	text-align center
-	color black
-	
-.select2-container.select2-container--default .select2-selection--single
-	border-radius 0px 
 
-.select2-container.select2-selection--single .select2-selection__rendered
-	padding-left 18px 	
-.js-select-placeholder
-	width 100%
+
+
+
 
 /* Contact Form */
 .form-section .container-fluid
 	width 1376px
+	margin: 0 auto;
 	
-.form-section { /* :todo */
-    color: white;
-}
+
 .form-section h2 {
-    /*color: white;*/
+
     background-color: red; /* :todo we need to clarify the red color  */
     
     padding-top: 6px; /* :todo check and update this numbers  */
@@ -256,6 +231,82 @@
     padding-right: 25px;
     padding-left: 25px;
 }
+.form-section .row-padding-120 {
+	padding-left: 120px;
+}
+.form-section .btn-red {
+    background: linear-gradient(#fe4545, #ab2a2a);
+    display: inline-block;
+    /*padding: 5px 15px;*/
+    /*color: #fff !important;*/
+    border-radius: 4px;
+    margin-right: 10px;
+    line-height: 20px;
+    /*font-size: 23px;*/
+    padding: 16px 60px;
+    float: right;
+    border: 0px solid transparent !important;
+
+    margin-top: 60px;
+    outline: none;
+    height: 80px;
+    width: 100%;
+}
+.form-section .btn-red:hover {
+    color:white;
+}
+.form-section .btn-red:active,
+.form-section .btn-red:focus {
+    color:white;
+    outline: 0;
+}
+
+.form-section .error {
+    background-color: green;
+}
+
+
+
+.col-left-form {
+    margin-top: 5px;
+
+}
+.col-left-form input {
+    width: 480px;
+    padding-left: 25px;
+    height: 80px;
+    
+    
+}
+    	
+.row.row-with-three-inputs input,
+.row.row-with-three-inputs select,
+.row.row-with-three-inputs .select2.select2-container.select2-container--default {
+	width: 146px;
+	height: 49px;
+	text-align: center;
+	// color: black;
+}
+	
+.select2-container--default .select2-selection--single {
+	border-radius: 0px; 
+	height: 48px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	padding-left: 18px; 	
+	line-height: 43px;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+	font-size: 24px;
+	color: #777;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 46px;
+}
+.js-select-placeholder {
+	width: 100%;
+}
+
 
 /*#bxslider
 	img
