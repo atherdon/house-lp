@@ -14,8 +14,8 @@ $(document).ready(function(){
         controls: true,
 
         /* Class selectors from step 1 */
-        nextSelector: '.plans-wrapper .bxNext',
-        prevSelector: '.plans-wrapper .bxPrev',
+        // nextSelector: '.plans-wrapper .bxNext',
+        // prevSelector: '.plans-wrapper .bxPrev',
 
         /* Here's the heart of how to customize nav arrows.
          || Enter a HTML string for both prevText and nextText.
@@ -27,8 +27,8 @@ $(document).ready(function(){
         // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
         // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
 
-        wrapperClass: '.plans-wrapper',
-        adaptiveHeight: true
+        wrapperClass: 'plans-wrapper',
+        // adaptiveHeight: true
        
     });
 
@@ -71,8 +71,8 @@ if ($('#gallery-thumbs').length > 0) {
         controls: true,
 
         /* Class selectors from step 1 */
-        nextSelector: '.gallery-container.slider .bxNext',
-        prevSelector: '.gallery-container.slider .bxPrev',
+        // nextSelector: '.gallery-container.slider .bxNext',
+        // prevSelector: '.gallery-container.slider .bxPrev',
 
         /* Here's the heart of how to customize nav arrows.
          || Enter a HTML string for both prevText and nextText.
@@ -84,9 +84,10 @@ if ($('#gallery-thumbs').length > 0) {
         // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
         // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
 
-        wrapperClass: '.gallery-container.slider',
-        adaptiveHeight: true
+        wrapperClass: 'gallery-container slider',
+        // adaptiveHeight: true
     });
+    
     // When clicking a thumb
     thumb.click(function (e) {
         // -6 as BX slider clones a bunch of elements
