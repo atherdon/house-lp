@@ -279,8 +279,8 @@
 
 /******************************/
 
-/*
-.block {
+
+/*.block {
     padding: 10px;
     
     color: white;
@@ -332,16 +332,10 @@
     background: #27ae60;
 }*/
 
-
-
-
-
-
-
-
-.block {
+/*************/
+/*.block {
     padding: 10px;
-    /*text-align: right;*/
+    
     color: white;
     opacity: 0.8;
 }
@@ -349,22 +343,22 @@
 .block-1 {
    
     width: 100%;
-    /*height: 350px;*/
+    
     min-height: 350px;
-    /*background: #3a78a1;*/
+   
 }
 .block-11 {
     display: block;
     
     width: 100%;
-    /*height: 175px;*/
+   
     min-height: 175px;
 }
 .block-12 {
     display: block;
     
     width: 100%;
-    /*height: 175px;*/
+    
     min-height: 175px;
     background: black;
 }
@@ -373,29 +367,105 @@
     position: relative;
     
     width: 250px;
-    /*height: 250px;*/
+   
     min-height: 250px;
     background: #e74c3c;
     
-    /*top: 0;*/
+    top: 0;
+    right: -40px;
+    top: -531px;
+}
+
+.block-3 {
+    position: relative;
+    top: -920px;
+    
+    width: 100%;
+    /*height: 175px;*/
+    background: #2d6daf;
+    opacity: 1;
+}
+
+
+
+
+
+.cropcircle {
+    width: 900px;
+    height: 900px;
+    border-radius: 100%;
+    background: #eee no-repeat center;
+    background-size: cover;
+
+}
+
+#image1 {
+    background-image: url(http://www.voont.com/files/images/edit/7-ridiculous-ways-boost-self-esteem/happy.jpg);
+    
+    border-top-right-radius: 0;
+    
+    border-radius: 50%;
+}
+.tanynah
+{
+    height: 1200px;
+}
+*************ласт***********/
+
+
+/*
+.block {
+    padding: 10px;
+   
+    color: white;
+    opacity: 0.8;
+}
+
+.block-1 {
+   
+    width: 100%;
+   
+    min-height: 350px;
+    
+}
+.block-11 {
+    display: block;
+    
+    width: 100%;
+   
+    min-height: 175px;
+}
+.block-12 {
+    display: block;
+    
+    width: 100%;
+    
+    min-height: 175px;
+    background: black;
+}
+
+.block-2 {
+    position: relative;
+    
+    width: 250px;
+    
+    min-height: 250px;
+    background: #e74c3c;
+    
+   
     right: 28px;
     top: -385px;
     float: right;
 }
 
 .block-3 {
-    /*position: absolute;
-    top: 60px;
-
-    width: 100%;
-    height: 175px;*/
-    /*background: #27ae60;*/
+   
 
         position: relative;
-    top: -1123px;
+    top: -912px;
     width: 100%;
     height: 400px;
-}
+}*/
 
 
 
@@ -596,12 +666,12 @@
 
 
 <!-- -->
-<section class="tanynah benefit-section" id="communication">
+<!-- <section class="tanynah benefit-section" id="communication">
         
         <div class=" block-1">
         
             <div class="block block-11"></div>
-            <!-- Block 1.2 - text content -->
+            
             <div class="block block-12 container-fluid circle-image-section image-left">
                 <div class="col-md-6 text-wrapper">
                     <h2>Севастополь</h2>
@@ -610,10 +680,9 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="block block-2">Блок 2</div> -->
+        
         <div id="image1" class="cropcircle block block-2"></div>
-        <!-- <div class="block block-3"></div> -->
-        <!-- Block 3 (top) -->
+        
         <div class="container-fluid block block-3" >
             <h2 class="benefit-title">Коммуникации</h2>
         
@@ -628,8 +697,7 @@
             <div class="col-md-2">
                 <div class="benefit-block">
                     <figure>
-                        
-                        <svg class="icon"><use xlink:href="#pipes" /></svg>
+                        <img src="assets/images/benefits/benefits-6.png" alt="">
                     </figure>
                     <p>Центральный водопровод и канализация</p>
                 </div>
@@ -646,9 +714,9 @@
 
             </div>
 
-    </section>
+    </section> -->
 
-    <!-- <section class="benefit-section" id="communication">
+    <section class="benefit-section" id="communication">
     	<div class="container-fluid" id="communication-title">
     		<h2 class="benefit-title" >
                 Коммуникации
@@ -705,7 +773,7 @@
 
     		</div>
     	</div>
-    </section> -->
+    </section>
 
     <!-- <section class="circle-image-section image-left" id="sevastopol">
     	<div class="container-fluid">
@@ -927,7 +995,9 @@
                 <a href="#" class="default-button red-background below-bottom-line" 
                 data-target="#exampleFormModal" 
                 data-toggle="modal">
-                    Записаться на просмотр
+                    <span>
+                        Записаться на просмотр
+                    </span>
                 </a>  
           </div>
             </div>
@@ -1092,7 +1162,11 @@
                     Живите в экологически чистом районе города. Наслаждайтесь свежим воздухом, больше гуляйте, выращивайте собственные фрукты и овощи и будьте здоровы! 
                 </h3>
     			<a href="#" class="default-button red-background below-bottom-line" 
-                data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+                data-target="#exampleFormModal" data-toggle="modal">
+                    <span>
+                        Записаться на просмотр
+                    </span>
+                </a>
     		</div>
     		<div class="image-wrapper"></div>
     	</div><!--/.container-fluid-->
@@ -1111,7 +1185,9 @@
     			<h2>Сад</h2>
     			<h3>Проводите досуг как вам нравится, не мешая своим домочадцам и не испытывайте помех сами. Не ограничивайте себя в выборе любимых занятий. </h3>
     			<a href="" class="default-button red-background below-bottom-line" 
-                data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+                data-target="#exampleFormModal" data-toggle="modal">
+                    <span>Записаться на просмотр</span>
+                </a>
     		</div>
     		<div class="image-wrapper"></div>
     	</div><!--/.container-fluid-->
@@ -1137,14 +1213,14 @@
                     <a href="#" class="default-button orange-background" 
                         data-target="#FormModal3" 
                         data-toggle="modal">
-                        Юридическая чистота
+                        <span>Юридическая чистота</span>
                     </a>
                 </div> 
                 <div class="col-md-3 pull-right">
                     <a href="#" class="default-button red-background" 
                         data-target="#FormModal" 
                         data-toggle="modal">
-                        Запишитесь на просмотр
+                        <span>Запишитесь на просмотр</span>
                     </a>
                 </div>
 
@@ -1161,7 +1237,11 @@
     			<h2>Отдыхайте с друзьями!</h2>
     			<h3>Живите в экологически чистом районе города. Наслаждайтесь свежим воздухом, больше гуляйте, выращивайте собственные фрукты и овощи и будьте здоровы! </h3>
     			<a href="" class="default-button red-background below-bottom-line" 
-                data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+                data-target="#exampleFormModal" data-toggle="modal">
+                    <span>
+                        Записаться на просмотр
+                    </span>
+                </a>
     		</div>
     		<div class="image-wrapper"></div>
     	</div><!--/.container-fluid-->
