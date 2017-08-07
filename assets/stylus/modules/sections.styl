@@ -144,6 +144,47 @@
 	border none
 
 
+/*blockquote*/
+/* :todo fix this */
+.quote-section {
+    color: white;
+}
+.quote-section h2 {
+    background: rgba(39,174,166,.5);
+    display: inline-block;
+    padding: 5px 25px;
+}
+.quote-section blockquote {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 60px;
+    
+    quotes: "\201C""\201D""\2018""\2019";
+    border: none;
+}
+.quote-section blockquote:before,
+.quote-section blockquote:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 120px;
+    line-height: 1;
+    /*font-size: 4em;*/
+    /*font-size: 30px;*/
+}
+.quote-section blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+.quote-section blockquote:after {
+    bottom: 0;
+    right: 0;
+    content: "\201D";
+}
+
+
+
 /* Slider */
 #characteristics
 	#bxslider
@@ -201,7 +242,7 @@
 
 /* Contact Form */
 .form-section .container-fluid
-	width 1576px
+	width 1376px
 	
 .form-section { /* :todo */
     color: white;
