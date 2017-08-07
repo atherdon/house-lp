@@ -188,100 +188,10 @@
 
 
 
-/* modals */
-    .modal-header {
-      padding: 15px 20px;
-      border-bottom: none;
-    }
-    .modal-content {
-      
-      border-color: #999999;
-     background-color: #0A75A7;
-     color:white;
-    }
-    .modal .close {
-      color: white;
-    }
-    .modal .close:hover {
-        opacity: 0.9;
-        color: white;
-    }
-
-    .model-title {
-      color: white;
-    }
-
-    /*.modal input {
-        border-radius: 0px; 
-        height: 52px;
-    }*/
-    /*.modal .col-lg-4 input {
-        height: 28px;
-    }*/
-
-    .modal .modal-content {
-        border-radius: 0px;
-    }
-
-    .modal button.btn.btn-primary.btn-outline {
-        
-        border-color: #6B6B6B;
-        background-color: #FF1E00;
-        line-height: 46px;
-        font-size: 23px;
-        color: #FFFFFF;
-        text-align: center;
-        border-radius: 0px;
-        font-weight: 400;     
-    }
 
 
-    .modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
-        -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
-        -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
-        box-shadow: 0 5px 15px rgba(0,0,0,0);
-        border-color: #0A75A7;
-    }
-    .modal .modal-title {
-        text-align: center;
-        line-height: 35px;
-    }
-    .modal .modal-body {
-        padding: 0 50px;
 
-    }
-    .modal .modal-header h6,
-    .modal .modal-body h4 {
-        text-align: center;
 
-    }
-    .modal .modal-title {
-        padding: 0 50px;
-        padding-top: 15px;
-    }
-    .modal .modal-body .col-centered input, 
-    .modal .modal-body .col-centered select {
-        width: 100px;
-        /*margin-right: 10px;*/
-        text-align: center;
-        color: black;
-    }
-  /*  .modal-body .select2.select2-container.select2-container--default {
-        margin-right: 10px;
-    }*/
-    .modal .modal-body .col-centered input {
-        height: 28px;
-
-    }
-    .modal .modal-body .col-centered {
-        margin: 0 auto;
-        float: none;
-    }
-    .modal .modal-body .btn {
-        margin-top:25px;
-        margin-bottom: 25px;
-    }
 
 
 
@@ -292,18 +202,7 @@
 
 
 
-    .form-section {
-        color: white;
-    }
-    .form-section h2 {
-        /*color: white;*/
-        background-color: red; /* :todo we need to clarify the red color  */
-        display: inline-block;
-        padding-top: 6px; /* :todo check and update this numbers  */
-        padding-bottom: 6px;
-        padding-right: 25px;
-        padding-left: 25px;
-    }
+
 
     .form-section .btn-red {
         background: linear-gradient(#fe4545, #ab2a2a);
@@ -344,6 +243,7 @@
     .mb-40 {
         margin-bottom: 40px;
     }
+
 
 .wrapper2 {
     margin: 0 auto;
@@ -764,11 +664,11 @@ footer .size-66-66 {
             Запишитесь на просмотр дома 
             </a> -->
 
-            <a href="#" class="default-button red-background" 
+           <!--  <a href="#" class="default-button red-background" 
             data-target="#FormModal3" 
             data-toggle="modal">
                 Запишитесь на просмотр дома 
-            </a>
+            </a> -->
 
             <a href="#" class="default-button orange-background">
                 <div>
@@ -1424,16 +1324,17 @@ footer .size-66-66 {
     <section id="themap"></section>
 
     <footer id="contacts">		
-        <div class="container-fluid" id="contacts-title">
+        <div class="container" id="contacts-title">
+
             <div class="row">
                 <div class="col-md-12">
                     <h2>
                         НАШИ КОНТАКТЫ
                     </h2>
                 </div>
-                <div class="col-md-offset-3 col-md-6">
+                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-4  col-sm-4">
+                        <div class="col-md-4 col-sm-4">
                             <div class="footer-block">
                                 <figure>
                                     <img src="assets/images/footer-picker.png" 
@@ -1482,15 +1383,15 @@ footer .size-66-66 {
 
     <!-- Site Action -->
     <div class="site-action">
-        <button type="button" 
+        <a href="#" 
         class="site-action-toggle btn-raised btn orange-background btn-floating tour">
             <img src="assets/images/360-tour.png" alt="Виртуальный тур">  
-         </button>
-         <button type="button" 
+         </a>
+         <a href="#"
         class="site-action-toggle btn-raised btn red-background btn-floating visit-place" data-target="#FormModal" 
             data-toggle="modal">
             <img src="assets/images/mail.png" alt="Записаться на просмотр">  
-         </button>
+         </a>
     </div>
     <!-- End Site Action -->
 
