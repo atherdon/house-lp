@@ -276,6 +276,66 @@
 }
 
 
+
+/******************************/
+
+
+.block {
+    padding: 10px;
+    /*text-align: right;*/
+    color: white;
+    opacity: 0.8;
+}
+
+.block-1 {
+   
+    width: 100%;
+    /*height: 350px;*/
+    min-height: 350px;
+    background: #3a78a1;
+}
+.block-11 {
+    display: block;
+    
+    width: 100%;
+    /*height: 175px;*/
+    min-height: 175px;
+}
+.block-12 {
+    display: block;
+    
+    width: 100%;
+    /*height: 175px;*/
+    min-height: 175px;
+    background: black;
+}
+
+.block-2 {
+    position: absolute;
+    
+    width: 250px;
+    /*height: 250px;*/
+    min-height: 250px;
+    background: #e74c3c;
+    
+    top: 0;
+    right: -40px;
+    top: 161px;
+}
+
+.block-3 {
+    position: absolute;
+    top: 60px;
+    /*width: 350px;*/
+    width: 100%;
+    height: 175px;
+    background: #27ae60;
+}
+
+
+
+
+
 </style>
 
   </head>
@@ -469,68 +529,121 @@
     	</div>
     </section>
 
-    <section class="benefit-section" id="communication">
+
+
+<!-- -->
+<section class="tanynah benefit-section" id="communication">
+        
+        <div class=" block-1">
+        
+            <div class="block block-11"></div>
+            <!-- Block 1.2 - text content -->
+            <div class="block block-12 container-fluid circle-image-section image-left">
+                <div class="col-md-6 text-wrapper">
+                    <h2>Севастополь</h2>
+                    <h3>Создайте для своей семьи максимально комфортные условия. Здесь вы сможете видеть, как растут ваши дети и внуки, заботиться о родителях и всегда быть вместе с теми, кто вам дорог.</h3>
+                    <a href="" class="default-button red-background" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="block block-2">Блок 2</div> -->
+        <div id="image1" class="cropcircle block block-2"></div>
+        <!-- <div class="block block-3"></div> -->
+        <!-- Block 3 (top) -->
+        <div class="container-fluid block block-3" >
+            <h2 class="benefit-title">Коммуникации</h2>
+        
+            <div class="col-md-2">
+                <div class="benefit-block">
+                    <figure>
+                        <img src="assets/images/benefits/benefits-6.png" alt="">
+                    </figure>
+                    <p>Электроэнергия</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="benefit-block">
+                    <figure>
+                        
+                        <svg class="icon"><use xlink:href="#pipes" /></svg>
+                    </figure>
+                    <p>Центральный водопровод и канализация</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="benefit-block">
+                    <figure>
+                        <img src="assets/images/benefits/benefits-4.png" alt="">
+                    </figure>
+                    <p>Городской телефон</p>
+                </div>
+            </div>
+      
+
+            </div>
+
+    </section>
+
+    <!-- <section class="benefit-section" id="communication">
     	<div class="container-fluid" id="communication-title">
     		<h2 class="benefit-title" >
                 Коммуникации
             </h2>
-        
-        <div class="col-md-2 col-sm-4 h-265">
-			<div class="benefit-block">
-				<figure>
-                    <img src="assets/images/benefits/benefits-6.png" alt="">
-                </figure>
-				<p>Электроэнергия</p>
-			</div>
-        </div>
-        <div class="col-md-2 col-sm-4 h-265">
-			<div class="benefit-block">
-				<figure>
-                    <img src="assets/images/benefits/benefits-5.png" alt="">
-                    <!-- <svg class="icon"><use xlink:href="#pipes" /></svg> -->
-                </figure>
-				<p>Центральный водопровод и канализация</p>
-			</div>
-        </div>
-        <div class="col-md-2 col-sm-4 h-265">
-			<div class="benefit-block">
-				<figure>
-                    <img src="assets/images/benefits/benefits-4.png" alt="">
-                </figure>
-				<p>Городской телефон</p>
-			</div>
-        </div>
-        <div class="col-md-2 col-sm-4 sm-mb-0">
-			<div class="benefit-block">
-				<figure>
-                    <img src="assets/images/benefits/benefits-3.png" alt="">
-                    <!-- <svg class="icon"><use xlink:href="#radar-dish" /></svg> -->
-                </figure>
-				<p>Спутниковое телевидение</p>
-			</div>
-        </div>
-        <div class="col-md-2 col-sm-4 sm-mb-0">
-			<div class="benefit-block">
-				<figure>
-                    <img src="assets/images/benefits/benefits-2.png" alt="">
-                </figure>
-				<p>Магистральный газ</p>
-			</div>
-        </div>
-        <div class="col-md-2 col-sm-4 sm-mb-0">
-			<div class="benefit-block">
-				<figure>
-                    <img src="assets/images/benefits/benefits-1.png" alt="">
-                </figure>
-				<p>Интернет</p>
-			</div>
-        </div>
+            <div class="benefit-wrapper">
+                <div class="col-md-2 col-sm-4 h-265">
+        			<div class="benefit-block">
+        				<figure>
+                            <img src="assets/images/benefits/benefits-6.png" alt="">
+                        </figure>
+        				<p>Электроэнергия</p>
+        			</div>
+                </div>
+                <div class="col-md-2 col-sm-4 h-265">
+        			<div class="benefit-block">
+        				<figure>
+                            <img src="assets/images/benefits/benefits-5.png" alt="">
+                        </figure>
+        				<p>Центральный водопровод и канализация</p>
+        			</div>
+                </div>
+                <div class="col-md-2 col-sm-4 h-265">
+        			<div class="benefit-block">
+        				<figure>
+                            <img src="assets/images/benefits/benefits-4.png" alt="">
+                        </figure>
+        				<p>Городской телефон</p>
+        			</div>
+                </div>
+                <div class="col-md-2 col-sm-4 sm-mb-0">
+        			<div class="benefit-block">
+        				<figure>
+                            <img src="assets/images/benefits/benefits-3.png" alt="">
+                        </figure>
+        				<p>Спутниковое телевидение</p>
+        			</div>
+                </div>
+                <div class="col-md-2 col-sm-4 sm-mb-0">
+        			<div class="benefit-block">
+        				<figure>
+                            <img src="assets/images/benefits/benefits-2.png" alt="">
+                        </figure>
+        				<p>Магистральный газ</p>
+        			</div>
+                </div>
+                <div class="col-md-2 col-sm-4 sm-mb-0">
+        			<div class="benefit-block">
+        				<figure>
+                            <img src="assets/images/benefits/benefits-1.png" alt="">
+                        </figure>
+        				<p>Интернет</p>
+        			</div>
+                </div>
 
-    		</div><!--/.benefit-wrapper-->
-    	</div><!--/.container-fluid-->
-    </section>
+    		</div>
+    	</div>
+    </section> -->
 
-    <section class="circle-image-section image-left" id="sevastopol">
+    <!-- <section class="circle-image-section image-left" id="sevastopol">
     	<div class="container-fluid">
     		<div class="image-wrapper"></div>
             <div class="row">
@@ -545,8 +658,8 @@
                 <a href="" class="default-button red-background below-bottom-line" data-target="#exampleFormModal" data-toggle="modal">Записаться на просмотр</a>
             </div>
             </div>
-    	</div><!--/.container-fluid-->
-    </section>
+    	</div>
+    </section> -->
 
     <section class="parameters-section characteristics" id="characteristics">
     	<div class="container-fluid" id="characteristics-title">
@@ -764,7 +877,6 @@
                 Фотогалерея
             </h2>
     		
-
             <div class="gallery-container slider">
 
                 <div id="gallery" class="gallery-images">
@@ -852,7 +964,9 @@
 
     <section class="benefit-section">
     	<div class="container-fluid">
-    		<h2 class="benefit-title">Инфраструктура</h2>
+    		<h2 class="benefit-title">
+                Инфраструктура
+            </h2>
     		<div class="benefit-wrapper">
 
           <div class="col-md-offset-1 col-md-2 col-sm-4">
@@ -1378,7 +1492,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 

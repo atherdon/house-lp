@@ -19,65 +19,65 @@ $(document).ready(function() {
 	}
 
 
-	var waypoint1 = new Waypoint({
-	  element: $('.left-column h1'),
-	  handler: function(direction) {
-	    console.log('Scrolled to waypoint!')
+// 	var waypoint1 = new Waypoint({
+// 	  element: $('.left-column h1'),
+// 	  handler: function(direction) {
+// 	    console.log('Scrolled to waypoint!')
 
-	    $('a.down').fadeIn();
+// 	    $('a.down').fadeIn();
 	    
-	  },
-	  // offset: '600px'
-	})
+// 	  },
+// 	  // offset: '600px'
+// 	})
 
 
-	var waypoint2 = new Waypoint({
-	  element: $('.left-column h2'),
-	  handler: function(direction) {
-	    console.log('Scrolled to waypoint!')
+// 	var waypoint2 = new Waypoint({
+// 	  element: $('.left-column h2'),
+// 	  handler: function(direction) {
+// 	    console.log('Scrolled to waypoint!')
 
-	    $('a.down').fadeOut();
+// 	    $('a.down').fadeOut();
 
-	  },
-	  // offset: '600px'
-	})
-// $('.site-action').fadeOut();
+// 	  },
+// 	  // offset: '600px'
+// 	})
+// // $('.site-action').fadeOut();
 
-	var waypoint3 = new Waypoint({
-	  element: $('#start'),
-	  handler: function(direction) {
-	    console.log('Scrolled to start waypoint!')
+// 	var waypoint3 = new Waypoint({
+// 	  element: $('#start'),
+// 	  handler: function(direction) {
+// 	    console.log('Scrolled to start waypoint!')
 
-	    // $('body').hide();
+// 	    // $('body').hide();
 
-	    $('.site-action').fadeIn();
+// 	    $('.site-action').fadeIn();
 
-	    // $('ul.nav > li').removeClass('active');
-         // $(this).addClass('active');
-         // console.log( $('.nav-links a[href="#start"]').parent() )
-	    // $('.nav-links a[href="#start"]').parent().addClass('active');
+// 	    // $('ul.nav > li').removeClass('active');
+//          // $(this).addClass('active');
+//          // console.log( $('.nav-links a[href="#start"]').parent() )
+// 	    // $('.nav-links a[href="#start"]').parent().addClass('active');
 
-	  },
-	  offset: '-100px'
-	})
+// 	  },
+// 	  offset: '-100px'
+// 	})
 
-	var waypoint4 = new Waypoint({
-	  element: $('#communication'),
-	  handler: function(direction) {
-	    console.log('Scrolled to communication waypoint!')
+// 	var waypoint4 = new Waypoint({
+// 	  element: $('#communication'),
+// 	  handler: function(direction) {
+// 	    console.log('Scrolled to communication waypoint!')
 
-	    // $('body').hide();
+// 	    // $('body').hide();
 
-	    // $('.site-action').fadeIn();
+// 	    // $('.site-action').fadeIn();
 
-	    // $('ul.nav > li').removeClass('active');
-         // $(this).addClass('active');
-         // console.log( $('.nav-links a[href="#communication"]').parent() )
-	    // $('.nav-links a[href="#communication"]').parent().addClass('active');
+// 	    // $('ul.nav > li').removeClass('active');
+//          // $(this).addClass('active');
+//          // console.log( $('.nav-links a[href="#communication"]').parent() )
+// 	    // $('.nav-links a[href="#communication"]').parent().addClass('active');
 
-	  },
-	  offset: '300px'
-	})
+// 	  },
+// 	  offset: '300px'
+// 	})
 
 	
 
