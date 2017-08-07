@@ -184,12 +184,7 @@
         opacity: .8;
     }*/
 
-    @media only screen and (min-width: 900px){
-        a.down {
-            -webkit-animation: adown 1s infinite;
-            animation: adown 1s infinite;
-        }    
-    }
+
 
 
 
@@ -397,6 +392,16 @@
 }*/
 
 
+
+
+
+
+
+
+
+
+
+
 /*slider*/
 .fa-chevron-circle-right:before,
 .fa-chevron-circle-left:before {
@@ -582,68 +587,7 @@ footer .size-66-66 {
 .show-on-responsive {
     display: none !important;
 }
-@media (max-width: 768px) {
-    .show-on-responsive {
-        display: block !important;
-    }
-    .hide-on-responsive {
-        display: none;    
-    }
-}
 
-@media (max-width: 1200px) {
-    /*.show-on-responsive {
-        display: block !important;
-    }
-    .hide-on-responsive {
-        display: none;    
-    }*/
-    /*header {
-        display: none;
-    }*/
-    .nav.navbar-icons .nav-button-messenger {
-        margin-right: 5px;
-    }
-    .nav-button-messenger img {
-        width: 30px;
-        height: 30px;
-    }
-    .nav.navbar-icons a {
-        font-size: 15px;
-    }
-    .nav.navbar-icons .nav-button.navbar-contact {
-        padding: 8px 9px;
-        margin-right: 5px;
-    }
-    .nav.nav-links a {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 768px) {
-    /*header {
-        display: none;
-    }*/
-    .benefit-section .col-md-2 {
-        margin-bottom: 50px;
-    }
-    .benefit-section .row {
-        margin-bottom: 0px;
-    }
-    .col-md-2.sm-mb-0{
-        margin-bottom: 0px;    
-    }
-        
-    .col-md-2.h-265{
-        min-height: 265px;        
-    }
-        
-    .col-md-2 {
-        min-height: 200px;
-    }
-    
-    
-}
 
 /*.welcome-section h1 {
     line-height: 77px;
@@ -1067,7 +1011,7 @@ footer .size-66-66 {
       				<p>Участок за каменной стеной</p>
       			</div>
           </div>
-          <div class="col-md-2 col-sm-4 col-sm-offset-2">
+          <div class="col-md-2 col-sm-4 colx-sm-offset-2">
       			<div class="benefit-block">
       				<figure>
                         <img src="assets/images/benefits/benefits-11.png" alt="">
@@ -1266,7 +1210,7 @@ footer .size-66-66 {
               <p>Магазины и торговые центры</p>
             </div>
           </div>
-          <div class="col-md-2 col-sm-4 col-sm-offset-2 sm-mb-0">
+          <div class="col-md-2 col-sm-4 colx-sm-offset-2 sm-mb-0">
             <div class="benefit-block">
               <figure>
                 <img src="assets/images/benefits/benefits-11.png" alt="">
@@ -1543,7 +1487,8 @@ footer .size-66-66 {
             <img src="assets/images/360-tour.png" alt="Виртуальный тур">  
          </button>
          <button type="button" 
-        class="site-action-toggle btn-raised btn red-background btn-floating visit-place">
+        class="site-action-toggle btn-raised btn red-background btn-floating visit-place" data-target="#FormModal" 
+            data-toggle="modal">
             <img src="assets/images/mail.png" alt="Записаться на просмотр">  
          </button>
     </div>

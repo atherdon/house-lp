@@ -84,10 +84,10 @@ if ($('#gallery-thumbs').length > 0) {
         // nextText: '<i class="fa fa-arrow-circle-right fa-3x"></i>',
         // prevText: '<i class="fa fa-arrow-circle-left fa-3x"></i>',
 
-        wrapperClass: 'gallery-container slider',
+        wrapperClass: 'gallery-wrapper',
         // adaptiveHeight: true
     });
-    
+
     // When clicking a thumb
     thumb.click(function (e) {
         // -6 as BX slider clones a bunch of elements
