@@ -182,10 +182,8 @@
 
 
 /* Slider */
-#characteristics .container-fluid
-	width 1520px
-	
-#characteristics .parameters-block h4, #characteristics.parameters-block p
+#characteristics .parameters-block h4,
+#characteristics.parameters-block p
 	margin-left 5px	
 	
 #characteristics
@@ -202,13 +200,42 @@
     bottom 300px
 */
 
-.column-left-characteristic
-	padding-right 45px
-.column-right-characteristic	
-	padding-left 45px	
+#characteristics
+	@media(min-width: 768px) and (max-width: 991px)
+		display none
+	@media (min-width: 992px)
+		display none
+	@media (min-width: 1200px)
+		display none
+	@media (min-width: 1500px) 	
+		display none
 
-.plans-wrapper .bx-viewport
-	margin-left 65px /* :todo change this */
+
+.column-left-characteristic
+	/*@media (max-width: 767px)
+		padding-right 0px*/
+	@media (min-width: 1500px)	
+		padding-right 45px
+
+.column-right-characteristic	
+	/*@media (max-width: 767px)	
+		padding-left 0px*/
+	@media (min-width: 1500px)
+		padding-left 45px		
+
+#characteristics .bx-controls
+	position relative
+	@media (max-width: 767px)
+		bottom 300px
+
+.plans-wrapper .bx-viewport /* :todo change this */
+	@media (max-width: 767px)
+		margin 0 26px /* :todo change this */
+
+.plans-wrapper .bx-next
+	@media (max-width: 767px)
+		left 94% /* :todo change this */
+ 
 
 #photogallery .slider
 	max-width 60%
