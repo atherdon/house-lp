@@ -201,8 +201,7 @@
 */
 
 #characteristics
-	@media(min-width: 768px) and (max-width: 991px)
-		display none
+
 	@media (min-width: 992px)
 		display none
 	@media (min-width: 1200px)
@@ -225,16 +224,21 @@
 
 #characteristics .bx-controls
 	position relative
-	@media (max-width: 767px)
-		bottom 300px
+	// @media (max-width: 767px)
+	bottom 300px
+	// @media(min-width: 768px) and (max-width: 991px)	
 
 .plans-wrapper .bx-viewport /* :todo change this */
 	@media (max-width: 767px)
 		margin 0 26px /* :todo change this */
+	@media(min-width: 768px) and (max-width: 991px)
+		margin 0 65px /* :todo change this */
 
 .plans-wrapper .bx-next
 	@media (max-width: 767px)
 		left 94% /* :todo change this */
+	@media(min-width: 768px) and (max-width: 991px)	
+		left 106% /* :todo change this */
  
 
 #photogallery .slider
