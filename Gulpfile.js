@@ -11,7 +11,7 @@ gulp.task('stylus', function() {
 
 			'assets/css/jquery.bxslider.css',
 			'assets/css/jquery.timepicker.css',
-			'assets/js/nivo-lightbox/nivo-lightbox.css',
+			// 'assets/js/nivo-lightbox/nivo-lightbox.css',
 			'assets/css/bootstrap-datepicker.min.css',
 			'assets/css/select2.min.css',
 			// 'assets/font-awesome-4.7.0/css/font-awesome.min.css',

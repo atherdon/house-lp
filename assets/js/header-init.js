@@ -5,5 +5,6 @@ $(document).ready(function() {
             e.preventDefault();
             $('ul.nav > li').removeClass('active');
             $(this).addClass('active');                
-        });  
+    });  
+	 
 });
