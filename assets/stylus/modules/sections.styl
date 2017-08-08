@@ -194,20 +194,17 @@
 				
 #characteristics .bx-controls .fa.fa-6x
 	font-size 4em
+	@media (min-width: 992px)
+		font-size 3em
+	
 	
 /*#characteristics .plans-wrapper .bx-controls
     position relative
     bottom 300px
 */
 
-#characteristics
 
-	@media (min-width: 992px)
-		display none
-	@media (min-width: 1200px)
-		display none
-	@media (min-width: 1500px) 	
-		display none
+
 
 
 .column-left-characteristic
@@ -226,19 +223,34 @@
 	position relative
 	// @media (max-width: 767px)
 	bottom 300px
-	// @media(min-width: 768px) and (max-width: 991px)	
+	@media (min-width: 992px)
+		bottom 250px
+	@media (min-width: 1200px)	
+		bottom 300px
 
 .plans-wrapper .bx-viewport /* :todo change this */
 	@media (max-width: 767px)
 		margin 0 26px /* :todo change this */
 	@media(min-width: 768px) and (max-width: 991px)
 		margin 0 65px /* :todo change this */
-
+	@media (min-width: 992px)	
+		margin 0 auto /* :todo change this */
+	@media (min-width: 1200px)
+		margin 0 auto /* :todo change this */
+	@media (min-width: 1500px)
+		margin 0 55px /* :todo change this */			
+		
 .plans-wrapper .bx-next
 	@media (max-width: 767px)
 		left 94% /* :todo change this */
 	@media(min-width: 768px) and (max-width: 991px)	
 		left 106% /* :todo change this */
+	@media (min-width: 992px)
+		left 86% /* :todo change this */
+	@media (min-width: 1200px)
+		left 89% /* :todo change this */
+	@media (min-width: 1500px)
+		left 108% /* :todo change this */				
  
 
 #photogallery .slider

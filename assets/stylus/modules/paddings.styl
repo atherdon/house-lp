@@ -24,9 +24,19 @@
 .circle-image-section h3
 	margin-top 0px
 	margin-bottom 40px	
-.parameters-section h2	
-	margin-top 130px
-	margin-bottom 60px
+.parameters-section h2
+	@media (max-width: 767px)
+		margin-top 60px
+		margin-bottom 30px
+	@media(min-width: 768px) and (max-width: 991px)
+		margin-top 60px
+		margin-bottom 30px
+	@media (min-width: 992px) 
+		margin-top 60px
+		margin-bottom 30px
+	@media (min-width: 1200px)	
+		margin-top 130px
+		margin-bottom 60px
 .parameters-block h3.red-background
 	margin-bottom 50px
 .benefit-section .row				
