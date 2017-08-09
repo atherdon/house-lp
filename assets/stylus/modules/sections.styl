@@ -316,7 +316,11 @@
 			min-height 250px
 		@media (min-width: 992px) 
 			width 33%
-			min-height 250px 		
+			min-height 250px
+
+	.col-md-offset-1	
+		@media (min-width: 992px) 
+			margin-left 0px			 		
 			
 
 		
@@ -336,16 +340,26 @@
 			min-height 250px
 	.row
 		@media (max-width: 767px)
-			margin-bottom 0px 		 
-						
+			margin-bottom 0px
+		@media (min-width: 1200px)	 		 
+			margin-bottom 0px
+		@media (min-width: 1500px)
+			margin-bottom 50px				
 	.colx-xs-show-only
 		display none
 		@media (max-width: 767px)
 			display block		
+		@media (min-width: 992px)
+			display block	
 	.colx-xs-hide-only
 		display block
 		@media (max-width: 767px)
-			display none		
+			display none
+		@media (min-width: 992px)
+			display none	
+	.col-md-offset-1, .col-md-offset-3	
+		@media (min-width: 992px) 
+			margin-left 0px					
 
 
 #infrastructure
@@ -355,6 +369,10 @@
 		@media (min-width: 992px) 
 			width 33%
 			min-height 250px
+	.col-md-offset-1	
+		@media (min-width: 992px) 
+			margin-left 0px		
+				
 		
 /* Photogallery  */		
 .bx-controls .fa.fa-6x
