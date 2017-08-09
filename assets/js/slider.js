@@ -140,9 +140,6 @@ if ($('#gallery-thumbs').length > 0) {
     });
 
 
-    // $('#galleryzzzzzz a').
-    // $('#galleryzzzzzz a').nivoLightbox();
-
 }
 
 
