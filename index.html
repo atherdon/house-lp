@@ -370,7 +370,13 @@
   /*  #start {
         display: block;
     }*/
- .welcome-section {
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 898px) { 
+     .welcome-section {
         flex-flow: row; 
         flex-wrap: wrap;
         height: calc(50vh - 60px);
@@ -435,8 +441,77 @@
         margin-right: 0px;
 
     }
+}
+
+@media (min-width: 898px) and (max-width: 992px) { 
+    .welcome-section {
+        flex-flow: row; 
+        flex-wrap: wrap;
+        height: calc(60vh - 60px);
 
 
+        padding-left: 15px;
+        padding-right 15px;
+    }
+    .two-column-section .left-column {
+        flex: 1;
+        width: 100%;
+        margin-left: -15px;
+    }
+    .two-column-section .right-column {
+        flex: 1;
+        height: initial;
+        width: 100%;
+        /*margin-left: 30px;*/
+        margin-top: 40px;
+        margin-top: 350px;
+        padding-bottom: 0px;
+    }
+    #start.welcome-section h1 {
+        padding-right: 36px;
+        padding-left: 36px;
+        font-size: 64px;
+        line-height: 40px;
+        margin-top: 0px;
+    }
+    #start.welcome-section h2 { 
+        padding-right: 36px;
+        padding-left: 36px;
+        font-size: 25px;
+    }
+    .welcome-section h1 span.big,
+    .welcome-section h1 span.small {
+        font-size: 42px;
+    }
+    .default-button {
+        width: 100%;
+        font-size: 18px;
+    }
+    .default-button span {
+        padding-top: 0px;
+        /*margin-top: -4px;*/
+        display: block;
+        text-align: center;
+    }
+
+
+    /*.default-button.red-background {
+        padding-left: 40px;
+    }*/
+    .default-button.orange-background {
+        margin-right: 15px !important; /* change this */
+    }
+    /*.default-button.orange-background span {
+        margin-top: 8px;
+    }*/
+
+
+   /* .default-button.orange-background div {
+        display: none;
+        float: none;
+        margin-right: 0px;
+
+    }*/
 }
 
 
@@ -460,80 +535,79 @@
         width: 132px;
     }
 
+
    /*     .welcome-section {
         display: none;
     }*/
-  /*  #start {
-        display: block;
+    /*#start {
+        display: none;
     }*/
 
 
-
-    .welcome-section {
+    /*.welcome-section {
+        display: block
         flex-flow: row; 
         flex-wrap: wrap;
-        /*height: calc(50vh - 60px);*/
-
-
-        padding-left: 15px;
-        padding-right 15px;
-    }
+        height: calc(50vh - 60px);
+    }*/
     .two-column-section .left-column {
-        flex: 1;
-        width: 100%;
-        margin-left: -15px;
+        /*flex: 1;*/
+        width: 40%;
     }
     .two-column-section .right-column {
-        flex: 1;
+        /*flex: 1;*/
         height: initial;
-        width: 100%;
+        width: 60%;
         /*margin-left: 30px;*/
-        margin-top: 40px;
+        /*margin-top: 40px;*/
     }
-#start.welcome-section h1 {
-        /*padding-right: 36px;*/
-        /*padding-left: 36px;*/
-        /*font-size: 64px;*/
-        /*line-height: 40px;*/
+    #start.welcome-section h1 {
+        padding-right: 36px;
+        padding-left: 36px;
+        font-size: 64px;
+        line-height: 40px;
         /*margin-top: 0px;*/
     }
     #start.welcome-section h2 { 
-        /*padding-right: 36px;*/
-        /*padding-left: 36px;*/
-        /*font-size: 25px;*/
+        padding-right: 36px;
+        padding-left: 36px;
+        font-size: 25px;
     }
+
     .welcome-section h1 span.big,
     .welcome-section h1 span.small {
-        font-size: 42px;
+        font-size: 37px;
     }
-    .default-button {
-        width: 100%;
+    .welcome-section .right-column .default-button {
+        /*width: 100%;*/
+        font-size: 17px;
+        margin-right: 0px;
     }
+
     .default-button span {
-        padding-top: 0px;
+       /* padding-top: 0px;
         margin-top: -4px;
         display: block;
-        text-align: center;
+        text-align: center;*/
     }
 
 
-    /*.default-button.red-background {
-        padding-left: 40px;
-    }*/
-    .default-button.orange-background {
-        margin-right: 15px !important; /* change this */
-    }
-    .default-button.orange-background span {
+    
+    /*.default-button.orange-background span {
         margin-top: 8px;
-    }
-
-
-    /*.default-button.orange-background div {
-        display: none;
-        float: none;
-        margin-right: 0px;
-
     }*/
+.welcome-section .right-column .default-button.red-background {
+    margin-right: 30px;
+}
+
+     .row.row-down-arrow {
+        /*display: none;*/
+        width: 5%;
+    }   
+
+  .site-action {
+    display: none;
+  }
 
 }
 
@@ -833,7 +907,7 @@
                         </a>
                     </li>
                     <li class="show-on-responsive">
-                        <a href="viber://pa?chatURI=<public account URI>&text=Записаться%20на%20просмотр" class="message-us-link">
+                        <a href="viber://add?number=79168830840" class="message-us-link">
                         Viber
                         </a>
                     </li>
@@ -882,7 +956,7 @@
 
 
                     <li>
-                        <a href="viber://pa?chatURI=<public account URI>&text=Записаться%20на%20просмотр" 
+                        <a href="viber://add?number=79168830840" 
                             class="nav-button-messenger">
                             <img src="assets/images/viber.png" alt="">
                         </a>
@@ -1315,7 +1389,7 @@
                 <div id="gallery" class="gallery-images">
                     <a href="assets/images/gallery/1.jpg" 
                         data-lightbox="gallery1" 
-                        data-title="Дом в Севастополе - столовая 16 м²">
+                        data-title="Дом в Севастополе - детская – 17,5 м²">
                         <img src="assets/images/gallery/1.jpg" alt="" />
                     </a>
                     <a href="assets/images/gallery/2.jpg" 
