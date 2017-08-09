@@ -88,13 +88,37 @@
 		background-repeat no-repeat
 		z-index 1
 	&.image-left .image-wrapper
-		border-top-right-radius 0%
+		border-radius 50%
 		right -10%
+		top: -10%
 	&.image-right .image-wrapper
 		border-top-left-radius 0%
 		left -10%
 	.text-wrapper
 		color white
+		
+/* Vyhodi na PK */
+#infrastructure
+	position relative
+	z-index 50
+#health
+	z-index 45
+	position relative
+#white-text-only
+	position relative
+	background white
+	z-index 40
+.garden-section
+	position relative
+	z-index 35
+	.image-wrapper
+		height 100%
+		wid
+
+body
+	overflow-x hidden
+/* Ne vyhodi na Knosoli */
+
 .circle-image-section
 	position relative
 	min-height 500px
