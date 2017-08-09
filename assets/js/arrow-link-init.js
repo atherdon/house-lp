@@ -19,28 +19,33 @@ $(document).ready(function() {
 	}
 
 
-// 	var waypoint1 = new Waypoint({
-// 	  element: $('.left-column h1'),
-// 	  handler: function(direction) {
-// 	    console.log('Scrolled to waypoint!')
+	var waypoint1 = new Waypoint({
+	  element: $('.left-column h1'),
+	  handler: function(direction) {
+	    console.log('Scrolled to waypoint!')
 
-// 	    $('a.down').fadeIn();
+	    $('a.down').fadeIn();
 	    
-// 	  },
-// 	  // offset: '600px'
-// 	})
+	  },
+	  // offset: '600px'
+	})
 
 
-// 	var waypoint2 = new Waypoint({
-// 	  element: $('.left-column h2'),
-// 	  handler: function(direction) {
-// 	    console.log('Scrolled to waypoint!')
+	var waypoint2 = new Waypoint({
+	  element: $('.left-column h2'),
+	  handler: function(direction) {
+	    console.log('Scrolled to waypoint!')
 
-// 	    $('a.down').fadeOut();
+	    $('a.down').fadeOut();
 
-// 	  },
-// 	  // offset: '600px'
-// 	})
+	  },
+	  // offset: '600px'
+	})
+
+
+
+
+
 // // $('.site-action').fadeOut();
 
 // 	var waypoint3 = new Waypoint({
