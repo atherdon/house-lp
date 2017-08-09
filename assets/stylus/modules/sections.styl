@@ -296,13 +296,30 @@
 		@media (max-width: 767px)		
 			padding-left 15px
 			padding-right 15px
+		@media(min-width: 768px) and (max-width: 991px)
+			padding-left 15px
+			padding-right 15px
+		@media (min-width: 992px) 	
+			padding-left 15px
+			padding-right 15px
 	.benefit-block
+		width 70%
 		@media (max-width: 767px)
-			width 100%
+			width 98%
+
 	.benefit-block p				
 		@media (max-width: 767px)
 			margin-bottom 25px
+	
+	.benefit-wrapper .col-md-2
+		@media (max-width: 767px)
+			min-height 250px
+		@media (min-width: 992px) 
+			width 33%
+			min-height 250px 		
 			
+
+		
 #benefits-two-rows							
 	.benefit-block
 		@media (max-width: 767px)
@@ -310,6 +327,17 @@
 	.benefit-block p				
 		@media (max-width: 767px)
 			margin-bottom 25px
+			
+	.col-md-2
+		@media (max-width: 767px)
+			min-height 250px
+		@media (min-width: 992px) 
+			width 33%
+			min-height 250px
+	.row
+		@media (max-width: 767px)
+			margin-bottom 0px 		 
+						
 	.colx-xs-show-only
 		display none
 		@media (max-width: 767px)
@@ -320,8 +348,13 @@
 			display none		
 
 
-
-
+#infrastructure
+	.col-md-2
+		@media (max-width: 767px)
+			min-height 250px
+		@media (min-width: 992px) 
+			width 33%
+			min-height 250px
 		
 /* Photogallery  */		
 .bx-controls .fa.fa-6x
