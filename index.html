@@ -367,9 +367,9 @@
         display: none;
     }*/
 
-    #start {
+  /*  #start {
         display: block;
-    }
+    }*/
  .welcome-section {
         flex-flow: row; 
         flex-wrap: wrap;
@@ -463,9 +463,78 @@
    /*     .welcome-section {
         display: none;
     }*/
-    #start {
-        display: none;
+  /*  #start {
+        display: block;
+    }*/
+
+
+
+    .welcome-section {
+        flex-flow: row; 
+        flex-wrap: wrap;
+        /*height: calc(50vh - 60px);*/
+
+
+        padding-left: 15px;
+        padding-right 15px;
     }
+    .two-column-section .left-column {
+        flex: 1;
+        width: 100%;
+        margin-left: -15px;
+    }
+    .two-column-section .right-column {
+        flex: 1;
+        height: initial;
+        width: 100%;
+        /*margin-left: 30px;*/
+        margin-top: 40px;
+    }
+#start.welcome-section h1 {
+        /*padding-right: 36px;*/
+        /*padding-left: 36px;*/
+        /*font-size: 64px;*/
+        /*line-height: 40px;*/
+        /*margin-top: 0px;*/
+    }
+    #start.welcome-section h2 { 
+        /*padding-right: 36px;*/
+        /*padding-left: 36px;*/
+        /*font-size: 25px;*/
+    }
+    .welcome-section h1 span.big,
+    .welcome-section h1 span.small {
+        font-size: 42px;
+    }
+    .default-button {
+        width: 100%;
+    }
+    .default-button span {
+        padding-top: 0px;
+        margin-top: -4px;
+        display: block;
+        text-align: center;
+    }
+
+
+    /*.default-button.red-background {
+        padding-left: 40px;
+    }*/
+    .default-button.orange-background {
+        margin-right: 15px !important; /* change this */
+    }
+    .default-button.orange-background span {
+        margin-top: 8px;
+    }
+
+
+    /*.default-button.orange-background div {
+        display: none;
+        float: none;
+        margin-right: 0px;
+
+    }*/
+
 }
 
 @media (min-width: 1200px) {
