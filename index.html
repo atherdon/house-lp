@@ -453,12 +453,12 @@
         padding-left: 15px;
         padding-right 15px;
     }
-    .two-column-section .left-column {
+    #start .two-column-section .left-column {
         flex: 1;
         width: 100%;
         margin-left: -15px;
     }
-    .two-column-section .right-column {
+    #start .two-column-section .right-column {
         flex: 1;
         height: initial;
         width: 100%;
@@ -483,11 +483,11 @@
     .welcome-section h1 span.small {
         font-size: 42px;
     }
-    .default-button {
+    #start .default-button {
         width: 100%;
         font-size: 18px;
     }
-    .default-button span {
+    #start .default-button span {
         padding-top: 0px;
         /*margin-top: -4px;*/
         display: block;
@@ -498,7 +498,7 @@
     /*.default-button.red-background {
         padding-left: 40px;
     }*/
-    .default-button.orange-background {
+    #start .default-button.orange-background {
         margin-right: 15px !important; /* change this */
     }
     /*.default-button.orange-background span {
@@ -550,25 +550,25 @@
         flex-wrap: wrap;
         height: calc(50vh - 60px);
     }*/
-    .two-column-section .left-column {
+    #start .two-column-section .left-column {
         /*flex: 1;*/
         width: 40%;
     }
-    .two-column-section .right-column {
+    #start .two-column-section .right-column {
         /*flex: 1;*/
         height: initial;
         width: 60%;
         /*margin-left: 30px;*/
         /*margin-top: 40px;*/
     }
-    #start.welcome-section h1 {
+    #start .welcome-section h1 {
         padding-right: 36px;
         padding-left: 36px;
         font-size: 64px;
         line-height: 40px;
         /*margin-top: 0px;*/
     }
-    #start.welcome-section h2 { 
+    #start .welcome-section h2 { 
         padding-right: 36px;
         padding-left: 36px;
         font-size: 25px;
@@ -584,7 +584,7 @@
         margin-right: 0px;
     }
 
-    .default-button span {
+    #start .default-button span {
        /* padding-top: 0px;
         margin-top: -4px;
         display: block;
@@ -600,7 +600,7 @@
     margin-right: 30px;
 }
 
-     .row.row-down-arrow {
+     #start .row.row-down-arrow {
         /*display: none;*/
         width: 5%;
     }   
@@ -624,10 +624,58 @@
         display: none;
     }*/
 
-    #start {
+    /*#start {
         display: none;
+    }*/
+    .two-column-section .left-column {
+        /*flex: 1;*/
+        width: 55%;
     }
+    .two-column-section .right-column {
+        /*flex: 1;*/
+        height: initial;
+        width: 60%;
+        /*margin-left: 30px;*/
+        /*margin-top: 40px;*/
+    }
+    #start.welcome-section h1 {
+        padding-right: 6px;
+        /*padding-left: 36px;*/
+        font-size: 56px;
+        line-height: 40px;
+        
+    }
+    #start.welcome-section h2 { 
+        padding-right: 36px;
+        padding-left: 36px;
+        font-size: 25px;
+    }
+    .welcome-section h1 span.big,
+    .welcome-section h1 span.small {
+        font-size: 37px;
+    }
+    .row.row-down-arrow {
+        /*display: none;*/
+        width: 3%;
+    }   
+
+    #start .default-button {
+       font-size: 20px;
+       width: 50%;
+    }
+
     
+    #start .default-button span {
+        padding-top: 0px;
+        
+
+        text-align: center;
+    }
+
+    .default-button.orange-background span {
+        margin-top: 8px;
+    }
+
 }
 
 @media (min-width: 1500px) {
