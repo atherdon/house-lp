@@ -79,6 +79,8 @@
 	padding 0 120px
 	h2
 		text-align left
+	h3
+		line-height	55px
 	&.image-left .image-wrapper,
 	&.image-right .image-wrapper
 		position absolute
@@ -420,7 +422,7 @@ body
 			
 
 		
-#benefits-two-rows							
+#benefits-two-rows
 	.benefit-block
 		@media (max-width: 767px)
 			width 100%
@@ -434,25 +436,35 @@ body
 		@media (min-width: 992px) 
 			width 33%
 			min-height 250px
+		@media (min-width: 1200px)	 		 
+			margin-bottom 0px
+			min-height initial
+		@media (min-width: 1500px)
+			margin-bottom 50px					
 	.row
 		@media (max-width: 767px)
 			margin-bottom 0px
+		@media (min-width: 992px) 	
+			margin-bottom 0px
 		@media (min-width: 1200px)	 		 
 			margin-bottom 0px
-		@media (min-width: 1500px)
-			margin-bottom 50px				
+			
 	.colx-xs-show-only
 		display none
 		@media (max-width: 767px)
 			display block		
 		@media (min-width: 992px)
 			display block	
+		@media (min-width: 1200px)
+			display none		
 	.colx-xs-hide-only
 		display block
 		@media (max-width: 767px)
 			display none
 		@media (min-width: 992px)
 			display none	
+		@media (min-width: 1200px)
+			display block	
 	.col-md-offset-1, .col-md-offset-3	
 		@media (min-width: 992px) 
 			margin-left 0px					
@@ -465,6 +477,7 @@ body
 		@media (min-width: 992px) 
 			width 33%
 			min-height 250px
+			
 	.col-md-offset-1	
 		@media (min-width: 992px) 
 			margin-left 0px		
