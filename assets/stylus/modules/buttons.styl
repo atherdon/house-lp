@@ -23,15 +23,18 @@
 		vertical-align middle
 		padding-top 10px	
 		
-.orange-background
+.default-button.orange-background
 	background-color $color-orange
-.red-background
-	background-color $color-red
-	
-.orange-background
 	div 
 		float left
 		margin-right 10px	
+	span
+		@media (min-width: 1500px)	
+			margin-top 0px
+		
+.default-button.red-background
+	background-color $color-red
+	
 
 .default-button.below-bottom-line
 	position relative
