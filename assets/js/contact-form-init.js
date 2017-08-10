@@ -23,6 +23,9 @@ $(document).ready(function() {
     /* Contact Form */
     if($('#contactForm').length) {
 
+        var error = $('#contactForm div.error');
+
+
         $("#contactForm").validate({
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
@@ -33,10 +36,14 @@ $(document).ready(function() {
                   ? 'You missed 1 field. It has been highlighted'
                   : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                $("div.error").html(message);
-                $("div.error").fadeIn();
+                
+                error.html(message);
+                error.fadeIn();
+
               } else {
-                $("div.error").hide();
+
+                error.hide();
+                
               }
             },
             showErrors: false,
@@ -48,8 +55,10 @@ $(document).ready(function() {
                     url: 'process.php', 
                     success: function() {
                         var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
-                        $("div.error").html(message);
-                        $("div.error").fadeIn();
+                        error.html(message);
+                        error.fadeIn();
+                        // $("div.error").html(message);
+                        // $("div.error").fadeIn();
                     },
                     error: function() {
                         alert('Something`s wrong.');
@@ -75,7 +84,7 @@ $(document).ready(function() {
         // $('#FormModal1 ').
 
         var form  = $("#FormModal1");
-        var error = $("#FormModal1").find('.error'); 
+        var error2 = $("#FormModal1").find('.error'); 
 
         $("#FormModal1").validate({
             invalidHandler: function(event, validator) {
@@ -87,13 +96,13 @@ $(document).ready(function() {
                   ? 'You missed 1 field. It has been highlighted'
                   : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                  
-                $("div.error").html(message);
-                $("div.error").fadeIn();
+                error2.html(message);
+                error2.fadeIn();  
+                
 
               } else {
 
-                $("div.error").hide();
+                error2.hide();
 
               }
             },
@@ -107,8 +116,10 @@ $(document).ready(function() {
                     url: 'process.php', 
                     success: function() {
                         var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
-                        $("div.error").html(message);
-                        $("div.error").fadeIn();
+                        
+                        error2.html(message);
+                        error2.fadeIn();
+                        
                     },
                     error: function() {
                         alert('Something`s wrong.');
@@ -122,6 +133,8 @@ $(document).ready(function() {
     /* Modal2 */
     if($('#FormModal21').length) {
 
+        var error3 = $("#FormModal21").find('.error'); 
+
         $("#FormModal21").validate({
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
@@ -132,10 +145,12 @@ $(document).ready(function() {
                   ? 'You missed 1 field. It has been highlighted'
                   : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                $("div.error").html(message);
-                $("div.error").fadeIn();
+                error3.html(message);
+                error3.fadeIn();
+                
               } else {
-                $("div.error").hide();
+                error3.hide();
+                
               }
             },
             showErrors: false,
@@ -147,6 +162,8 @@ $(document).ready(function() {
                     url: 'process.php', 
                     success: function() {
                         var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
+                        $("div.error").html(message);
+                        $("div.error").fadeIn();
                         $("div.error").html(message);
                         $("div.error").fadeIn();
                     },
@@ -163,6 +180,8 @@ $(document).ready(function() {
     /* Modal3 */
     if($('#FormModal31').length) {
 
+        var error4 = $("#FormModal31").find('.error'); 
+
         $("#FormModal31").validate({
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
@@ -173,10 +192,12 @@ $(document).ready(function() {
                   ? 'You missed 1 field. It has been highlighted'
                   : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                $("div.error").html(message);
-                $("div.error").fadeIn();
+                error4.html(message);
+                error4.fadeIn();
+                
               } else {
-                $("div.error").hide();
+                error4.hide();
+                
               }
             },
             showErrors: false,
@@ -188,8 +209,9 @@ $(document).ready(function() {
                     url: 'process.php', 
                     success: function() {
                         var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
-                        $("div.error").html(message);
-                        $("div.error").fadeIn();
+                        error4.html(message);
+                        error4.fadeIn();
+                        
                     },
                     error: function() {
                         alert('Something`s wrong.');
