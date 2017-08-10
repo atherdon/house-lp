@@ -76,25 +76,23 @@
 	position relative
 	min-height 500px
 	background-color $color-green
+	padding 0 120px
 	h2
 		text-align left
 	&.image-left .image-wrapper,
 	&.image-right .image-wrapper
 		position absolute
-		width 70%
 		top 0
 		border-radius 50%
 		overflow hidden
-		width 1200px
-		height 1200px
-
-
+		width 980px
+		height 980px
 
 		/*background-image url('../images/circle/circle-photo-1.jpg')*/
 		/*background-position center center
 		background-repeat no-repeat*/
 			
-		z-index 1
+		z-index -1
 	&.image-left .image-wrapper
 		border-top-right-radius 0%
 		/*border-radius 50%*/
@@ -104,9 +102,15 @@
 		height 900px*/
 	&.image-right .image-wrapper
 		border-top-left-radius 0%
-		left -10%
-		/*width 900px
-		height 900px*/
+		/*left -10%*/
+		left -20%
+		top -20%
+		
+		width 980px
+		height 910px
+		left -6%
+		top -20%
+			
 	.text-wrapper
 		color white
 		
@@ -115,26 +119,22 @@
 #benefits-two-rows,
 #health,
 #white-text-only,
-.garden-section
+.garden-section,
+.quote-section
 	position relative
 
-#communication
-	z-index 50
-	
-#sevastopol
-	z-index 35
-
-#characteristics		
-	z-index 50
-	
-#benefits-two-rows
-	z-index 50
-	
-#dosug
-	z-index 35
-		
+#communication,
+.quote-section,
+#characteristics,
+#benefits-two-rows,
 #infrastructure
 	z-index 50
+	
+#sevastopol,
+#dosug,
+.garden-section
+	z-index 35
+
 
 #health,
 .rest-with-your-friends
@@ -144,24 +144,13 @@
 	background white
 	z-index 40
 	
-.garden-section
-	
-	z-index 35
-	.image-wrapper
-		height 100%
-		/*wid*/
-
-
-	
-
 
 body
 	overflow-x hidden
 
-
+/*
 .circle-image-section
-	position relative
-	min-height 500px
+	
 	&.image-right .image-wrapper
 		position absolute
 		left -20%
@@ -169,7 +158,7 @@ body
 		width 70%
 		border-radius 50%
 		overflow hidden
-		z-index -1
+		z-index -1*/
 
 /* Ne vyhodi na Knosoli */
 
