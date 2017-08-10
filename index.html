@@ -75,6 +75,10 @@
 
 
 
+
+
+
+
     .site-action {
         position: fixed;
         right: 0px;
@@ -161,6 +165,13 @@
       
     } 
 
+
+
+
+
+
+
+
     .datepicker-input {
         color:black;
     }
@@ -231,6 +242,11 @@
 }
 
 
+
+
+
+
+
 .gallery-container.slider .bx-next {
   left: 106%;
   /*___________*/
@@ -266,11 +282,6 @@
     border-right: 0;
 }
 
-
-
-/*.show-on-responsive {
-    display: none !important;
-}*/
 
 
 
@@ -953,9 +964,9 @@
 
     <section class="circle-image-section image-left" id="sevastopol">
     	<div class="container-fluid">
-    		<div class="image-wrapper"></div>
-            <div class="row">
-            <div class="col-md-4 text-wrapper">
+    		<!-- <div class="image-wrapper"></div> -->
+            <!-- <div class="row"> -->
+            <div class="text-wrapper col-md-6">
                 <h2>
                     Севастополь
                 </h2>
@@ -963,12 +974,26 @@
                     Создайте для своей семьи максимально комфортные условия. Здесь вы сможете видеть, как растут ваши дети и внуки, заботиться о родителях и всегда быть вместе с теми, кто вам дорог.
                 </h3>
                 
+                <a href="" class="default-button red-background below-bottom-line" data-target="#FormModal" data-toggle="modal">
+                    <span>
+                        Записаться на просмотр
+                    </span>    
+                </a>
+
+
             </div>    
-            </div>
-    		<div class="row">
+            <!-- </div> -->
+    		<!-- <div class="row">
             <div class="col-md-3 below-line">
-                <a href="" class="default-button red-background below-bottom-line" data-target="#FormModal" data-toggle="modal">Записаться на просмотр</a>
+                <a href="" class="default-button red-background below-bottom-line" data-target="#FormModal" data-toggle="modal">
+                    <span>
+                        Записаться на просмотр
+                    </span>    
+                </a>
             </div>
+            </div> -->
+            <div class="image-wrapper">
+                <img src="assets/images/circle/circle-photo-3.jpg" alt="">      
             </div>
     	</div>
     </section>
@@ -1167,16 +1192,24 @@
     	</div><!--/.container-fluid-->
     </section>
 
-    <section class="circle-image-section image-right" id="dosug">
+    <section class="circle-image-section image-left" id="dosug">
     	<div class="container-fluid">
-            <div class="row">
-    		<div class="text-wrapper col-md-6 col-md-offset-6">
-    			<h2>Занимайтесь любимым делом! </h2>
+            <!-- <div class="row"> -->
+    		<div class="text-wrapper col-md-6">
+    			<h2>Занимайтесь любимым делом!</h2>
     			<h3>Проводите досуг как вам нравится, не мешая своим домочадцам и не испытывайте помех сами. Не ограничивайте себя в выборе любимых занятий. </h3>
     		
+                <a href="#" class="default-button red-background below-bottom-line" 
+                data-target="#FormModal" 
+                data-toggle="modal">
+                    <span>
+                        Записаться на просмотр
+                    </span>
+                </a> 
+
     		</div>
-            </div>
-          <div class="row">
+            <!-- </div> -->
+          <!-- <div class="row">
           <div class="col-md-3 col-md-offset-6 below-line">
                 <a href="#" class="default-button red-background below-bottom-line" 
                 data-target="#FormModal" 
@@ -1186,8 +1219,12 @@
                     </span>
                 </a>  
           </div>
+            </div> -->
+
+    		<!-- <div class="image-wrapper"></div> -->
+            <div class="image-wrapper">
+                <img src="assets/images/circle/circle-photo-1.jpg" alt="">      
             </div>
-    		<div class="image-wrapper"></div>
     	</div><!--/.container-fluid-->
     </section>
 
@@ -1353,7 +1390,7 @@
                 </a>
     		</div>
     		<div class="image-wrapper">
-                <img src="assets/images/circle/circle-photo-1.jpg" alt="">      
+                <img src="assets/images/circle/circle-photo-5.jpg" alt="">      
             </div>
     	</div><!--/.container-fluid-->
     </section>
@@ -1368,7 +1405,9 @@
     <section class="circle-image-section image-right garden-section">
     	<div class="container-fluid">
     		<div class="text-wrapper col-md-6 col-md-offset-6">
-    			<h2>Сад</h2>
+    			<h2>
+                    Сад
+                </h2>
     			<h3>Проводите досуг как вам нравится, не мешая своим домочадцам и не испытывайте помех сами. Не ограничивайте себя в выборе любимых занятий. </h3>
     			<a href="" class="default-button red-background below-bottom-line" 
                 data-target="#FormModal" data-toggle="modal">
@@ -1431,7 +1470,9 @@
                     </span>
                 </a>
     		</div>
-    		<div class="image-wrapper"></div>
+    		  <div class="image-wrapper">
+                <img src="assets/images/circle/circle-photo-4.jpg" alt="">      
+            </div>
     	</div><!--/.container-fluid-->
     </section>
 
@@ -1601,7 +1642,7 @@
     <!-- End Site Action -->
 
 
-        <!-- Modal -->
+    <!-- Modal -->
     <div class="modal fade" id="FormModal" 
          aria-hidden="false" aria-labelledby="FormModalLabel"
          role="dialog" tabindex="-1">
@@ -1676,11 +1717,11 @@
               </div>
             </form>
           </div>
-        </div>
-        <!-- End Modal -->
+    </div>
+    <!-- End Modal -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="FormModal2" aria-hidden="false" aria-labelledby="FormModalLabel2"
+    <!-- Modal -->
+    <div class="modal fade" id="FormModal2" aria-hidden="false" aria-labelledby="FormModalLabel2"
         role="dialog" tabindex="-1">
           <div class="modal-dialog">
             <form class="modal-content" id="FormModal21">
@@ -1756,11 +1797,11 @@
               </div>
             </form>
           </div>
-        </div>
-        <!-- End Modal -->
+    </div>
+    <!-- End Modal -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="FormModal3" aria-hidden="false" 
+    <!-- Modal -->
+    <div class="modal fade" id="FormModal3" aria-hidden="false" 
         aria-labelledby="FormModalLabel3"
         role="dialog" tabindex="-1">
           <div class="modal-dialog">
@@ -1803,8 +1844,8 @@
               </div>
             </form>
           </div>
-        </div>
-        <!-- End Modal -->
+    </div>
+    <!-- End Modal -->
 
 
 

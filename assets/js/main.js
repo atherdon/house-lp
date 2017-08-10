@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-//
-
-	//nivo lightbox init
-
-
 
     
 	$('[data-tooltip="true"]').tooltip();
