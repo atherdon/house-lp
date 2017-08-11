@@ -12,13 +12,26 @@ $(document).ready(function() {
 //     input[name="time"]
 
 // contactForm
-//     input[name="name"]
-//  input[name="email"]
-// date
-// month
-// time
+//  input[name="name"]
+//  input[name="phone"]
+//  input[name="date"]
+//  input[name="month"]
+//  input[name="time"]
 
 
+
+
+        // 'Введите данные в поля формы'
+
+        // 'Введите свое имя'
+        // 'Введите контактный телефон'
+        // 'Введите дату',
+        // 'Выберите месяц',
+        // 'Введите время'
+
+
+        // 'Введите email адрес'
+        // 'Введите контактный телефон'
 
     /* Contact Form */
     if($('#contactForm').length) {
@@ -27,6 +40,24 @@ $(document).ready(function() {
 
 
         $("#contactForm").validate({
+
+            rules: {
+                name:  "required", {required:true, minlength:3}
+                phone: "required",
+                date:  "required",
+                month: "required",
+                time:  "required"
+
+            },
+            messages: {
+                name:  '',
+                phone: '',
+                date:  '',
+                month: '',
+                time:  ''
+            },
+
+
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
@@ -87,6 +118,23 @@ $(document).ready(function() {
         var error2 = $("#FormModal1").find('.error'); 
 
         $("#FormModal1").validate({
+
+            rules: {
+                name:  "required",
+                phone: "required",
+                date:  "required",
+                month: "required",
+                time:  "required"
+
+            },
+            messages: {
+                name:  '',
+                phone: '',
+                date:  '',
+                month: '',
+                time:  ''
+            },
+
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
@@ -136,6 +184,23 @@ $(document).ready(function() {
         var error3 = $("#FormModal21").find('.error'); 
 
         $("#FormModal21").validate({
+
+            rules: {
+                name:  "required",
+                phone: "required",
+                date:  "required",
+                month: "required",
+                time:  "required"
+
+            },
+            messages: {
+                name:  '',
+                phone: '',
+                date:  '',
+                month: '',
+                time:  ''
+            },
+
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
@@ -183,6 +248,13 @@ $(document).ready(function() {
         var error4 = $("#FormModal31").find('.error'); 
 
         $("#FormModal31").validate({
+
+            rules: {
+                email:  "required",
+                phone: "required"
+
+            },
+
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
