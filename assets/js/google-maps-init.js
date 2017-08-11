@@ -59,15 +59,15 @@ $(document).ready(function() {
               mapOptions);
 
           var styledMapOptions = {
-            name: 'Адрес нашего офиса'
+            name: 'Адрес дома'
           };
 
           var contentString = '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h3 id="firstHeading" class="mt20">Наш главный офис в г.Севастополь</h3>'+
+          '<h3 id="firstHeading" class="mt20">Наш адрес</h3>'+
           '<div id="bodyContent">'+
-          '<p>Республика Крым, г.Севастополь<br>Симферопольская улица, 29<br> Телефон: +111222333444</p>'+
+          '<p>г.Севастополь<br>Симферопольская улица, 29<br> Телефон: +7 (916) 883 08 40</p>'+
           '</div>'+
           '</div>';
 
