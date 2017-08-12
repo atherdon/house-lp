@@ -109,22 +109,6 @@ $(document).ready(function() {
 //   // offset: '600px'
 // })
 
-// var inview = new Waypoint.Inview({
-//   element: $('#start'),
-//   enter: function(direction) {
-//     notify('Enter triggered with direction ' + direction)
-//   },
-//   entered: function(direction) {
-//     notify('Entered triggered with direction ' + direction)
-//   },
-//   exit: function(direction) {
-//     notify('Exit triggered with direction ' + direction)
-//   },
-//   exited: function(direction) {
-//     notify('Exited triggered with direction ' + direction)
-//   }
-// });
-
 	/* Waypoints on the arrowdown link - make it dissapear when we're not on #start */
 	// function arrowdown() {
 

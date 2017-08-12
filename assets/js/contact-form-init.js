@@ -1,37 +1,17 @@
 $(document).ready(function() {
     
-//  exampleFormModal
-//  exampleFormModal2
-//  exampleFormModal3
-    
-// FormModal
-// input[name="name"]
-// input[name="phone"]
-//     input[name="date"]
-//     input[name="month"]
-//     input[name="time"]
 
-// contactForm
-//  input[name="name"]
-//  input[name="phone"]
-//  input[name="date"]
-//  input[name="month"]
-//  input[name="time"]
+    // 'Введите данные в поля формы'
+
+    // 'Введите свое имя'
+    // 'Введите контактный телефон'
+    // 'Введите дату',
+    // 'Выберите месяц',
+    // 'Введите время'
 
 
-
-
-        // 'Введите данные в поля формы'
-
-        // 'Введите свое имя'
-        // 'Введите контактный телефон'
-        // 'Введите дату',
-        // 'Выберите месяц',
-        // 'Введите время'
-
-
-        // 'Введите email адрес'
-        // 'Введите контактный телефон'
+    // 'Введите email адрес'
+    // 'Введите контактный телефон'
 
     /* Contact Form */
     if($('#contactForm').length) {
@@ -42,7 +22,7 @@ $(document).ready(function() {
         $("#contactForm").validate({
 
             rules: {
-                name:  "required", {required:true, minlength:3}
+                name:  "required", //{required:true, minlength:3}
                 phone: "required",
                 date:  "required",
                 month: "required",
@@ -50,11 +30,11 @@ $(document).ready(function() {
 
             },
             messages: {
-                name:  '',
-                phone: '',
-                date:  '',
-                month: '',
-                time:  ''
+                name:  'Введите свое имя',
+                phone: 'Введите контактный телефон',
+                date:  'Введите дату',
+                month: 'Выберите месяц',
+                time:  'Введите время'
             },
 
 
@@ -85,9 +65,12 @@ $(document).ready(function() {
                 jQuery(form).ajaxSubmit({
                     url: 'process.php', 
                     success: function() {
-                        var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
-                        error.html(message);
-                        error.fadeIn();
+
+                        // var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
+
+                        // error.html(message);
+                        // error.fadeIn();
+
                         // $("div.error").html(message);
                         // $("div.error").fadeIn();
                     },
@@ -105,14 +88,7 @@ $(document).ready(function() {
     /* Modal1 */
     if($('#FormModal1').length) {
 
-        // var messages = {
-        //   'Время звонка не введено',
-        //   'Время дату звонка',
-        //   'Введите почту для связи',
-        //   'Введите данные в поля формы'
-        // };
 
-        // $('#FormModal1 ').
 
         var form  = $("#FormModal1");
         var error2 = $("#FormModal1").find('.error'); 
@@ -128,11 +104,11 @@ $(document).ready(function() {
 
             },
             messages: {
-                name:  '',
-                phone: '',
-                date:  '',
-                month: '',
-                time:  ''
+                name:  'Введите свое имя',
+                phone: 'Введите контактный телефон',
+                date:  'Введите дату',
+                month: 'Выберите месяц',
+                time:  'Введите время'
             },
 
             invalidHandler: function(event, validator) {
@@ -163,14 +139,17 @@ $(document).ready(function() {
                 jQuery(form).ajaxSubmit({
                     url: 'process.php', 
                     success: function() {
-                        var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
+
+                        // var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
                         
-                        error2.html(message);
-                        error2.fadeIn();
+                        // error2.html(message);
+                        // error2.fadeIn();
                         
                     },
                     error: function() {
+
                         alert('Something`s wrong.');
+
                     }
                 });
             }
@@ -194,11 +173,11 @@ $(document).ready(function() {
 
             },
             messages: {
-                name:  '',
-                phone: '',
-                date:  '',
-                month: '',
-                time:  ''
+                name:  'Введите свое имя',
+                phone: 'Введите контактный телефон',
+                date:  'Введите дату',
+                month: 'Выберите месяц',
+                time:  'Введите время'
             },
 
             invalidHandler: function(event, validator) {
@@ -226,14 +205,19 @@ $(document).ready(function() {
                 jQuery(form).ajaxSubmit({
                     url: 'process.php', 
                     success: function() {
-                        var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
-                        $("div.error").html(message);
-                        $("div.error").fadeIn();
-                        $("div.error").html(message);
-                        $("div.error").fadeIn();
+
+                        // var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
+                        // error3.html(message);
+                        // error3.fadeIn();
+
+                        // $("div.error").html(message);
+                        // $("div.error").fadeIn();
+
                     },
                     error: function() {
+
                         alert('Something`s wrong.');
+
                     }
                 });
             }
@@ -251,8 +235,13 @@ $(document).ready(function() {
 
             rules: {
                 email:  "required",
-                phone: "required"
+                phone:  "required"
 
+            },
+            messages: {
+                email:  'Введите email адрес',
+                phone:  'Введите контактный телефон',
+               
             },
 
             invalidHandler: function(event, validator) {
@@ -280,13 +269,17 @@ $(document).ready(function() {
                 jQuery(form).ajaxSubmit({
                     url: 'process.php', 
                     success: function() {
-                        var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
-                        error4.html(message);
-                        error4.fadeIn();
+
+                        // var message = 'Thank\'s for your message. We\'ll answer as soon as possible.';
+                        // error4.html(message);
+                        // error4.fadeIn();
+
                         
                     },
                     error: function() {
+
                         alert('Something`s wrong.');
+                        
                     }
                 });
             }

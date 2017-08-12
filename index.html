@@ -1269,14 +1269,18 @@
                     <div class="col-md-6 col-left-form">
                         <div class="row">
                             <div class="col-md-12">
-                                    <input type="text" name="name" 
-                                    placeholder="Имя..." class="required">
+                                    <input type="text" 
+                                    name="name" 
+                                    placeholder="Имя..."
+                                    minlength="3"
+                                    required class="required">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <input type="text" name="phone" 
-                                placeholder="Телефон..." class="required">
+                                placeholder="Телефон..." class="required"
+                                required>
                             </div>
                         </div>
                     </div>
@@ -1293,10 +1297,10 @@
                             <div class="col-md-12 col-centered form-inline">
                                 <div class="form-group">
                                      <input type="text" name="date" 
-                                            placeholder="Дата" class="required datepicker-input">
+                                            placeholder="Дата" class="required datepicker-input" required >
                                 </div>
                                 <div class="form-group">
-                                    <select name="month" class="required js-select-placeholder" data-placeholder="Месяц">
+                                    <select name="month" class="required js-select-placeholder" data-placeholder="Месяц" required>
                                         <option disabled selected value></option>
                                         <option value = "1">Январь</option>
                                         <option value = "2">Февраль</option>
@@ -1314,7 +1318,7 @@
                                 </div>
                                 <div class="form-group">
                                      <input type="text" name="time" 
-                                            placeholder="Время" class="required timepicker-input">
+                                            placeholder="Время" class="required timepicker-input" required>
                                 </div>
                             </div>
                   
