@@ -6,6 +6,8 @@ var cssmin      = require('gulp-cssmin');
 var rename      = require('gulp-rename');
 var browserSync = require('browser-sync');
 
+// https://www.npmjs.com/package/gulp-minify
+
 gulp.task('stylus', function() {
 	return gulp.src([
 
