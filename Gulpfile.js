@@ -40,6 +40,41 @@ gulp.task('stylus', function() {
 // 				.pipe(gulp.dest('assets/css'));
 // });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gulp.task('scripts', function() {
+	return gulp.src([
+			'assets/vendor/lightbox2-master/dist/js/lightbox.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.ru.min.js',
+			'assets/js/jquery.timepicker.js',
+			'assets/js/jquery.validate.min.js',
+			'assets/js/jquery.form.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js',
+			'assets/js/main.js',
+			'assets/js/slider.js',
+			'assets/js/google-maps-init.js',
+			'assets/js/contact-form-init.js',
+			'assets/js/arrow-link-init.js'
+		])
+			.pipe(concat('all.js', {newLine: ';'}))
+			.pipe(gulp.dest('assets/js'));
+}); 
+
+
 gulp.task('browserSync', ['stylus'], function(){
 	browserSync.init({
 		server: {
@@ -49,5 +84,9 @@ gulp.task('browserSync', ['stylus'], function(){
 });
 
 gulp.task('watch', ['browserSync'], function(){
+	gulp.watch('assets/stylus/**/**.styl', ['stylus']);
+});
+
+gulp.task('watch2', ['browserSync', 'scripts'], function(){
 	gulp.watch('assets/stylus/**/**.styl', ['stylus']);
 });

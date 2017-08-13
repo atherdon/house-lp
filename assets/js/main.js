@@ -35,8 +35,11 @@ $(document).ready(function(){
 
 	var options = {
 		show2400: true,
-		timeFormat: 'H:i'
-		// time from & to
+		timeFormat: 'H:i',
+
+		'minTime': '10:00am',
+    	'maxTime': '5:30pm',
+		
 	};
 
 	
