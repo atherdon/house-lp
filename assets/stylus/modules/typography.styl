@@ -32,6 +32,7 @@
 	span.big	
 		font-size 70px
 		font-family $font-franklin
+ 
     
 .welcome-section h2
 	width 75%    
@@ -42,26 +43,59 @@
 	font-family $font-franklin
 	font-weight 400
 	color #2d6daf
+		
 		    			
 .default-button
 	font-size 22px
 	font-family $font-franklin
+	@media (max-width: 319px)
+		font-size 14px
+	@media(min-width: 320px) and (max-width: 766px)
+		font-size 14px
 	
 #second, #white-text-only
 	font-size 23px
 	font-family $font-roboto
 	font-weight 300
 	color #2d6daf
+	@media (max-width: 319px)
+		font-size 18px
+	@media(min-width: 320px) and (max-width: 600px)
+		font-size 18px
+	@media (min-width: 1200px) and (max-width: 1500px)
+		margin-top 45px;	
+
+#second p
+	@media (max-width: 319px)
+		padding 25px
+	@media(min-width: 320px) and (max-width: 600px)
+		padding 25px
+	@media(min-width: 600px) and (max-width: 766px)
+		padding 60px 60px		
 
 .benefit-section .benefit-title
 	font-size 60px
 	font-family $font-roboto
 	font-weight 400
+	@media (max-width: 319px)
+		font-size 34px
+	@media(min-width: 320px) and (max-width: 600px)
+		font-size 37px
+	@media(min-width: 1200px) and (max-width: 1500px)
+		font-size 40px	
 				    			
 .benefit-section .benefit-block p
 	font-size 24px
 	font-family $font-roboto
-	
+	@media (max-width: 319px)
+		font-size 16px
+	@media(min-width: 320px) and (max-width: 600px)
+		font-size 18px
+	@media (min-width: 1200px)
+		font-size 15px	
+	@media (min-width: 1500px)
+		font-size 22px	
+		
 .circle-image-section h2
 	font-family $font-roboto
 	font-weight 400
@@ -71,15 +105,21 @@
 	@media(min-width: 768px)
 		font-size 50px
 	@media (min-width: 1200px)		
-		font-size 60px
+		font-size 50px
 	@media (min-width: 1500px)
-		font-size 70px	
+		font-size 60px	
 		
 .circle-image-section h3
 	font-size 45px
 	font-family $font-roboto
 	font-weight 300
-	line-height 55px		
+	line-height 55px
+	@media (max-width: 319px)
+		font-size 32px
+		line-height 40px
+	@media(min-width: 320px) and (max-width: 600px)
+		font-size 32px
+		line-height 40px
 	
 .parameters-section h2	
 	font-size 70px
@@ -142,6 +182,11 @@
 		font-family $font-roboto
 		font-weight 400		
 		color white
+		@media (max-width: 319px)
+			font-size 44px	
+		@media(min-width: 320px) and (max-width: 600px)
+			font-size 44px
+			
 	.title.simple	
 		font-size 50px
 		font-family $font-roboto
@@ -179,7 +224,13 @@
 		
 footer h2
 	font-size 70px
-	font-family $font-roboto	
+	font-family $font-roboto
+	@media (max-width: 319px)
+		font-size 32px
+		line-height 0px
+	@media(min-width: 320px) and (max-width: 600px)
+		font-size 32px
+		line-height 40px	
 
 footer .footer-block p
 	font-size 30px

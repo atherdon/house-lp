@@ -281,7 +281,10 @@ $(document).ready(function() {
         $("#FormModal31").validate({
 
             rules: {
-                email:  "required",
+                email:  {
+                 required: true,
+                 email: true   
+                },
                 phone:  "required"
 
             },
@@ -315,7 +318,7 @@ $(document).ready(function() {
             // },
             showErrors: false,
             errorPlacement: function(error, element) {
-                
+
                 $("#FormModal31 .error.main-wrapper").css('display','block');
                 console.log($("#FormModal31 .error.main-wrapper"));    
                 error.appendTo("#FormModal31 .error.main-wrapper");
