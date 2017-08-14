@@ -57,8 +57,8 @@ $(document).ready(function(){
 		show2400: true,
 		timeFormat: 'H:i',
 
-		'minTime': '10:00am',
-    	'maxTime': '5:30pm',
+		'minTime': '9:00am',
+    	'maxTime': '9:00pm',
 		
 	};
 

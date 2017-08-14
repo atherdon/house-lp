@@ -22,16 +22,12 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				function loadMessage(){
-				  setTimeout( function() {
-				    (jQuery)('#tour-loading').fadeOut();
+				  setTimeout(function() {
+				    $('#tour-loading').fadeOut();
 				  }, 15000);
 				}
+				loadMessage();
 
-				if (window.addEventListener)
-				      window.addEventListener("load", loadMessage, false);
-				  else if (window.attachEvent)
-				      window.attachEvent("onload", loadMessage);
-				  else window.onload = loadMessage;
 			});
 		</script>
 		
@@ -46,6 +42,9 @@
 			}
 			#tour-loading {
 				color: white;
+			}
+			.container {
+				margin-top: 50px;
 			}
 
 		</style>
