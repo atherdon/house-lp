@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
     
 	$('[data-tooltip="true"]').tooltip();
 
@@ -13,22 +11,44 @@ $(document).ready(function(){
 	
 
 	// phone mask init
+	$("#contactForm input[type='tel']").mask('(000) 000-00-00');
 
-	$("#contactForm input[name='phone']").mask('(000) 000-00-00');
+	$("#FormModal input[type='tel']").mask('(000) 000-00-00');
 
-	$("#exampleFormModal input[type='phone']").mask('(000) 000-00-00');
+	$("#FormModal2 input[type='tel']").mask('(000) 000-00-00');
 
-	$("#exampleFormModal2 input[type='phone']").mask('(000) 000-00-00');
+	$("#FormModal3 input[type='tel']").mask('(000) 000-00-00');
 
-	$("#exampleFormModal3 input[type='phone']").mask('(000) 000-00-00');
 
+
+	$.map( $("select[name='month']"), function( val, i ) {
+
+	   	$(val).select2({
+	  		placeholder: function(){
+		        $(val).data('placeholder');
+		    },
+	  		minimumResultsForSearch: Infinity,
+	  		width: 'element'
+		});
+
+	});
 
 	$.map( $('.datepicker-input'), function( val, i ) {
+
 
 	   	$(val).datepicker({
 			language: "ru",
 			orientation: "bottom"
-			});
+
+
+		}).on('change', function(e){
+
+			var month = new Date(e.timeStamp).getMonth() + 1;
+			var $monthSelect2 = $(val).closest('.row').find('select[name="month"]').select2();
+			$monthSelect2.val(month).trigger("change");
+
+
+		});
 	});
 
 
@@ -48,18 +68,7 @@ $(document).ready(function(){
 	   	$(val).timepicker(options);
 	});
 
-	$.map( $("select[name='month']"), function( val, i ) {
 
-
-	   	$(val).select2({
-	  		placeholder: function(){
-		        $(val).data('placeholder');
-		    },
-	  		minimumResultsForSearch: Infinity,
-	  		 width: 'element'
-		});
-
-	});
 	
 
-})
+});
