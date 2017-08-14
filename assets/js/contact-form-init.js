@@ -35,31 +35,40 @@ $(document).ready(function() {
             },
 
 
-            invalidHandler: function(event, validator) {
-              // 'this' refers to the form
-              var errors = validator.numberOfInvalids();
-              if (errors) {
+            // invalidHandler: function(event, validator) {
+            //   // 'this' refers to the form
+            //   var errors = validator.numberOfInvalids();
+            //   console.log( validator );
+            //   if (errors) {
 
-                var message = errors == 1
-                  ? 'You missed 1 field. It has been highlighted'
-                  : 'You missed ' + errors + ' fields. They have been highlighted';
+            //     console.log(errors);
+
+            //     // var message = errors == 1
+            //       // ? 'You missed 1 field. It has been highlighted'
+            //       // : 'You missed ' + errors + ' fields. They have been highlighted';
 
                 
-                error.html(message);
-                error.fadeIn();
+            //     // error.html(message);
+            //     error.html(errors);
+            //     error.fadeIn();
 
-              } else {
+            //   } else {
 
-                error.hide();
+            //     error.hide();
                 
-              }
-            },
-            showErrors: false,
+            //   }
+            // },
+            // showErrors: false,
+            
+
             errorPlacement: function(error,element) {
-                return true;
+                // return true;
+
+                error.appendTo( element.closest(".modal-body").find('.error.main-wrapper') );
             },
             submitHandler: function(form) { 
                 jQuery(form).ajaxSubmit({
+
                     url: 'process.php', 
                     success: function() {
 
@@ -111,13 +120,16 @@ $(document).ready(function() {
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
+              console.log( validator );
               if (errors) {
                 
-                var message = errors == 1
-                  ? 'You missed 1 field. It has been highlighted'
-                  : 'You missed ' + errors + ' fields. They have been highlighted';
+                console.log(errors);
+                // var message = errors == 1
+                  // ? 'You missed 1 field. It has been highlighted'
+                  // : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                error2.html(message);
+                // error2.html(message);
+                error2.html(errors);
                 error2.fadeIn();  
                 
 
@@ -134,6 +146,7 @@ $(document).ready(function() {
             submitHandler: function(form) {             
 
                 jQuery(form).ajaxSubmit({
+
                     url: 'process.php', 
                     success: function() {
 
@@ -180,13 +193,16 @@ $(document).ready(function() {
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
+              console.log( validator );
               if (errors) {
                 
-                var message = errors == 1
-                  ? 'You missed 1 field. It has been highlighted'
-                  : 'You missed ' + errors + ' fields. They have been highlighted';
+                console.log(errors);
+                // var message = errors == 1
+                  // ? 'You missed 1 field. It has been highlighted'
+                  // : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                error3.html(message);
+                // error3.html(message);
+                error3.html(errors);
                 error3.fadeIn();
                 
               } else {
@@ -200,6 +216,7 @@ $(document).ready(function() {
             },
             submitHandler: function(form) { 
                 jQuery(form).ajaxSubmit({
+
                     url: 'process.php', 
                     success: function() {
 
@@ -244,13 +261,18 @@ $(document).ready(function() {
             invalidHandler: function(event, validator) {
               // 'this' refers to the form
               var errors = validator.numberOfInvalids();
+
+              console.log( validator );
+
               if (errors) {
                 
-                var message = errors == 1
-                  ? 'You missed 1 field. It has been highlighted'
-                  : 'You missed ' + errors + ' fields. They have been highlighted';
+                console.log(errors);
+                // var message = errors == 1
+                  // ? 'You missed 1 field. It has been highlighted'
+                  // : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                error4.html(message);
+                error4.html(errors);
+                // error4.html(message);
                 error4.fadeIn();
                 
               } else {
@@ -264,6 +286,7 @@ $(document).ready(function() {
             },
             submitHandler: function(form) { 
                 jQuery(form).ajaxSubmit({
+
                     url: 'process.php', 
                     success: function() {
 
