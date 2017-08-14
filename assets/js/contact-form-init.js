@@ -64,12 +64,14 @@ $(document).ready(function() {
             errorPlacement: function(error,element) {
                 // return true;
 
-                error.appendTo( element.closest(".modal-body").find('.error.main-wrapper') );
+                $("#contactForm .error.main-wrapper").css('display','block');
+                console.log($("#contactForm .error.main-wrapper"));    
+                error.appendTo("#contactForm .error.main-wrapper");
             },
             submitHandler: function(form) { 
 
 
-                return false;
+                
 
                 jQuery(form).ajaxSubmit({
 
@@ -121,34 +123,52 @@ $(document).ready(function() {
                 time:  'Введите время'
             },
 
-            invalidHandler: function(event, validator) {
-              // 'this' refers to the form
-              var errors = validator.numberOfInvalids();
-              console.log( validator );
-              if (errors) {
+            // invalidHandler: function(event, validator) {
+            //   // 'this' refers to the form
+            //   var errors = validator.numberOfInvalids();
+            //   console.log( validator );
+
+            //   if (errors) {
+              
+            //     console.log('dd', element.attr("name"));
+
+            //     // if (element.attr("name") == "client_city") {
+            //         error.appendTo("#FormModal .error.main-wrapper");
+            //     // } else {
+            //         // error.insertAfter(element)
+            //     // }
+
                 
-                console.log(errors);
-                // var message = errors == 1
-                  // ? 'You missed 1 field. It has been highlighted'
-                  // : 'You missed ' + errors + ' fields. They have been highlighted';
+            //     // var message = errors == 1
+            //       // ? 'You missed 1 field. It has been highlighted'
+            //       // : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                // error2.html(message);
-                error2.html(errors);
-                error2.fadeIn();  
+            //     // error2.html(message);
+            //     error2.html(errors);
+            //     error2.fadeIn();  
                 
 
-              } else {
+            //   } else {
 
-                error2.hide();
+            //     error2.hide();
 
-              }
-            },
+            //   }
+            // },
             showErrors: false,
-            errorPlacement: function(error,element) {
-                return true;
+            errorPlacement: function(error, element) {
+
+                // console.log('dd', element.attr("name"));
+
+                // if (element.attr("name") == "client_city") {
+                $("#FormModal .error.main-wrapper").css('display','block');
+                console.log($("#FormModal .error.main-wrapper"));    
+                error.appendTo("#FormModal .error.main-wrapper");
+
+
+                // return true;
             },
             submitHandler: function(form) {             
-                return false;
+                // return false;
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 
@@ -166,6 +186,8 @@ $(document).ready(function() {
 
                     }
                 });
+                $("#FormModal .error.main-wrapper").css('display','none');
+                return false;
             }
         
         });
@@ -194,32 +216,36 @@ $(document).ready(function() {
                 time:  'Введите время'
             },
 
-            invalidHandler: function(event, validator) {
-              // 'this' refers to the form
-              var errors = validator.numberOfInvalids();
-              console.log( validator );
-              if (errors) {
+            // invalidHandler: function(event, validator) {
+            //   // 'this' refers to the form
+            //   var errors = validator.numberOfInvalids();
+            //   console.log( validator );
+            //   if (errors) {
                 
-                console.log(errors);
-                // var message = errors == 1
-                  // ? 'You missed 1 field. It has been highlighted'
-                  // : 'You missed ' + errors + ' fields. They have been highlighted';
+            //     console.log(errors);
+            //     // var message = errors == 1
+            //       // ? 'You missed 1 field. It has been highlighted'
+            //       // : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                // error3.html(message);
-                error3.html(errors);
-                error3.fadeIn();
+            //     // error3.html(message);
+            //     error3.html(errors);
+            //     error3.fadeIn();
                 
-              } else {
-                error3.hide();
+            //   } else {
+            //     error3.hide();
                 
-              }
-            },
+            //   }
+            // },
             showErrors: false,
-            errorPlacement: function(error,element) {
-                return true;
+            errorPlacement: function(error, element) {
+
+                $("#FormModal21 .error.main-wrapper").css('display','block');
+                console.log($("#FormModal21 .error.main-wrapper"));    
+                error.appendTo("#FormModal21 .error.main-wrapper");
+
             },
             submitHandler: function(form) { 
-                return false;
+                
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 
@@ -239,6 +265,8 @@ $(document).ready(function() {
 
                     }
                 });
+                $("#FormModal21 .error.main-wrapper").css('display','none');
+                return false;
             }
         
         });
@@ -263,34 +291,37 @@ $(document).ready(function() {
                
             },
 
-            invalidHandler: function(event, validator) {
-              // 'this' refers to the form
-              var errors = validator.numberOfInvalids();
+            // invalidHandler: function(event, validator) {
+            //   // 'this' refers to the form
+            //   var errors = validator.numberOfInvalids();
 
-              console.log( validator );
+            //   console.log( validator );
 
-              if (errors) {
+            //   if (errors) {
                 
-                console.log(errors);
-                // var message = errors == 1
-                  // ? 'You missed 1 field. It has been highlighted'
-                  // : 'You missed ' + errors + ' fields. They have been highlighted';
+            //     console.log(errors);
+            //     // var message = errors == 1
+            //       // ? 'You missed 1 field. It has been highlighted'
+            //       // : 'You missed ' + errors + ' fields. They have been highlighted';
 
-                error4.html(errors);
-                // error4.html(message);
-                error4.fadeIn();
+            //     error4.html(errors);
+            //     // error4.html(message);
+            //     error4.fadeIn();
                 
-              } else {
-                error4.hide();
+            //   } else {
+            //     error4.hide();
                 
-              }
-            },
+            //   }
+            // },
             showErrors: false,
-            errorPlacement: function(error,element) {
-                return true;
+            errorPlacement: function(error, element) {
+                
+                $("#FormModal31 .error.main-wrapper").css('display','block');
+                console.log($("#FormModal31 .error.main-wrapper"));    
+                error.appendTo("#FormModal31 .error.main-wrapper");
             },
             submitHandler: function(form) { 
-                return false;
+                
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 
@@ -308,6 +339,8 @@ $(document).ready(function() {
 
                     }
                 });
+                $("#FormModal31 .error.main-wrapper").css('display','none');
+                return false;
             }
         
         });
