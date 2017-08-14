@@ -43,20 +43,6 @@ gulp.task('stylus', function() {
 // });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 gulp.task('scripts', function() {
 	return gulp.src([
 			'assets/vendor/lightbox2-master/dist/js/lightbox.min.js',
@@ -85,7 +71,8 @@ gulp.task('browserSync', ['stylus'], function(){
 	});
 });
 
-gulp.task('watch', ['browserSync'], function(){
+
+gulp.task('watch', ['browserSync', 'scripts'], function(){
 	gulp.watch('assets/stylus/**/**.styl', ['stylus']);
 });
 
