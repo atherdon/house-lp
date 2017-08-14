@@ -30,17 +30,6 @@ gulp.task('stylus', function() {
 		.pipe(gulp.dest('assets/css'));
 });
 
-// gulp.task('stylus', function() {
-// 	return gulp.src('assets/stylus/style.styl')
-// 				.pipe(stylus({
-// 						use: [
-// 							bootstrap()
-// 						]
-// 				}))
-// 				.pipe(cssmin())
-// 				.pipe(rename({suffix: '.min'}))
-// 				.pipe(gulp.dest('assets/css'));
-// });
 
 
 gulp.task('scripts', function() {
@@ -48,9 +37,9 @@ gulp.task('scripts', function() {
 			'assets/vendor/lightbox2-master/dist/js/lightbox.min.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.ru.min.js',
-			'assets/js/jquery.timepicker.js',
-			'assets/js/jquery.validate.min.js',
-			'assets/js/jquery.form.min.js',
+			// 'assets/js/jquery.timepicker.js',
+			// 'assets/js/jquery.validate.min.js',
+			// 'assets/js/jquery.form.min.js',
 			'https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js',
 			'assets/js/main.js',
 			'assets/js/slider.js',
@@ -72,7 +61,7 @@ gulp.task('browserSync', ['stylus'], function(){
 });
 
 
-gulp.task('watch', ['browserSync', 'scripts'], function(){
+gulp.task('watch', ['browserSync'], function(){
 	gulp.watch('assets/stylus/**/**.styl', ['stylus']);
 });
 

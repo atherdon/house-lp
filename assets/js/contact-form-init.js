@@ -1,6 +1,5 @@
 $(document).ready(function() {
     
-
     // 'Введите данные в поля формы'
 
     // 'Введите свое имя'
@@ -9,10 +8,8 @@ $(document).ready(function() {
     // 'Выберите месяц',
     // 'Введите время'
 
-
     // 'Введите email адрес'
     // 'Введите контактный телефон'
-
     /* Contact Form */
     if($('#contactForm').length) {
 
@@ -279,7 +276,7 @@ $(document).ready(function() {
                     error: function() {
 
                         alert('Something`s wrong.');
-                        
+
                     }
                 });
             }
