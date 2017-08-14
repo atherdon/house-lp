@@ -67,6 +67,10 @@ $(document).ready(function() {
                 error.appendTo( element.closest(".modal-body").find('.error.main-wrapper') );
             },
             submitHandler: function(form) { 
+
+
+                return false;
+
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 
@@ -144,7 +148,7 @@ $(document).ready(function() {
                 return true;
             },
             submitHandler: function(form) {             
-
+                return false;
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 
@@ -215,6 +219,7 @@ $(document).ready(function() {
                 return true;
             },
             submitHandler: function(form) { 
+                return false;
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 
@@ -285,6 +290,7 @@ $(document).ready(function() {
                 return true;
             },
             submitHandler: function(form) { 
+                return false;
                 jQuery(form).ajaxSubmit({
 
                     url: 'process.php', 

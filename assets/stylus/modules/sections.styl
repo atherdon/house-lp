@@ -786,6 +786,46 @@ body
 	margin: 0 auto;
 	
 
+/*slider*/
+.fa-chevron-circle-right:before,
+.fa-chevron-circle-left:before {
+    color: #ffa841;
+}
+
+.gallery-container.slider .bx-controls {
+    position: relative;
+    bottom: 340px;
+}
+
+
+
+
+.bx-controls a,
+.bx-controls a:link,
+.bx-controls a:visited {
+  color: cyan;
+  position: relative;
+  0
+  /**/
+  top: 0;
+  /*______________*/
+  z-index: 99;
+  /*_________*/
+  transition: all 1s ease-in;
+}
+.bx-controls a:hover,
+.bx-controls a:active {
+  color: rgba(127, 127, 0, .7);
+  transition: all 1s ease-out;
+}
+
+
+.bx-controls a:hover .fa-chevron-circle-right:before,
+.bx-controls a:hover .fa-chevron-circle-left:before {
+    color: #fe614e;   
+}
+
+
 .form-section h2 {
 
     background-color: red; /* :todo we need to clarify the red color  */
