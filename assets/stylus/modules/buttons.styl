@@ -42,12 +42,19 @@
 	position relative
 	width 100%
 	text-align center
-	
+
+#start .default-button
+	@media(min-width: 600px) and (max-width: 767px)
+		height 60px	
+
+		
 #sevastopol
 	.below-bottom-line		
 		top 80px
-		@media(min-width: 1200px) and (max-width: 1500px)
+		@media(min-width: 1200px) and (max-width: 1250px)
 			top 94px
+		@media(min-width: 1250px) and (max-width: 1500px)
+			top 130px	
 	.default-button span
 		@media(min-width: 1200px) and (max-width: 1500px)
 			padding-top 0px		
@@ -65,8 +72,10 @@
 #health
 	.below-bottom-line		
 		top 80px
-		@media(min-width: 1200px) and (max-width: 1500px)
-			top 75px		
+		@media(min-width: 1200px) and (max-width: 125px)
+			top 75px
+		@media(min-width: 1250px) and (max-width: 1500px)			
+			top 130px
 	.default-button span
 		@media(min-width: 1200px) and (max-width: 1500px)
 			padding-top 0px	
@@ -82,8 +91,11 @@
 
 .quote-section
 	.default-button span
+		@media(min-width: 600px) and (max-width: 767px)
+			padding-top 10px
 		@media(min-width: 1200px) and (max-width: 1500px)
-			padding-top 0px							
+			padding-top 0px
+										
 
 .rest-with-your-friends
 	.below-bottom-line		

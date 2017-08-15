@@ -169,7 +169,7 @@
 			line-height 77px
 		    width 100%
 		    font-size 101px
-		    padding-left 150px!important				
+		    padding-left 150px
 		    padding-right 0px  
 		span.big,
 		span.small
@@ -350,7 +350,16 @@
 				margin-top 0px
 				display block
 								
-				
+#start.welcome-section h1	
+	@media (min-width: 1600px)  
+		line-height 77px
+	    padding-left 150px
+	    padding-right 0px
+	@media (min-width: 320px) and (max-width: 600px)
+		padding-left 36px
+	@media (min-width: 600px) and (max-width: 767px)      			
+		padding-left 36px
+
 /*.welcome-section
 
 	@media(min-width: 768px) and (max-width: 991px)
@@ -671,7 +680,11 @@ body
 		margin-bottom 40px
 		
 #photogallery .bx-controls
-	@media (max-width: 767px)
+	@media (min-width: 380px) and (max-width: 480px)
+		bottom 90px
+	@media (min-width: 480px) and (max-width: 600px)
+		bottom 90px	
+	@media (min-width: 600px) and (max-width: 767px)
 		bottom 130px
 	@media(min-width: 768px) and (max-width: 991px)		
 		bottom 130px
@@ -681,7 +694,11 @@ body
 		bottom 300px*/
 
 #photogallery .bx-controls .bx-next
-	@media (max-width: 767px)
+	@media (min-width: 380px) and (max-width: 480px)
+		left 91%
+	@media (min-width: 480px) and (max-width: 600px)	
+		left 91%
+	@media (min-width: 600px) and (max-width: 767px)		 
 		left 102% 
 	@media(min-width: 768px) and (max-width: 991px)	
 		left 103% 
@@ -1072,8 +1089,11 @@ body
 
 #contacts #contacts-title:before 		
 	margin-top -200px
-	height 200px 
-	@media (max-width: 767px)
+	height 200px
+	@media (min-width: 380px) and (max-width: 480px) 
+		margin-top -80px
+		height 80px
+	@media (min-width: 480px) and (max-width: 767px)	
 		margin-top -200px
 		height 200px	
 	@media(min-width: 768px) and (max-width: 991px)
