@@ -9,7 +9,7 @@ $(document).ready(function(){
         speed: 500,
         auto: false,
 
-        slideWidth: 580,
+        slideWidth: 500,
         // auto: true,
 
         /* Controls must be true */

@@ -43,31 +43,62 @@
 	width 100%
 	text-align center
 	
-	
 #sevastopol
 	.below-bottom-line		
 		top 80px
+		@media(min-width: 1200px) and (max-width: 1500px)
+			top 94px
+	.default-button span
+		@media(min-width: 1200px) and (max-width: 1500px)
+			padding-top 0px		
 
 #dosug		
 	.below-bottom-line		
 		top 80px
+		@media(min-width: 1200px) and (max-width: 1500px)
+			top 75px
+	.default-button span
+		@media(min-width: 1200px) and (max-width: 1500px)
+			padding-top 0px		
 
-.rest-with-your-friends		
-	.below-bottom-line		
-		top 80px /* :todo dont like this */	
 		
 #health
 	.below-bottom-line		
-		top 80px /* :todo dont like this */
-
+		top 80px
+		@media(min-width: 1200px) and (max-width: 1500px)
+			top 75px		
+	.default-button span
+		@media(min-width: 1200px) and (max-width: 1500px)
+			padding-top 0px	
+			
 .garden-section
 	.below-bottom-line		
-		top 80px /* :todo dont like this */					
+		top 80px
+		@media(min-width: 1200px) and (max-width: 1500px)
+			top 130px		
+	.default-button span
+		@media(min-width: 1200px) and (max-width: 1500px)
+			padding-top 0px							
 
+.quote-section
+	.default-button span
+		@media(min-width: 1200px) and (max-width: 1500px)
+			padding-top 0px							
+
+.rest-with-your-friends
+	.below-bottom-line		
+		top 80px
+		@media(min-width: 1200px) and (max-width: 1500px)
+			top 56px			
+	.default-button span
+		@media(min-width: 1200px) and (max-width: 1500px)
+			padding-top 0px
+			margin-top -8px							
+	
 /* down arrow button */
 #start .center-block a.down
 	display block
-	background url('../images/arrowdown.png') no-repeat 0 0
+	/*background url('../images/arrowdown.png') no-repeat 0 0*/
 	height 57px
 	width 57px
 	margin 0 auto
@@ -76,8 +107,16 @@
 	left 0
 	right 0
 	opacity 0.8
-
-
+	@media (min-width: 992px) and (max-width: 1119px)
+		width 40px
+		height 40px
+		bottom 8px
+	@media (min-width: 1200px) and (max-width: 1500px)	
+		width 40px
+		height 40px
+		bottom 8px
+	@media (min-width: 1600px)		
+		bottom 2px
 /* sidebar buttons */
 
 .site-action {
