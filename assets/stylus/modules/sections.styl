@@ -45,9 +45,9 @@
 
 #start.welcome-section
 	@media (max-width: 319px)
-		height calc(50vh - 60px)
+		height calc(60vh - 60px)
 	@media(min-width: 320px) and (max-width: 766px)
-		height calc(50vh - 60px)
+		height calc(60vh - 60px)
 	@media(max-width: 767px)
 		flex-flow row
 		flex-wrap wrap
@@ -56,7 +56,7 @@
 	@media(min-width: 768px) and (max-width: 898px)	
 		flex-flow row
 		flex-wrap wrap
-		height calc(65vh - 60px)
+		height calc(70vh - 60px)
 		padding-left 15px
 		padding-right 15px
 	@media(min-width: 898px) and (max-width: 991px)	
@@ -116,6 +116,8 @@
 			height initial
 			width 60%
 			padding-bottom 90px
+		@media (min-width: 1000px)
+			padding-bottom 104px 	
 		@media (min-width: 1200px)	
 			height initial
 			width 60%
@@ -351,14 +353,16 @@
 				display block
 								
 #start.welcome-section h1	
-	@media (min-width: 1600px)  
-		line-height 77px
-	    padding-left 150px
-	    padding-right 0px
 	@media (min-width: 320px) and (max-width: 600px)
 		padding-left 36px
 	@media (min-width: 600px) and (max-width: 767px)      			
 		padding-left 36px
+	@media (min-width: 1000px)
+		padding-left 36px     				
+	@media (min-width: 1600px)  
+		line-height 77px
+	    padding-left 150px
+	    padding-right 0px	
 
 /*.welcome-section
 
